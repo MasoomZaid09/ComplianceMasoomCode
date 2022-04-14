@@ -27,6 +27,12 @@ class DetailsActivity : AppCompatActivity() {
             }
         }
 
+        binding.resourseManagementLayout.setOnClickListener {
+            Intent(this, ResourceManagementActivity::class.java).also{
+                startActivity(it)
+            }
+        }
+
         binding.toolbarBackIcon.setOnClickListener {
             finish()
         }

@@ -14,6 +14,11 @@
         android:background="@color/white"
         android:paddingHorizontal="8dp">
 
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="start"
+            android:src="@color/black" />
 
         <TextView
             android:id="@+id/toolbarTitle"
@@ -26,8 +31,15 @@
             android:textSize="21sp"
             android:textStyle="bold" />
 
-    </androidx.appcompat.widget.Toolbar>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/toolbarProfileIcon"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/profile_image" />
 
+    </androidx.appcompat.widget.Toolbar>
 
     <View
         android:id="@+id/divider"
