@@ -19,8 +19,7 @@ class UserAdapter(val context : Context, val itemList : ArrayList<ModelClass>, v
         val userID: TextView = view.findViewById(R.id.itemId)
         val userEmail: TextView = view.findViewById(R.id.itemEmail)
         val userMobile : TextView = view.findViewById(R.id.itemMobile)
-        val layout :    CardView = view.findViewById(R.id.layout)
-
+        val layout :   CardView = view.findViewById(R.id.layout)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): UserViewHolder {
