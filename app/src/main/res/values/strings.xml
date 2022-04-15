@@ -75,5 +75,7 @@
 <![CDATA[ Goods & Services ]]>
 </string>
 
+    <string name="menu">Menu</string>
+
 
 </resources>
