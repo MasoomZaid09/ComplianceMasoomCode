@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".MenuFragments.NotificationsFragment">
+    tools:context=".activity.ChangeUserActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
@@ -14,15 +14,27 @@
         android:background="@color/white"
         android:paddingHorizontal="8dp">
 
+        <TextView
+            android:id="@+id/backProxyUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:gravity="center_vertical"
+            android:text="@string/back"
+            android:textColor="@color/blue"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:drawableStartCompat="@drawable/ic_back_arrow"
+            app:drawableTint="@color/blue" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:gravity="center_vertical"
-            android:text="Notification"
+            android:text="Proxy User"
             android:textColor="@color/blue"
-            android:textSize="21sp"
+            android:textSize="22sp"
             android:textStyle="bold" />
 
         <TextView
@@ -46,7 +58,7 @@
 
     <EditText
         android:paddingStart="5dp"
-        android:id="@+id/searchNotificationBar"
+        android:id="@+id/searchProxyUser"
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:layout_below="@id/divider"
@@ -58,12 +70,10 @@
         android:hint="@string/search"
         tools:ignore="RtlSymmetry" />
 
-
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/searchNotificationBar"
-        android:id="@+id/recyclerViewNotification"/>
-
+        android:layout_below="@id/searchProxyUser" />
 
 </RelativeLayout>

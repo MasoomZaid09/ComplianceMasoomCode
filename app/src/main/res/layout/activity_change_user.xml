@@ -32,7 +32,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:gravity="center_vertical"
-            android:text="@string/users"
+            android:text="Change User"
             android:textColor="@color/blue"
             android:textSize="22sp"
             android:textStyle="bold" />
