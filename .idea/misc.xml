@@ -6,7 +6,9 @@
         <entry key="app/src/main/res/drawable-anydpi/ic_home.xml" value="0.114" />
         <entry key="app/src/main/res/drawable-hdpi/backgroundsearch.xml" value="0.114" />
         <entry key="app/src/main/res/drawable-hdpi/cloud.xml" value="0.114" />
+        <entry key="app/src/main/res/drawable-hdpi/ic_back_arrow.xml" value="0.114" />
         <entry key="app/src/main/res/drawable-hdpi/ic_baseline_keyboard_arrow_down_24.xml" value="0.114" />
+        <entry key="app/src/main/res/drawable-v24/edittext_border.xml" value="0.114" />
         <entry key="app/src/main/res/drawable-v24/ic_arrow.xml" value="0.1525" />
         <entry key="app/src/main/res/drawable-v24/ic_back_arrow.xml" value="0.1525" />
         <entry key="app/src/main/res/drawable-v24/ic_edit.xml" value="0.1525" />
@@ -24,6 +26,7 @@
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.16666666666666666" />
         <entry key="app/src/main/res/layout/activity_profile.xml" value="0.1824074074074074" />
         <entry key="app/src/main/res/layout/activity_proxy_user.xml" value="0.19375" />
+        <entry key="app/src/main/res/layout/activity_register_email_notification.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_resource_management.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.1824074074074074" />
         <entry key="app/src/main/res/layout/activity_testing.xml" value="0.15904232578024796" />

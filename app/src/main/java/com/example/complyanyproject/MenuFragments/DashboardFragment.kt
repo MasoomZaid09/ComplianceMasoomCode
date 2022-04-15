@@ -10,6 +10,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import com.example.complyanyproject.R
 import com.example.complyanyproject.activity.DetailsActivity
+import com.example.complyanyproject.activity.RegisterEmailNotificationActivity
 
 class DashboardFragment : Fragment() {
 

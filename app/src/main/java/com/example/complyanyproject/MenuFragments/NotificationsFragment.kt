@@ -1,14 +1,18 @@
 package com.example.complyanyproject.MenuFragments
 
 import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.complyanyproject.R
+import com.example.complyanyproject.activity.MainActivity
+import com.example.complyanyproject.activity.RegisterEmailNotificationActivity
 import com.example.complyanyproject.adapter.NotificationAdapter
 import com.example.complyanyproject.model.NotificationModelClass
 
@@ -16,6 +20,7 @@ import com.example.complyanyproject.model.NotificationModelClass
 class NotificationsFragment : Fragment() {
 
     lateinit var recyclerView: RecyclerView
+    lateinit var addIconNotification : TextView
 
     //lateinit var layoutManager: RecyclerView.LayoutManager
     lateinit var adapter: NotificationAdapter
@@ -31,6 +36,14 @@ class NotificationsFragment : Fragment() {
 
         recyclerView = view.findViewById(R.id.recyclerViewNotification)
 
+        addIconNotification = view.findViewById(R.id.addIconNotification)
+
+        // intent to registerEmailNotification screen
+        addIconNotification.setOnClickListener {
+            Intent(activity as Context, RegisterEmailNotificationActivity::class.java).also {
+                startActivity(it)
+            }
+        }
 
         var data1 = NotificationModelClass(
             "Afganistan",

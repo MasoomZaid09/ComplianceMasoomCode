@@ -41,4 +41,39 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="complyany_support">ComplyAny | Support</string>
     <string name="_0_25">0/25</string>
+
+
+    // added vishal's String resources
+    <string name="register_email_notification">Register Email Notification</string>
+    <string name="user_name">User Name</string>
+    <string name="enter_user_name">
+<font size="15">Enter User Name</font>
+</string>
+    <string name="star">*</string>
+    <string name="enter_email_id">
+<font size="15">Enter Email ID</font>
+</string>
+    <string name="email_id">Email ID</string>
+    <string name="entity_name">Entity Name</string>
+    <string name="select_entity_name">
+<font size="15">Select Entity Name</font>
+</string>
+    <string name="regulations">Regulations</string>
+    <string name="testing">testing</string>
+    <string name="select_country">
+<font size="10">Select Country</font>
+</string>
+    <string name="ram">ram</string>
+    <string name="stock_exchange">Stock Exchange</string>
+    <string name="labour_law">Labour Law</string>
+    <string name="central_bank">Central Bank</string>
+    <string name="customs_law">Customs Law</string>
+    <string name="corporate_law">Corporate Law</string>
+    <string name="excise_duty">Excise Duty</string>
+    <string name="income">INCOME</string>
+    <string name="goods_amp_services">
+<![CDATA[ Goods & Services ]]>
+</string>
+
+
 </resources>

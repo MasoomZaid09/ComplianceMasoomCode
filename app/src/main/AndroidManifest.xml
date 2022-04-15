@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ComplyAnyProject">
         <activity
+            android:name=".activity.RegisterEmailNotificationActivity"
+            android:exported="false" />
+        <activity
             android:name=".activity.ProxyUserActivity"
             android:exported="false" />
         <activity
