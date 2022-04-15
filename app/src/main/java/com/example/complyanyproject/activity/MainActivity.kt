@@ -56,7 +56,6 @@ class MainActivity : AppCompatActivity() {
             return@setOnItemSelectedListener true
         }
 
-
     }
 
     // navigating default screens
@@ -65,6 +64,5 @@ class MainActivity : AppCompatActivity() {
             .replace(R.id.frame, DashboardFragment())
             .commit()
     }
-
 
 }
