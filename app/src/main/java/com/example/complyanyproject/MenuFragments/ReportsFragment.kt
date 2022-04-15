@@ -42,44 +42,40 @@ class ReportsFragment : Fragment() {
         bankGurantee = view.findViewById(R.id.bankLayout)
         complienceData = view.findViewById(R.id.ComplienceDataLayout)
 
+
         global.setOnClickListener {
-            Toast.makeText(context, "Hello", Toast.LENGTH_SHORT).show()
+            Toast.makeText(context, "Global", Toast.LENGTH_SHORT).show()
         }
-
         entity.setOnClickListener {
-            Toast.makeText(context, "Hello", Toast.LENGTH_SHORT).show()
+            Toast.makeText(context, "Entity", Toast.LENGTH_SHORT).show()
         }
-
         department.setOnClickListener {
-            Toast.makeText(context, "Hello", Toast.LENGTH_SHORT).show()
+            Toast.makeText(context, "Department", Toast.LENGTH_SHORT).show()
         }
         globalEntity.setOnClickListener {
-            Toast.makeText(context, "Hello", Toast.LENGTH_SHORT).show()
+            Toast.makeText(context, "Global Entity Department", Toast.LENGTH_SHORT).show()
         }
         entityFunction.setOnClickListener {
-            Toast.makeText(context, "Hello", Toast.LENGTH_SHORT).show()
+            Toast.makeText(context, "Entity Function", Toast.LENGTH_SHORT).show()
         }
         rent.setOnClickListener {
-            Toast.makeText(context, "Hello", Toast.LENGTH_SHORT).show()
+            Toast.makeText(context, "Rent", Toast.LENGTH_SHORT).show()
         }
         insuarance.setOnClickListener {
-            Toast.makeText(context, "Hello", Toast.LENGTH_SHORT).show()
+            Toast.makeText(context, "Insurance", Toast.LENGTH_SHORT).show()
         }
         agreement.setOnClickListener {
-            Toast.makeText(context, "Hello", Toast.LENGTH_SHORT).show()
+            Toast.makeText(context, "Agreement", Toast.LENGTH_SHORT).show()
         }
-
         complienceData.setOnClickListener {
-            Toast.makeText(context, "Hello", Toast.LENGTH_SHORT).show()
+            Toast.makeText(context, "Complience Data", Toast.LENGTH_SHORT).show()
+        }
+        bankGurantee.setOnClickListener {
+            Toast.makeText(context, "Bank Guarantee", Toast.LENGTH_SHORT).show()
         }
 
-        bankGurantee.setOnClickListener {
-            Toast.makeText(context, "Hello", Toast.LENGTH_SHORT).show()
-        }
 
         return view
-
-
     }
 
 
