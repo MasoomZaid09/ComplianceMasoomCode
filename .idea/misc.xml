@@ -13,9 +13,11 @@
         <entry key="app/src/main/res/drawable-v24/ic_forward_arrow.xml" value="0.131" />
         <entry key="app/src/main/res/drawable-v24/ic_stop.xml" value="0.114" />
         <entry key="app/src/main/res/drawable-v24/rounded_edit_text.xml" value="0.1355" />
+        <entry key="app/src/main/res/drawable/ic_add_icon.xml" value="0.114" />
         <entry key="app/src/main/res/drawable/tab_color_selector.xml" value="0.131" />
         <entry key="app/src/main/res/drawable/your_shape_here.xml" value="0.131" />
         <entry key="app/src/main/res/layout/activity_change_password.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_change_user.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/activity_details.xml" value="0.2" />
         <entry key="app/src/main/res/layout/activity_forget_password.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.16" />
@@ -25,6 +27,7 @@
         <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.1824074074074074" />
         <entry key="app/src/main/res/layout/activity_testing.xml" value="0.15904232578024796" />
         <entry key="app/src/main/res/layout/activity_user.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/change_user_recycler_layout.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_business_partner.xml" value="0.17864583333333334" />
         <entry key="app/src/main/res/layout/fragment_dashboard.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/fragment_menu.xml" value="0.19375" />
@@ -33,7 +36,7 @@
         <entry key="app/src/main/res/layout/fragment_reports.xml" value="0.2" />
         <entry key="app/src/main/res/layout/fragment_user.xml" value="0.4346978557504873" />
         <entry key="app/src/main/res/layout/recycler_resource_layout.xml" value="0.22" />
-        <entry key="app/src/main/res/layout/user_recycler_layout.xml" value="0.67" />
+        <entry key="app/src/main/res/layout/user_recycler_layout.xml" value="0.22" />
         <entry key="app/src/main/res/menu/bottom_menu.xml" value="0.19375" />
       </map>
     </option>

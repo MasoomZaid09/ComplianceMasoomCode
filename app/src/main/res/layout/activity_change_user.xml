@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.UserActivity">
+    tools:context=".activity.ChangeUserActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
@@ -15,7 +15,7 @@
         android:paddingHorizontal="8dp">
 
         <TextView
-            android:id="@+id/toolbarBackIcon"
+            android:id="@+id/backChangeUser"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="start"
@@ -28,7 +28,6 @@
             app:drawableTint="@color/blue" />
 
         <TextView
-            android:id="@+id/toolbarTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -39,16 +38,12 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/toolbarUsersAddIcon"
+            android:id="@+id/addIconChangeUser"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="end"
-            android:gravity="center_vertical"
-            android:text="@string/_0_25"
             android:layout_marginEnd="10dp"
-            android:textColor="@color/red"
-            android:textSize="17sp"
-            android:textStyle="bold"
+            android:gravity="center_vertical"
             app:drawableEndCompat="@drawable/ic_add_icon" />
 
     </androidx.appcompat.widget.Toolbar>
@@ -63,7 +58,7 @@
 
     <EditText
         android:paddingStart="5dp"
-        android:id="@+id/searchBar"
+        android:id="@+id/searchChangeUser"
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:layout_below="@id/divider"
@@ -72,12 +67,13 @@
         android:background="@drawable/rounded_edit_text"
         android:drawableStart="@drawable/ic_search"
         android:drawablePadding="5dp"
-        android:hint="@string/search" />
+        android:hint="@string/search"
+        tools:ignore="RtlSymmetry" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/searchBar" />
+        android:layout_below="@id/searchChangeUser" />
 
 </RelativeLayout>

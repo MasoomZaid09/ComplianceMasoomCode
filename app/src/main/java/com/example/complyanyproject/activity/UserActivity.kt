@@ -33,11 +33,7 @@ class UserActivity : AppCompatActivity() {
             finish()
         }
 
-        binding.toolbarProfileIcon.setOnClickListener {
-            Intent(this, DetailsActivity::class.java).also {
-                startActivity(it)
-            }
-        }
+
 
         val data1 = ModelClass("Masoom","0001", "mz@gmail.com","6392654000")
         val data2 = ModelClass("Vishal","0002", "vk@gmail.com","4664546434")
@@ -71,11 +67,8 @@ class UserActivity : AppCompatActivity() {
         recyclerView.layoutManager = LinearLayoutManager(this)
         adapter = UserAdapter(this, itemList, object : OnRecyclerClickListener{
             override fun onClick(pos: Int) {
-//                Toast.makeText(this@UserActivity, "item is $pos ", Toast.LENGTH_SHORT).show()
-                Intent(this@UserActivity, TestingActivity::class.java).also {
-                    it.putExtra("title", pos.toString())
-                    startActivity(it)
-                }
+                Toast.makeText(this@UserActivity, "item is $pos ", Toast.LENGTH_SHORT).show()
+
             }
 
         })
