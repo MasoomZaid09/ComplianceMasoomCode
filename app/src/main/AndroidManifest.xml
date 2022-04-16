@@ -10,6 +10,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ComplyAnyProject">
         <activity
+            android:name=".activity.EmailContactUsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.HelpContactActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.FaqActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.HelpDemoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.HelpDocumentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.HelpAndSupportActivity"
+            android:exported="false" />
+        <activity
             android:name=".activity.OverDueActivity"
             android:exported="false" />
         <activity

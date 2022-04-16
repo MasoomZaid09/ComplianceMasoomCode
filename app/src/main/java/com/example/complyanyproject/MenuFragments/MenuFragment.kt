@@ -32,6 +32,7 @@ class MenuFragment : Fragment() {
     lateinit var clientGroupManagement : LinearLayout
     lateinit var complianceManagement : LinearLayout
     lateinit var clientManagement : LinearLayout
+    lateinit var helpAndSupport : LinearLayout
 
 
     // TextView
@@ -93,6 +94,7 @@ class MenuFragment : Fragment() {
         clientGroupManagement = view.findViewById(R.id.clientGroupManagement)
         complianceManagement = view.findViewById(R.id.complianceManagement)
         clientManagement = view.findViewById(R.id.ClientManagement)
+        helpAndSupport = view.findViewById(R.id.helpAndSupport)
 
         // TextView
         clientGroupId = view.findViewById(R.id.clientGroupId)
@@ -305,7 +307,12 @@ class MenuFragment : Fragment() {
             }
         }
 
-
+        // added clicks on help&Support
+        helpAndSupport.setOnClickListener {
+            Intent(activity as Context, HelpAndSupportActivity::class.java).also{
+                startActivity(it)
+            }
+        }
 
         return view
     }
