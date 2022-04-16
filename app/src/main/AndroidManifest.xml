@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ComplyAnyProject">
         <activity
+            android:name=".activity.OverDueActivity"
+            android:exported="false" />
+        <activity
             android:name=".activity.SelectorClientSubGroupActivity"
             android:exported="false" />
         <activity
