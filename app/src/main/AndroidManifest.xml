@@ -10,6 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ComplyAnyProject">
         <activity
+            android:name=".activity.SelectorClientSubGroupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.CreateClientSubGroupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ClientSubGroupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.CreateClientGroupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ClientGroupActivity"
+            android:exported="false" />
+        <activity
             android:name=".activity.ClientManagement"
             android:exported="false" />
         <activity

@@ -1,5 +1,7 @@
 package com.example.complyanyproject.MenuFragments
 
+import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -8,7 +10,10 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.RelativeLayout
+import android.widget.TextView
 import com.example.complyanyproject.R
+import com.example.complyanyproject.activity.ClientGroupActivity
+import com.example.complyanyproject.activity.ClientSubGroupActivity
 
 
 class MenuFragment : Fragment() {
@@ -27,6 +32,14 @@ class MenuFragment : Fragment() {
     lateinit var userManagement : LinearLayout
     lateinit var clientGroupManagement : LinearLayout
     lateinit var complianceManagement : LinearLayout
+
+
+    // TextView
+    lateinit var clientGroupId : TextView
+    lateinit var clientSubGroupId : TextView
+
+
+
 
     // Both Arrow Relative Layout
     lateinit var companyArrowLayout : RelativeLayout
@@ -74,6 +87,12 @@ class MenuFragment : Fragment() {
         userManagement = view.findViewById(R.id.userManagement)
         clientGroupManagement = view.findViewById(R.id.clientGroupManagement)
         complianceManagement = view.findViewById(R.id.complianceManagement)
+
+        // TextView
+        clientGroupId = view.findViewById(R.id.clientGroupId)
+        clientSubGroupId = view.findViewById(R.id.clientSubGroupId)
+
+
 
         // Both Arrow Relative Layout
         companyArrowLayout  = view.findViewById(R.id.companyArrowLayout)
@@ -238,6 +257,19 @@ class MenuFragment : Fragment() {
             }
 
         }
+
+        // added click on clientGroupManagement
+        clientGroupId.setOnClickListener {
+            Intent(activity as Context, ClientGroupActivity::class.java).also{
+                startActivity(it)
+            }
+        }
+        clientSubGroupId.setOnClickListener {
+            Intent(activity as Context, ClientSubGroupActivity::class.java).also{
+                startActivity(it)
+            }
+        }
+
         return view
     }
 

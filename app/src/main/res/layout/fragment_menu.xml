@@ -704,6 +704,7 @@
                         android:orientation="vertical">
 
                         <TextView
+                            android:id="@+id/clientGroupId"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Client Group"
@@ -726,6 +727,7 @@
                         android:orientation="vertical">
 
                         <TextView
+                            android:id="@+id/clientSubGroupId"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Client Sub-Group"
