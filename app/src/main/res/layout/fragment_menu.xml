@@ -573,6 +573,7 @@
                         android:orientation="vertical">
 
                         <TextView
+                            android:id="@+id/userId"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Users"
@@ -596,6 +597,7 @@
                         android:orientation="vertical">
 
                         <TextView
+                            android:id="@+id/changeUserId"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Change User"
@@ -618,6 +620,7 @@
                         android:orientation="vertical">
 
                         <TextView
+                            android:id="@+id/proxyUserId"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Proxy User"

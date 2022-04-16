@@ -12,8 +12,7 @@ import android.widget.LinearLayout
 import android.widget.RelativeLayout
 import android.widget.TextView
 import com.example.complyanyproject.R
-import com.example.complyanyproject.activity.ClientGroupActivity
-import com.example.complyanyproject.activity.ClientSubGroupActivity
+import com.example.complyanyproject.activity.*
 
 
 class MenuFragment : Fragment() {
@@ -32,11 +31,17 @@ class MenuFragment : Fragment() {
     lateinit var userManagement : LinearLayout
     lateinit var clientGroupManagement : LinearLayout
     lateinit var complianceManagement : LinearLayout
+    lateinit var clientManagement : LinearLayout
 
 
     // TextView
     lateinit var clientGroupId : TextView
     lateinit var clientSubGroupId : TextView
+    lateinit var userId : TextView
+    lateinit var changeUserId : TextView
+    lateinit var proxyUserId : TextView
+
+
 
 
 
@@ -87,10 +92,14 @@ class MenuFragment : Fragment() {
         userManagement = view.findViewById(R.id.userManagement)
         clientGroupManagement = view.findViewById(R.id.clientGroupManagement)
         complianceManagement = view.findViewById(R.id.complianceManagement)
+        clientManagement = view.findViewById(R.id.ClientManagement)
 
         // TextView
         clientGroupId = view.findViewById(R.id.clientGroupId)
         clientSubGroupId = view.findViewById(R.id.clientSubGroupId)
+        userId = view.findViewById(R.id.userId)
+        changeUserId = view.findViewById(R.id.changeUserId)
+        proxyUserId = view.findViewById(R.id.proxyUserId)
 
 
 
@@ -266,6 +275,32 @@ class MenuFragment : Fragment() {
         }
         clientSubGroupId.setOnClickListener {
             Intent(activity as Context, ClientSubGroupActivity::class.java).also{
+                startActivity(it)
+            }
+        }
+
+        // added clickListener on clientManagement
+        clientManagement.setOnClickListener {
+            Intent(activity as Context, ClientManagement::class.java).also{
+                startActivity(it)
+            }
+        }
+
+        // added clickListener on userManagement
+        userId.setOnClickListener {
+            Intent(activity as Context, UserActivity::class.java).also{
+                startActivity(it)
+            }
+        }
+
+        changeUserId.setOnClickListener {
+            Intent(activity as Context, ChangeUserActivity::class.java).also{
+                startActivity(it)
+            }
+        }
+
+        proxyUserId.setOnClickListener {
+            Intent(activity as Context, ProxyUserActivity::class.java).also{
                 startActivity(it)
             }
         }
