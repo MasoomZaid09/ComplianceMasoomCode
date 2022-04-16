@@ -24,7 +24,7 @@
                 android:layout_gravity="center"
                 android:text="@string/menu"
                 android:textColor="@color/blue_1"
-                android:textSize="18sp"
+                android:textSize="21sp"
                 android:textStyle="bold" />
 
         </androidx.appcompat.widget.Toolbar>
