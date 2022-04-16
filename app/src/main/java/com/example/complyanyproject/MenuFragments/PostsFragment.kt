@@ -8,6 +8,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
+import android.widget.RelativeLayout
 import android.widget.TextView
 import com.example.complyanyproject.R
 import com.example.complyanyproject.activity.OverDueActivity
@@ -20,7 +21,8 @@ class PostsFragment : Fragment() {
 
     lateinit var FromdateImageView: ImageView
     lateinit var TodateImageView: ImageView
-    lateinit var overDue: TextView
+
+    lateinit var overDueLayout: RelativeLayout
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -28,9 +30,9 @@ class PostsFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_posts, container, false)
-        overDue = view.findViewById(R.id.OverDueLayout)
+        overDueLayout = view.findViewById(R.id.OverDueLayout)
 
-        overDue.setOnClickListener {
+        overDueLayout.setOnClickListener {
 //            Toast.makeText(context,"overdue",Toast.LENGTH_SHORT).show()
             var intent = Intent(context, OverDueActivity::class.java)
             startActivity(intent)
@@ -86,5 +88,6 @@ class PostsFragment : Fragment() {
 
         return view
     }
+
 
 }

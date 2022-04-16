@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/ComplyAnyProject/app/src/main/res/layout/activity_over_due.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/ComplyAnyProject/app/src/main/res/layout/fragment_posts.xml" value="0.25025641025641027" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/ComplyAnyProject/app/src/main/res/layout/overdue_recycler_layout.xml" value="0.25416666666666665" />
         <entry key="app/src/main/res/drawable-anydpi/ic_baseline_calendar_month_24.xml" value="0.127" />
         <entry key="app/src/main/res/drawable-anydpi/ic_baseline_edit_24.xml" value="0.127" />
         <entry key="app/src/main/res/drawable-anydpi/ic_baseline_save_24.xml" value="0.127" />
