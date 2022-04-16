@@ -7,7 +7,6 @@
     tools:context=".activity.EmailContactUsActivity"
     android:orientation="vertical">
 
-
     <RelativeLayout
         android:id="@+id/RelativeLayout"
         android:layout_width="match_parent"

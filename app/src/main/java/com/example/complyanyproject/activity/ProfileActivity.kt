@@ -72,7 +72,7 @@ class ProfileActivity : AppCompatActivity() {
                     binding.etMobileNumber.text.clear()
                     binding.etAddress.text.clear()
 
-                    Toast.makeText(this, "Profile Updated..",Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, "Profile Updated...",Toast.LENGTH_SHORT).show()
                 }
         }
 

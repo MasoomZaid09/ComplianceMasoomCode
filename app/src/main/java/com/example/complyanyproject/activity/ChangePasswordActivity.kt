@@ -45,13 +45,13 @@ class ChangePasswordActivity : AppCompatActivity() {
                 binding.etNewPass.setError("This field is required")
             }
             else if(newPass.length < 8){
-                binding.etNewPass.setError("Password contain atleast 8 characters")
+                binding.etNewPass.setError("Password must contain at least 8 characters")
             }
             else if (!newPass.matches(checkPass.toRegex())){
                 binding.etNewPass.setError("Password too weak")
             }
             else if (confirmPass != newPass){
-                binding.etConfirmNewPass.setError("Password must be same")
+                binding.etConfirmNewPass.setError("New password and confirm password must be same")
             }
             else{
                 binding.etOldPass.text.clear()
