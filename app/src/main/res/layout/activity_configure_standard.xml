@@ -16,7 +16,7 @@
         android:paddingHorizontal="8dp">
 
         <TextView
-            android:id="@+id/backChangeUser"
+            android:id="@+id/backStandardComplience"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="start"
@@ -118,8 +118,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="35dp"
                             android:layout_centerVertical="true"
-                            android:text="Select Global Region"
                             android:gravity="center_vertical"
+                            android:text="Select Global Region"
                             android:textSize="18sp"
                             app:drawableEndCompat="@drawable/ic_down_arrow" />
 
@@ -153,8 +153,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="35dp"
                             android:layout_centerVertical="true"
-                            android:text="Select Global Sub-Region"
                             android:gravity="center_vertical"
+                            android:text="Select Global Sub-Region"
                             android:textSize="18sp"
                             app:drawableEndCompat="@drawable/ic_down_arrow" />
 
@@ -187,8 +187,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="35dp"
                             android:layout_centerVertical="true"
-                            android:text="@string/select_country_office"
                             android:gravity="center_vertical"
+                            android:text="@string/select_country_office"
                             android:textSize="18sp"
                             app:drawableEndCompat="@drawable/ic_down_arrow" />
 
@@ -221,8 +221,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="35dp"
                             android:layout_centerVertical="true"
-                            android:text="Select Entity Name"
                             android:gravity="center_vertical"
+                            android:text="Select Entity Name"
                             android:textSize="18sp"
                             app:drawableEndCompat="@drawable/ic_down_arrow" />
 
@@ -282,6 +282,7 @@
 
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/cvAppilicableLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="20dp"
@@ -611,6 +612,7 @@
 
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/cvAssignUserLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="20dp"
@@ -1079,20 +1081,20 @@
                         android:orientation="horizontal">
 
                         <Button
-                            android:id="@+id/btnSaveAssignUserAndDepartment"
+                            android:id="@+id/btnBackAssignUserAndDepartment"
                             android:layout_width="75dp"
                             android:layout_height="45dp"
-                            android:text="@string/save"
+                            android:text="Back"
                             android:textAllCaps="false"
                             android:background="@drawable/backgroundsearch"
                             android:textSize="11sp"/>
 
                         <Button
-                            android:id="@+id/btnNextAssignUserAndDepartment"
+                            android:id="@+id/btnSaveAssignUserAndDepartment"
                             android:layout_width="75dp"
                             android:layout_height="45dp"
                             android:layout_marginStart="5dp"
-                            android:text="@string/next"
+                            android:text="Save"
                             android:textAllCaps="false"
                             android:background="@drawable/backgroundsearch"
                             android:textSize="11sp"/>

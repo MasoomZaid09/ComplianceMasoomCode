@@ -41,10 +41,7 @@ class MenuFragment : Fragment() {
     lateinit var userId : TextView
     lateinit var changeUserId : TextView
     lateinit var proxyUserId : TextView
-
-
-
-
+    lateinit var txtStandardComplience : TextView
 
 
     // Both Arrow Relative Layout
@@ -102,7 +99,7 @@ class MenuFragment : Fragment() {
         userId = view.findViewById(R.id.userId)
         changeUserId = view.findViewById(R.id.changeUserId)
         proxyUserId = view.findViewById(R.id.proxyUserId)
-
+        txtStandardComplience = view.findViewById(R.id.txtStandardComplience)
 
 
         // Both Arrow Relative Layout
@@ -310,6 +307,13 @@ class MenuFragment : Fragment() {
         // added clicks on help&Support
         helpAndSupport.setOnClickListener {
             Intent(activity as Context, HelpAndSupportActivity::class.java).also{
+                startActivity(it)
+            }
+        }
+
+        // standard configure option
+        txtStandardComplience.setOnClickListener {
+            Intent(activity as Context, ConfigureStandardActivity::class.java).also{
                 startActivity(it)
             }
         }
