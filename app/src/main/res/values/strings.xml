@@ -77,5 +77,23 @@
 
     <string name="menu">Menu</string>
 
+    // added string for configure standard
+    <string name="save">Save</string>
+    <string name="next">Next</string>
+    <string name="entity_name_standard">Entity Name *</string>
+    <string name="select_country_office">Select Country Office</string>
+    <string name="country_office">Country Office *</string>
+    <string name="global_sub_region">Global Sub-Region *</string>
+    <string name="global_region">Global Region *</string>
+    <string name="applicable_laws">Applicable Laws</string>
+    <string name="assign_user_and_department">Assign User And Department</string>
+    <string name="income_tax_assign_user">Income Tax *</string>
+    <string name="select">Select</string>
+    <string name="goods_and_service_tax">Goods And Service Tax *</string>
+    <string name="companies_act">Companies Act *</string>
+    <string name="provident_fund_act">Provident Fund Act *</string>
+    <string name="employees_state_insurance">Employees State Insurance *</string>
+    <string name="generate_complience">Generate Complience</string>
+
 
 </resources>
