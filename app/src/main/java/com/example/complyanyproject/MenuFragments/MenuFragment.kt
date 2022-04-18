@@ -45,6 +45,7 @@ class MenuFragment : Fragment() {
     lateinit var txtSettings : TextView
     lateinit var txtCalenderManagement : TextView
     lateinit var txtDepartment : TextView
+    lateinit var txtSubDepartment : TextView
 
 
     // Both Arrow Relative Layout
@@ -106,6 +107,7 @@ class MenuFragment : Fragment() {
         txtSettings = view.findViewById(R.id.txtSettings)
         txtCalenderManagement = view.findViewById(R.id.txtCalenderManagement)
         txtDepartment = view.findViewById(R.id.txtDepartment)
+        txtSubDepartment = view.findViewById(R.id.txtSubDepartment)
 
 
         // Both Arrow Relative Layout
@@ -345,7 +347,11 @@ class MenuFragment : Fragment() {
             }
         }
 
-
+        txtSubDepartment.setOnClickListener {
+            Intent(activity as Context, SubDepartmentActivity::class.java).also{
+                startActivity(it)
+            }
+        }
 
         return view
     }
