@@ -34,6 +34,7 @@
         <entry key="app/src/main/res/drawable-hdpi/cloud.xml" value="0.114" />
         <entry key="app/src/main/res/drawable-hdpi/ic_back_arrow.xml" value="0.114" />
         <entry key="app/src/main/res/drawable-hdpi/ic_baseline_keyboard_arrow_down_24.xml" value="0.114" />
+        <entry key="app/src/main/res/drawable-hdpi/ic_down_arrow.xml" value="0.1405" />
         <entry key="app/src/main/res/drawable-v24/edittext_border.xml" value="0.114" />
         <entry key="app/src/main/res/drawable-v24/ic_arrow.xml" value="0.1525" />
         <entry key="app/src/main/res/drawable-v24/ic_back_arrow.xml" value="0.1525" />
@@ -42,6 +43,7 @@
         <entry key="app/src/main/res/drawable-v24/ic_stop.xml" value="0.114" />
         <entry key="app/src/main/res/drawable-v24/rounded_edit_text.xml" value="0.1355" />
         <entry key="app/src/main/res/drawable/ic_add_icon.xml" value="0.114" />
+        <entry key="app/src/main/res/drawable/ic_arrowdown.xml" value="0.1405" />
         <entry key="app/src/main/res/drawable/tab_color_selector.xml" value="0.131" />
         <entry key="app/src/main/res/drawable/your_shape_here.xml" value="0.131" />
         <entry key="app/src/main/res/layout/activity_calender_management.xml" value="0.17864583333333334" />
@@ -51,6 +53,7 @@
         <entry key="app/src/main/res/layout/activity_client_management.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_client_sub_group.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/activity_configure_standard.xml" value="0.19074074074074074" />
+        <entry key="app/src/main/res/layout/activity_create_calender_management.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_create_client_group.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/activity_create_client_sub_group.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/activity_details.xml" value="0.2" />
@@ -63,6 +66,7 @@
         <entry key="app/src/main/res/layout/activity_register_email_notification.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_resource_management.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_selector_client_sub_group.xml" value="0.19375" />
+        <entry key="app/src/main/res/layout/activity_settings.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.1824074074074074" />
         <entry key="app/src/main/res/layout/activity_testing.xml" value="0.15904232578024796" />
         <entry key="app/src/main/res/layout/activity_user.xml" value="0.25" />
@@ -72,7 +76,7 @@
         <entry key="app/src/main/res/layout/client_sub_group_recycler_layout.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/fragment_business_partner.xml" value="0.17864583333333334" />
         <entry key="app/src/main/res/layout/fragment_dashboard.xml" value="0.19375" />
-        <entry key="app/src/main/res/layout/fragment_menu.xml" value="0.19375" />
+        <entry key="app/src/main/res/layout/fragment_menu.xml" value="0.3814814814814815" />
         <entry key="app/src/main/res/layout/fragment_notifications.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/fragment_posts.xml" value="0.21" />
         <entry key="app/src/main/res/layout/fragment_reports.xml" value="0.2" />
