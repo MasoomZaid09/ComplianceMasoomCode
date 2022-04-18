@@ -136,7 +136,7 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:id="@+id/RegionalCompany"
+                        android:id="@+id/regionalCompany"
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
                         android:gravity="center"

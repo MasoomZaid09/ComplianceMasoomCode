@@ -33,7 +33,7 @@
             android:layout_gravity="center"
             android:text="Sub-Regional Company"
             android:textColor="@color/blue"
-            android:textSize="18sp"
+            android:textSize="21sp"
             android:textStyle="bold" />
 
         <TextView

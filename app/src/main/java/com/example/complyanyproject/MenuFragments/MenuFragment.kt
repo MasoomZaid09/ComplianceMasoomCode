@@ -166,7 +166,7 @@ class MenuFragment : Fragment() {
 
         // sub menu items onclick id (Company Management)
         globalCompany = view.findViewById(R.id.globalcompany)
-        regionalCompany = view.findViewById(R.id.RegionalCompany)
+        regionalCompany = view.findViewById(R.id.regionalCompany)
         subRegionalCompany = view.findViewById(R.id.subRegionalcompany)
         countryCompany = view.findViewById(R.id.countryCompany)
         countryRegionCompany = view.findViewById(R.id.CountryRegionCompany)
