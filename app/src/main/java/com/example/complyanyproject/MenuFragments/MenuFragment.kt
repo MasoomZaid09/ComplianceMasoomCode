@@ -80,6 +80,22 @@ class MenuFragment : Fragment() {
     lateinit var clientGroupManagementMenu : LinearLayout
     lateinit var complianceManagementMenu : LinearLayout
 
+    // sub menu items onclick id
+    lateinit var globalCompany: LinearLayout
+    lateinit var regionalCompany: LinearLayout
+    lateinit var subRegionalCompany: LinearLayout
+    lateinit var countryCompany: LinearLayout
+    lateinit var countryRegionCompany: LinearLayout
+    lateinit var entity: LinearLayout
+
+    // back buttons id
+    lateinit var backGlobalCompany: TextView
+    lateinit var backRegionalCompany: TextView
+    lateinit var backSubRegionalCompany: TextView
+    lateinit var backCountryCompany: TextView
+    lateinit var backCountryRegionCompany: TextView
+    lateinit var backEntity: TextView
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -141,6 +157,22 @@ class MenuFragment : Fragment() {
         userManagementMenu = view.findViewById(R.id.userManagementMenu)
         clientGroupManagementMenu = view.findViewById(R.id.clientGroupManagementMenu)
         complianceManagementMenu = view.findViewById(R.id.complianceManagementMenu)
+
+        // sub menu items onclick id
+        globalCompany = view.findViewById(R.id.globalcompany)
+        regionalCompany = view.findViewById(R.id.RegionalCompany)
+        subRegionalCompany = view.findViewById(R.id.subRegionalcompany)
+        countryCompany = view.findViewById(R.id.countryCompany)
+        countryRegionCompany = view.findViewById(R.id.CountryRegionCompany)
+        entity = view.findViewById(R.id.entity)
+
+//        // back buttons id
+//        backGlobalCompany = view.findViewById(R.id.backGlobalCompany)
+//        backRegionalCompany = view.findViewById(R.id.backRegionalCompany)
+//        backSubRegionalCompany = view.findViewById(R.id.backSubRegionalCompany)
+//        backCountryCompany = view.findViewById(R.id.backCountryCompany)
+//        backCountryRegionCompany = view.findViewById(R.id.backCountryRegionCompany)
+//        backEntity = view.findViewById(R.id.backEntity)
 
         companyManagement.setOnClickListener {
 
@@ -272,6 +304,43 @@ class MenuFragment : Fragment() {
                 flag6 = true
             }
 
+        }
+
+        // added click listeners on sub menu items
+        globalCompany.setOnClickListener{
+            Intent(activity as Context, GlobalCompanyActivity::class.java).also{
+                startActivity(it)
+            }
+        }
+
+        regionalCompany.setOnClickListener{
+            Intent(activity as Context, RegionalCompanyActivity::class.java).also{
+                startActivity(it)
+            }
+        }
+
+        subRegionalCompany.setOnClickListener{
+            Intent(activity as Context, SubRegionalCompanyActivity::class.java).also{
+                startActivity(it)
+            }
+        }
+
+        countryCompany.setOnClickListener{
+            Intent(activity as Context, CountryCompanyActivity::class.java).also{
+                startActivity(it)
+            }
+        }
+
+        countryRegionCompany.setOnClickListener{
+            Intent(activity as Context, CountryRegionCompanyActivity::class.java).also{
+                startActivity(it)
+            }
+        }
+
+        entity.setOnClickListener{
+            Intent(activity as Context, EntityActivity::class.java).also{
+                startActivity(it)
+            }
         }
 
         // added click on clientGroupManagement

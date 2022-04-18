@@ -10,6 +10,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ComplyAnyProject">
         <activity
+            android:name=".activity.EntityActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.CountryRegionCompanyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.CountryCompanyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.SubRegionalCompanyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.RegionalCompanyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.GlobalCompanyActivity"
+            android:exported="false" />
+        <activity
             android:name=".activity.SubDepartmentActivity"
             android:exported="false" />
         <activity
