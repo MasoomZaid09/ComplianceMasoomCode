@@ -16,9 +16,11 @@ class SettingsActivity : AppCompatActivity() {
         binding = ActivitySettingsBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        // added back button method
         binding.backSettings.setOnClickListener {
             onBackPressed()
         }
+
     }
 
     override fun onBackPressed() {

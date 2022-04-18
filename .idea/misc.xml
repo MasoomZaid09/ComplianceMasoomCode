@@ -44,11 +44,13 @@
         <entry key="app/src/main/res/drawable/ic_add_icon.xml" value="0.114" />
         <entry key="app/src/main/res/drawable/tab_color_selector.xml" value="0.131" />
         <entry key="app/src/main/res/drawable/your_shape_here.xml" value="0.131" />
+        <entry key="app/src/main/res/layout/activity_calender_management.xml" value="0.17864583333333334" />
         <entry key="app/src/main/res/layout/activity_change_password.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_change_user.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/activity_client_group.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/activity_client_management.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_client_sub_group.xml" value="0.19375" />
+        <entry key="app/src/main/res/layout/activity_configure_standard.xml" value="0.19074074074074074" />
         <entry key="app/src/main/res/layout/activity_create_client_group.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/activity_create_client_sub_group.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/activity_details.xml" value="0.2" />

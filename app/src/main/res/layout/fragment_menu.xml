@@ -483,6 +483,7 @@
                         app:tint="@color/black"/>
 
                     <TextView
+                        android:id="@+id/txtCalenderManagement"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="9dp"

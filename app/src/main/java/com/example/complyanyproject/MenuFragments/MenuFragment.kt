@@ -43,6 +43,7 @@ class MenuFragment : Fragment() {
     lateinit var proxyUserId : TextView
     lateinit var txtStandardComplience : TextView
     lateinit var txtSettings : TextView
+    lateinit var txtCalenderManagement : TextView
 
 
     // Both Arrow Relative Layout
@@ -102,6 +103,7 @@ class MenuFragment : Fragment() {
         proxyUserId = view.findViewById(R.id.proxyUserId)
         txtStandardComplience = view.findViewById(R.id.txtStandardComplience)
         txtSettings = view.findViewById(R.id.txtSettings)
+        txtCalenderManagement = view.findViewById(R.id.txtCalenderManagement)
 
 
         // Both Arrow Relative Layout
@@ -323,6 +325,13 @@ class MenuFragment : Fragment() {
         // added clicks on Settings option
         txtSettings.setOnClickListener {
             Intent(activity as Context, SettingsActivity::class.java).also{
+                startActivity(it)
+            }
+        }
+
+        // added clicks on calender management
+        txtCalenderManagement.setOnClickListener {
+            Intent(activity as Context, CalenderManagementActivity::class.java).also{
                 startActivity(it)
             }
         }
