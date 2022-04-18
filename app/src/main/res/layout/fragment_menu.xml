@@ -321,6 +321,7 @@
                         android:orientation="vertical">
 
                         <TextView
+                            android:id="@+id/txtDepartment"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Department"
@@ -343,6 +344,7 @@
                         android:orientation="vertical">
 
                         <TextView
+                            android:id="@+id/txtSubDepartment"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Sub-Department"

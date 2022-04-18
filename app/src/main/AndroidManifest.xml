@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ComplyAnyProject">
         <activity
+            android:name=".activity.SubDepartmentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.DepartmentActivity"
+            android:exported="false" />
+        <activity
             android:name=".activity.CreateCalenderManagementActivity"
             android:exported="false" />
         <activity
