@@ -4,6 +4,7 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.complyanyproject.R
 import com.example.complyanyproject.model.SubDepartmentModelClass
@@ -21,6 +22,8 @@ class SubDepartmentAdapter(val context : Context, val itemList : ArrayList<SubDe
     override fun onBindViewHolder(holder: SubDepartmentAdapter.SubDepartmentViewHolder, position: Int) {
         val userData = itemList[position]
 
+        holder.departmentName.text = userData.departmentName
+        holder.subDepartmentName.text = userData.subDepartmentName
     }
 
     override fun getItemCount(): Int {
@@ -28,6 +31,7 @@ class SubDepartmentAdapter(val context : Context, val itemList : ArrayList<SubDe
     }
 
     class SubDepartmentViewHolder(val view : View) : RecyclerView.ViewHolder(view) {
-
+        val departmentName : TextView = view.findViewById(R.id.departmentName)
+        val subDepartmentName : TextView = view.findViewById(R.id.subDepartmentName)
     }
 }

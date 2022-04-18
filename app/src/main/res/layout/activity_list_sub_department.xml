@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.SelectorClientSubGroupActivity">
+    tools:context=".activity.ListSubDepartmentActivity">
+
 
     <RelativeLayout
         android:id="@+id/relativelayout"
@@ -12,7 +13,7 @@
         android:layout_height="wrap_content">
 
         <TextView
-            android:id="@+id/backSelector"
+            android:id="@+id/backClientGroupName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
@@ -31,11 +32,19 @@
             android:layout_centerHorizontal="true"
             android:gravity="center"
             android:padding="10dp"
-            android:text="Client Group Name"
+            android:text="Department Name"
             android:textColor="#0A3383"
             android:textSize="20sp"
             android:textStyle="bold" />
 
+        <ImageView
+            android:id="@+id/plus1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/ic_baseline_save_24" />
 
     </RelativeLayout>
     <View

@@ -20,13 +20,13 @@ class CreateClientSubGroupActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_create_client_sub_group)
 
-                back = findViewById(R.id.backClientGroup)
-                saved = findViewById(R.id.Saved)
-                ClientGroupName = findViewById(R.id.client_group)
-                SubClientGroupName = findViewById(R.id.SubClientGroupName)
-                tv_ClientGroupName = findViewById(R.id.tv_ClientGroupName)
-                tv_ClientSubGroupName = findViewById(R.id.tv_ClientSubGroupName)
-                selectClientGroup = findViewById(R.id.selectClientGroup)
+                back = findViewById(R.id.CreatSubDepartmentBack)
+                saved = findViewById(R.id.plus1)
+                ClientGroupName = findViewById(R.id.DepatmentGroup)
+                SubClientGroupName = findViewById(R.id.SubDepartmentName)
+                tv_ClientGroupName = findViewById(R.id.tv_CreateSubDepatment)
+                tv_ClientSubGroupName = findViewById(R.id.tv_SubDepartmentName)
+                selectClientGroup = findViewById(R.id.selectDepatment)
 
 
                 saved.setOnClickListener{
@@ -64,7 +64,7 @@ class CreateClientSubGroupActivity : AppCompatActivity() {
             var receiver_msg: TextView? = null
 
 
-        receiver_msg = findViewById(R.id.client_group);
+        receiver_msg = findViewById(R.id.DepatmentGroup);
 
         val intent = intent
 

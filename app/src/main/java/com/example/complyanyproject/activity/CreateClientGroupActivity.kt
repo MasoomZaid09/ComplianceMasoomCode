@@ -20,7 +20,7 @@ class CreateClientGroupActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_create_client_group)
 
-        backButton = findViewById(R.id.backClientGroup)
+        backButton = findViewById(R.id.CreatSubDepartmentBack)
         SaveButton = findViewById(R.id.saveButton)
         tv_ClientGroup = findViewById(R.id.tv_ClientGroup)
         ClientGroupManagement = findViewById(R.id.ClientGroupManagement)

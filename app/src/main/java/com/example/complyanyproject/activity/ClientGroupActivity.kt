@@ -10,7 +10,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.complyanyproject.R
 import com.example.complyanyproject.adapter.ClientGroupAdapter
 import com.example.complyanyproject.model.ClientGroupModelClass
-import com.example.complyanyproject.model.ClientManagementModelClass
 
 class ClientGroupActivity : AppCompatActivity() {
 
@@ -24,7 +23,7 @@ class ClientGroupActivity : AppCompatActivity() {
         setContentView(R.layout.activity_client_group)
 
         recyclerView = findViewById(R.id.clientgroup_recyclerView)
-        Back = findViewById(R.id.backClientGroup)
+        Back = findViewById(R.id.CreatSubDepartmentBack)
         addIconClientGroup = findViewById(R.id.enter)
 
 
