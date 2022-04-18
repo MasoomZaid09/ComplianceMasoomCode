@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.CreateClientSubGroupActivity">
-
+    tools:context=".activity.CreateSubDepartmentActivity">
 
     <RelativeLayout
         android:id="@+id/relativelayout"
@@ -13,7 +12,7 @@
         android:layout_height="wrap_content">
 
         <TextView
-            android:id="@+id/CreatSubDepartmentBack"
+            android:id="@+id/backCreateSubDepartment"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
@@ -38,7 +37,7 @@
             android:textStyle="bold" />
 
         <ImageView
-            android:id="@+id/plus1"
+            android:id="@+id/saveSubDepartment"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_alignParentEnd="true"
@@ -99,7 +98,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Client Group Name "
+                                android:text="Department"
                                 android:textColor="@color/blue"
                                 android:textStyle="bold" />
 
@@ -114,7 +113,7 @@
 
 
                         <RelativeLayout
-                            android:id="@+id/selectDepatment"
+                            android:id="@+id/selectDepartment"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="4dp"
@@ -125,21 +124,20 @@
                             android:paddingBottom="8dp">
 
                             <TextView
-                                android:id="@+id/DepatmentGroup"
+                                android:id="@+id/txtDepartmentName"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_alignParentLeft="true"
                                 android:layout_centerVertical="true"
                                 android:layout_marginLeft="8dp"
                                 android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_right_24"
-                                android:hint="Select Client Group"
-                                android:text="Select Client Group"
+                                android:text="Select Department"
                                 android:textSize="16sp" />
 
                         </RelativeLayout>
 
                         <TextView
-                            android:id="@+id/tv_CreateSubDepatment"
+                            android:id="@+id/tv_CreateSubDepartment"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text=""
@@ -163,7 +161,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Client Sub Group Name "
+                                android:text="Sub Department Name "
                                 android:textColor="@color/blue"
                                 android:textStyle="bold" />
 
@@ -189,7 +187,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:backgroundTint="#00000000"
-                                android:hint="Enter Client Sub Group Name"
+                                android:hint="Enter Sub Department Name"
                                 android:inputType="textPersonName"
                                 android:maxLength="50"
                                 android:maxLines="1"
@@ -218,8 +216,6 @@
 
 
     </androidx.core.widget.NestedScrollView>
-
-
 
 
 </RelativeLayout>

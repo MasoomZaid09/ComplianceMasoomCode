@@ -23,7 +23,7 @@ class ClientSubGroupActivity : AppCompatActivity() {
         setContentView(R.layout.activity_client_sub_group)
 
         recyclerView = findViewById(R.id.clientsubgroup_recyclerView)
-        Back = findViewById(R.id.backClientGroup)
+        Back = findViewById(R.id.CreatSubDepartmentBack)
         Enter = findViewById(R.id.Enter)
 
 
