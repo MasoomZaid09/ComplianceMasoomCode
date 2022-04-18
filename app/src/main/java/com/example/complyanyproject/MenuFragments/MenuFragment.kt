@@ -3,6 +3,7 @@ package com.example.complyanyproject.MenuFragments
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import android.speech.tts.TextToSpeech
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -81,12 +82,12 @@ class MenuFragment : Fragment() {
     lateinit var complianceManagementMenu : LinearLayout
 
     // sub menu items onclick id
-    lateinit var globalCompany: LinearLayout
-    lateinit var regionalCompany: LinearLayout
-    lateinit var subRegionalCompany: LinearLayout
-    lateinit var countryCompany: LinearLayout
-    lateinit var countryRegionCompany: LinearLayout
-    lateinit var entity: LinearLayout
+    lateinit var txtGlobalCompany: TextView
+    lateinit var txtRegionalCompany: TextView
+    lateinit var txtSubRegionalCompany: TextView
+    lateinit var txtCountryCompany: TextView
+    lateinit var txtCountryRegionCompany: TextView
+    lateinit var txtEntity: TextView
 
     // back buttons id
     lateinit var backGlobalCompany: TextView
@@ -159,12 +160,12 @@ class MenuFragment : Fragment() {
         complianceManagementMenu = view.findViewById(R.id.complianceManagementMenu)
 
         // sub menu items onclick id
-        globalCompany = view.findViewById(R.id.globalcompany)
-        regionalCompany = view.findViewById(R.id.RegionalCompany)
-        subRegionalCompany = view.findViewById(R.id.subRegionalcompany)
-        countryCompany = view.findViewById(R.id.countryCompany)
-        countryRegionCompany = view.findViewById(R.id.CountryRegionCompany)
-        entity = view.findViewById(R.id.entity)
+        txtGlobalCompany = view.findViewById(R.id.txtGlobalCompany)
+        txtRegionalCompany = view.findViewById(R.id.txtRegionalCompany)
+        txtSubRegionalCompany = view.findViewById(R.id.txtSubRegionalCompany)
+        txtCountryCompany = view.findViewById(R.id.txtCountryCompany)
+        txtCountryRegionCompany = view.findViewById(R.id.txtCountryRegionCompany)
+        txtEntity = view.findViewById(R.id.txtEntity)
 
 //        // back buttons id
 //        backGlobalCompany = view.findViewById(R.id.backGlobalCompany)
@@ -307,37 +308,37 @@ class MenuFragment : Fragment() {
         }
 
         // added click listeners on sub menu items
-        globalCompany.setOnClickListener{
+        txtGlobalCompany.setOnClickListener{
             Intent(activity as Context, GlobalCompanyActivity::class.java).also{
                 startActivity(it)
             }
         }
 
-        regionalCompany.setOnClickListener{
+        txtRegionalCompany.setOnClickListener{
             Intent(activity as Context, RegionalCompanyActivity::class.java).also{
                 startActivity(it)
             }
         }
 
-        subRegionalCompany.setOnClickListener{
+        txtSubRegionalCompany.setOnClickListener{
             Intent(activity as Context, SubRegionalCompanyActivity::class.java).also{
                 startActivity(it)
             }
         }
 
-        countryCompany.setOnClickListener{
+        txtCountryCompany.setOnClickListener{
             Intent(activity as Context, CountryCompanyActivity::class.java).also{
                 startActivity(it)
             }
         }
 
-        countryRegionCompany.setOnClickListener{
+        txtCountryRegionCompany.setOnClickListener{
             Intent(activity as Context, CountryRegionCompanyActivity::class.java).also{
                 startActivity(it)
             }
         }
 
-        entity.setOnClickListener{
+        txtEntity.setOnClickListener{
             Intent(activity as Context, EntityActivity::class.java).also{
                 startActivity(it)
             }

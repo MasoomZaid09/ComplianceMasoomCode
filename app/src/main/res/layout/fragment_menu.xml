@@ -114,13 +114,13 @@
                     android:visibility="gone">
 
                     <LinearLayout
-                        android:id="@+id/globalcompany"
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
                         android:gravity="center"
                         android:orientation="vertical">
 
                         <TextView
+                            android:id="@+id/txtGlobalCompany"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Global Company"
@@ -136,13 +136,13 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:id="@+id/RegionalCompany"
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
                         android:gravity="center"
                         android:orientation="vertical">
 
                         <TextView
+                            android:id="@+id/txtRegionalCompany"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Regional Company"
@@ -159,13 +159,13 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:id="@+id/subRegionalcompany"
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
                         android:gravity="center"
                         android:orientation="vertical">
 
                         <TextView
+                            android:id="@+id/txtSubRegionalCompany"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Sub-Regional Company"
@@ -181,16 +181,15 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:id="@+id/countryCompany"
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
                         android:gravity="center"
                         android:orientation="vertical">
 
                         <TextView
+                            android:id="@+id/txtCountryCompany"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-
                             android:text="Country Company"
                             android:textColor="#0A3383"
                             android:textSize="13dp"
@@ -204,13 +203,13 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:id="@+id/CountryRegionCompany"
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
                         android:gravity="center"
                         android:orientation="vertical">
 
                         <TextView
+                            android:id="@+id/txtCountryRegionCompany"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Country Region Company"
@@ -226,13 +225,13 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:id="@+id/entity"
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
                         android:gravity="center"
                         android:orientation="vertical">
 
                         <TextView
+                            android:id="@+id/txtEntity"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Entity"
