@@ -34,7 +34,6 @@ class MenuFragment : Fragment() {
     lateinit var clientManagement : LinearLayout
     lateinit var helpAndSupport : LinearLayout
 
-
     // TextView
     lateinit var clientGroupId : TextView
     lateinit var clientSubGroupId : TextView
@@ -46,7 +45,6 @@ class MenuFragment : Fragment() {
     lateinit var txtCalenderManagement : TextView
     lateinit var txtDepartment : TextView
     lateinit var txtSubDepartment : TextView
-
 
     // Both Arrow Relative Layout
     lateinit var companyArrowLayout : RelativeLayout
@@ -80,7 +78,7 @@ class MenuFragment : Fragment() {
     lateinit var clientGroupManagementMenu : LinearLayout
     lateinit var complianceManagementMenu : LinearLayout
 
-    // sub menu items onclick id
+    // sub menu items onclick id (Company Management)
     lateinit var globalCompany: LinearLayout
     lateinit var regionalCompany: LinearLayout
     lateinit var subRegionalCompany: LinearLayout
@@ -88,13 +86,21 @@ class MenuFragment : Fragment() {
     lateinit var countryRegionCompany: LinearLayout
     lateinit var entity: LinearLayout
 
-    // back buttons id
+    // back buttons id (Company Management)
     lateinit var backGlobalCompany: TextView
     lateinit var backRegionalCompany: TextView
     lateinit var backSubRegionalCompany: TextView
     lateinit var backCountryCompany: TextView
     lateinit var backCountryRegionCompany: TextView
     lateinit var backEntity: TextView
+
+    // sub menu items onclick id (Law or Head Management)
+    lateinit var law: LinearLayout
+    lateinit var subLawOrsubHead: LinearLayout
+
+    // back buttons id (Law or Head Management)
+    lateinit var backLawOrHead: TextView
+    lateinit var backSubLawOrSubHead: TextView
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -158,7 +164,7 @@ class MenuFragment : Fragment() {
         clientGroupManagementMenu = view.findViewById(R.id.clientGroupManagementMenu)
         complianceManagementMenu = view.findViewById(R.id.complianceManagementMenu)
 
-        // sub menu items onclick id
+        // sub menu items onclick id (Company Management)
         globalCompany = view.findViewById(R.id.globalcompany)
         regionalCompany = view.findViewById(R.id.RegionalCompany)
         subRegionalCompany = view.findViewById(R.id.subRegionalcompany)
@@ -166,13 +172,21 @@ class MenuFragment : Fragment() {
         countryRegionCompany = view.findViewById(R.id.CountryRegionCompany)
         entity = view.findViewById(R.id.entity)
 
-//        // back buttons id
+//        // back buttons id (Company Management)
 //        backGlobalCompany = view.findViewById(R.id.backGlobalCompany)
 //        backRegionalCompany = view.findViewById(R.id.backRegionalCompany)
 //        backSubRegionalCompany = view.findViewById(R.id.backSubRegionalCompany)
 //        backCountryCompany = view.findViewById(R.id.backCountryCompany)
 //        backCountryRegionCompany = view.findViewById(R.id.backCountryRegionCompany)
 //        backEntity = view.findViewById(R.id.backEntity)
+
+        // sub menu items onclick id (Law or Head Management)
+        law = view.findViewById(R.id.law)
+        subLawOrsubHead = view.findViewById(R.id.subLawOrsubHead)
+
+//        // back buttons id (Law or Head Management)
+//        backLawOrHead = view.findViewById(R.id.backLawOrHead)
+//        backSubLawOrSubHead = view.findViewById(R.id.backSubLawOrSubHead)
 
         companyManagement.setOnClickListener {
 
@@ -306,7 +320,7 @@ class MenuFragment : Fragment() {
 
         }
 
-        // added click listeners on sub menu items
+        // added click listeners on sub menu items (Company Management)
         globalCompany.setOnClickListener{
             Intent(activity as Context, GlobalCompanyActivity::class.java).also{
                 startActivity(it)
@@ -339,6 +353,19 @@ class MenuFragment : Fragment() {
 
         entity.setOnClickListener{
             Intent(activity as Context, EntityActivity::class.java).also{
+                startActivity(it)
+            }
+        }
+
+        // added click listeners on sub menu items (Law or Head Management)
+        law.setOnClickListener{
+            Intent(activity as Context, LawOrHeadActivity::class.java).also{
+                startActivity(it)
+            }
+        }
+
+        subLawOrsubHead.setOnClickListener{
+            Intent(activity as Context, SubLawOrSubHeadActivity::class.java).also{
                 startActivity(it)
             }
         }

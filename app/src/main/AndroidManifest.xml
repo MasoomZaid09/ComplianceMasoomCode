@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ComplyAnyProject">
         <activity
+            android:name=".activity.SubLawOrSubHeadActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.LawOrHeadActivity"
+            android:exported="false" />
+        <activity
             android:name=".activity.EntityActivity"
             android:exported="false" />
         <activity

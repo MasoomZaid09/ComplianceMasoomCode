@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.SubRegionalCompanyActivity">
+    tools:context=".activity.SubLawOrSubHeadActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
@@ -15,7 +15,7 @@
         android:paddingHorizontal="8dp">
 
         <TextView
-            android:id="@+id/backSubRegionalCompany"
+            android:id="@+id/backSubLawOrSubHead"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="start"
@@ -31,13 +31,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Sub-Regional Company"
+            android:text="Sub-Law or Head"
             android:textColor="@color/blue"
             android:textSize="18sp"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/addIconSubRegionalCompany"
+            android:id="@+id/addIconSubLawOrSubHead"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="end"

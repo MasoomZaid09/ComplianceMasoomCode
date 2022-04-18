@@ -63,6 +63,7 @@
         <entry key="app/src/main/res/layout/activity_entity.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_forget_password.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_global_company.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_law_or_head.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.16" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.16666666666666666" />
         <entry key="app/src/main/res/layout/activity_over_due.xml" value="0.17864583333333334" />
@@ -75,6 +76,8 @@
         <entry key="app/src/main/res/layout/activity_settings.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.1824074074074074" />
         <entry key="app/src/main/res/layout/activity_sub_department.xml" value="0.19375" />
+        <entry key="app/src/main/res/layout/activity_sub_law_or_sub_head.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_sub_regional_company.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_sun_regional_company.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_testing.xml" value="0.15904232578024796" />
         <entry key="app/src/main/res/layout/activity_user.xml" value="0.25" />
@@ -92,7 +95,7 @@
         <entry key="app/src/main/res/layout/notification_recycler_layout.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/proxy_user_recycler_layout.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/recycler_resource_layout.xml" value="0.22" />
-        <entry key="app/src/main/res/layout/sub_department_recycler_layout.xml" value="0.19375" />
+        <entry key="app/src/main/res/layout/sub_department_recycler_layout.xml" value="0.33" />
         <entry key="app/src/main/res/layout/user_recycler_layout.xml" value="0.22" />
         <entry key="app/src/main/res/menu/bottom_menu.xml" value="0.19375" />
       </map>
