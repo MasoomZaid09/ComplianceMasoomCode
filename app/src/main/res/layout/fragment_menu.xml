@@ -795,7 +795,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="22dp"
-                        android:layout_weight="0.07"
+                        android:layout_weight="0.08"
                         android:src="@drawable/done" />
 
                     <TextView
@@ -815,7 +815,6 @@
                         android:id="@+id/complianceManagementArrowLayout"
                         android:layout_width="64dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="0.1"
                         android:gravity="center">
 
                         <ImageView
