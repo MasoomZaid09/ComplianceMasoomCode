@@ -47,10 +47,11 @@
                     app:tabTextColor="@color/black" />
 
                 <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/viewPager"
                     android:layout_width="match_parent"
                     android:layout_height="330dp"
-                    android:id="@+id/viewPager"
-                    android:layout_below="@id/tabLayout"/>
+                    android:layout_below="@id/tabLayout"
+                    android:layout_marginBottom="10dp"/>
 
 
             </RelativeLayout>
