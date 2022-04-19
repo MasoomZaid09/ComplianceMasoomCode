@@ -12,6 +12,10 @@ import android.widget.RelativeLayout
 import android.widget.TextView
 import com.example.complyanyproject.R
 import com.example.complyanyproject.activity.OverDueActivity
+import com.example.complyanyproject.postComplainceActivities.CompletedActivity
+import com.example.complyanyproject.postComplainceActivities.ThisMonthActivity
+import com.example.complyanyproject.postComplainceActivities.TodayActivity
+import com.example.complyanyproject.postComplainceActivities.UpComingActivity
 import java.util.*
 
 class PostsFragment : Fragment() {
@@ -23,6 +27,11 @@ class PostsFragment : Fragment() {
     lateinit var TodateImageView: ImageView
 
     lateinit var overDueLayout: RelativeLayout
+    lateinit var todayLayout : RelativeLayout
+    lateinit var thisMonthLayout : RelativeLayout
+    lateinit var upcomingLayout: RelativeLayout
+    lateinit var completedLayout : RelativeLayout
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -31,15 +40,41 @@ class PostsFragment : Fragment() {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_posts, container, false)
         overDueLayout = view.findViewById(R.id.OverDueLayout)
+        todayLayout = view.findViewById(R.id.todayLayout)
+        thisMonthLayout = view.findViewById(R.id.thisMonthLayout)
+        upcomingLayout = view.findViewById(R.id.upcomingLayout)
+        completedLayout = view.findViewById(R.id.completedLayout)
 
+
+        // added clicks on list items
         overDueLayout.setOnClickListener {
-//            Toast.makeText(context,"overdue",Toast.LENGTH_SHORT).show()
-            var intent = Intent(context, OverDueActivity::class.java)
+            val intent = Intent(context, OverDueActivity::class.java)
             startActivity(intent)
         }
 
 
+        todayLayout.setOnClickListener {
+            val intent = Intent(context, TodayActivity::class.java)
+            startActivity(intent)
+        }
 
+        thisMonthLayout.setOnClickListener {
+            val intent = Intent(context, ThisMonthActivity::class.java)
+            startActivity(intent)
+        }
+
+        upcomingLayout.setOnClickListener {
+            val intent = Intent(context, UpComingActivity::class.java)
+            startActivity(intent)
+        }
+
+        completedLayout.setOnClickListener {
+            val intent = Intent(context, CompletedActivity::class.java)
+            startActivity(intent)
+        }
+
+
+        // added calender code
         FromdateTextView = view.findViewById(R.id.from_date_Text)
         TodateTextView = view.findViewById(R.id.to_date_Text)
 

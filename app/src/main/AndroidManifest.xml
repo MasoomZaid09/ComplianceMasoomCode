@@ -10,6 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ComplyAnyProject">
         <activity
+            android:name=".postComplainceActivities.CompletedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".postComplainceActivities.UpComingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".postComplainceActivities.ThisMonthActivity"
+            android:exported="false" />
+        <activity
+            android:name=".postComplainceActivities.TodayActivity"
+            android:exported="false" />
+        <activity
             android:name=".activity.UpdateComplainceActivity"
             android:exported="false" />
         <activity

@@ -53,6 +53,7 @@
         <entry key="app/src/main/res/layout/activity_client_management.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_client_sub_group.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/activity_comliance_type.xml" value="0.19375" />
+        <entry key="app/src/main/res/layout/activity_completed.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/activity_compliance_nature.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/activity_configure_standard.xml" value="0.19074074074074074" />
         <entry key="app/src/main/res/layout/activity_country_company.xml" value="0.19375" />
@@ -93,6 +94,9 @@
         <entry key="app/src/main/res/layout/activity_sub_regional_company.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/activity_support.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/activity_testing.xml" value="0.15904232578024796" />
+        <entry key="app/src/main/res/layout/activity_this_month.xml" value="0.19375" />
+        <entry key="app/src/main/res/layout/activity_today.xml" value="0.19375" />
+        <entry key="app/src/main/res/layout/activity_up_coming.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/activity_update_complaince.xml" value="0.15" />
         <entry key="app/src/main/res/layout/activity_user.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_user_role.xml" value="0.17864583333333334" />
@@ -100,6 +104,7 @@
         <entry key="app/src/main/res/layout/client_group_recycler_layout.xml" value="0.22" />
         <entry key="app/src/main/res/layout/client_management_recycler_layout.xml" value="0.25" />
         <entry key="app/src/main/res/layout/client_sub_group_recycler_layout.xml" value="0.19375" />
+        <entry key="app/src/main/res/layout/completed_recycler_layout.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/compliace_nature_recycler_layout.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/compliance_type_recycler_layout.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/entity_type_recycler_layout.xml" value="0.19375" />
@@ -116,6 +121,7 @@
         <entry key="app/src/main/res/layout/recycler_resource_layout.xml" value="0.22" />
         <entry key="app/src/main/res/layout/stock_exchange_recycler_layout.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/sub_department_recycler_layout.xml" value="0.19375" />
+        <entry key="app/src/main/res/layout/upcoming_recycler_layout.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/user_recycler_layout.xml" value="0.22" />
         <entry key="app/src/main/res/layout/user_role_recycler_layout.xml" value="0.19375" />
         <entry key="app/src/main/res/menu/bottom_menu.xml" value="0.19375" />
