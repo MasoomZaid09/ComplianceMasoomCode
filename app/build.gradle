@@ -55,4 +55,7 @@ dependencies {
 
     //added country code picker dependency
     implementation 'com.hbb20:ccp:2.5.0'
+
+    // added dynamic sizes dependency
+    implementation 'com.github.MrNouri:DynamicSizes:1.0'
 }

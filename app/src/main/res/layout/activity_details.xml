@@ -59,7 +59,7 @@
             android:id="@+id/profileLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="20dp">
+            android:padding="10dp">
 
             <ImageView
                 android:id="@+id/imageProfile"
@@ -76,7 +76,7 @@
                 android:layout_centerVertical="true"
                 android:layout_marginStart="15dp"
                 android:textColor="@color/black"
-                android:textSize="23sp" />
+                android:textSize="19sp" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -99,7 +99,7 @@
             android:id="@+id/changePasswordLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="20dp">
+            android:padding="10dp">
 
 
             <ImageView
@@ -113,11 +113,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
-                android:layout_toRightOf="@id/imagePassword"
                 android:layout_marginStart="15dp"
+                android:layout_toRightOf="@id/imagePassword"
                 android:text="@string/change_password"
                 android:textColor="@color/black"
-                android:textSize="23sp" />
+                android:textSize="19sp" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -140,7 +140,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/divider4"
-            android:padding="20dp">
+            android:padding="10dp">
 
 
             <ImageView
@@ -158,7 +158,7 @@
                 android:layout_toRightOf="@id/imageResource"
                 android:text="Resource Management"
                 android:textColor="@color/black"
-                android:textSize="23sp" />
+                android:textSize="19sp" />
 
             <ImageView
                 android:layout_width="wrap_content"

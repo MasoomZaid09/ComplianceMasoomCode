@@ -45,6 +45,7 @@ class MenuFragment : Fragment() {
     lateinit var txtCalenderManagement : TextView
     lateinit var txtDepartment : TextView
     lateinit var txtSubDepartment : TextView
+    lateinit var txtUpdateComplaince : TextView
 
     // Both Arrow Relative Layout
     lateinit var companyArrowLayout : RelativeLayout
@@ -130,6 +131,7 @@ class MenuFragment : Fragment() {
         txtCalenderManagement = view.findViewById(R.id.txtCalenderManagement)
         txtDepartment = view.findViewById(R.id.txtDepartment)
         txtSubDepartment = view.findViewById(R.id.txtSubDepartment)
+        txtUpdateComplaince = view.findViewById(R.id.txtUpdateComplaince)
 
 
         // Both Arrow Relative Layout
@@ -418,6 +420,12 @@ class MenuFragment : Fragment() {
         // standard configure option
         txtStandardComplience.setOnClickListener {
             Intent(activity as Context, ConfigureStandardActivity::class.java).also{
+                startActivity(it)
+            }
+        }
+
+        txtUpdateComplaince.setOnClickListener {
+            Intent(activity as Context, UpdateComplainceActivity::class.java).also{
                 startActivity(it)
             }
         }
