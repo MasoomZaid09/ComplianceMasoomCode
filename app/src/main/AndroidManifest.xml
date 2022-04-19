@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ComplyAnyProject">
         <activity
+            android:name=".activity.SupportActivity"
+            android:exported="false" />
+        <activity
             android:name=".settingsActivities.ComplianceTypeActivity"
             android:exported="false" />
         <activity

@@ -30,6 +30,7 @@ class UserFragment : Fragment() {
 
         changeColorTextView()
 
+        // added clicks on continue
         binding.btnContinue.setOnClickListener {
 
             val phoneNumber = binding.etPhone.text.toString().trim()
