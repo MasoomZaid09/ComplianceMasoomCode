@@ -1,6 +1,7 @@
 package com.example.complyanyproject.activity
 
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.SpannableString
@@ -26,7 +27,13 @@ class LoginActivity : AppCompatActivity() {
         setContentView(view)
 
         setupTabs()
-        changeColorTextView()
+//        changeColorTextView()
+
+        binding.txtSupport.setOnClickListener {
+            Intent(this, SupportActivity::class.java).also{
+                startActivity(it)
+            }
+        }
     }
 
     private fun setupTabs(){
@@ -38,15 +45,15 @@ class LoginActivity : AppCompatActivity() {
     }
 
     // added colors in textView
-    private fun changeColorTextView() {
-        val mText = binding.txtSupport.text.toString()
-
-        val mSpannableString = SpannableString(mText)
-        val mBlue = ForegroundColorSpan(resources.getColor(R.color.grey))
-
-        mSpannableString.setSpan(mBlue, 10, 12, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
-        binding.txtSupport.text = mSpannableString
-    }
+//    private fun changeColorTextView() {
+//        val mText = binding.txtSupport.text.toString()
+//
+//        val mSpannableString = SpannableString(mText)
+//        val mBlue = ForegroundColorSpan(resources.getColor(R.color.grey))
+//
+//        mSpannableString.setSpan(mBlue, 10, 12, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
+//        binding.txtSupport.text = mSpannableString
+//    }
 
     override fun onBackPressed() {
         finish()

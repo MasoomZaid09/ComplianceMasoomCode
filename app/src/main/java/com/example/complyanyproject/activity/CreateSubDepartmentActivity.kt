@@ -5,30 +5,43 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.*
 import com.example.complyanyproject.R
-import com.example.complyanyproject.databinding.ActivityCreateClientSubGroupBinding
-import com.example.complyanyproject.databinding.ActivityCreateSubDepartmentBinding
 
 class CreateSubDepartmentActivity : AppCompatActivity() {
 
-    private lateinit var binding : ActivityCreateSubDepartmentBinding
+    lateinit var saveSubDepartment : ImageView
+    lateinit var txtSelectDeparmentName : TextView
+    lateinit var checkDepartmentName : TextView
+    lateinit var SelectSubDepartmentName : EditText
+    lateinit var checkSubDepartmentName : TextView
+    lateinit var backCreateSubDepartment : TextView
+    lateinit var selectDepartment : RelativeLayout
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityCreateSubDepartmentBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+        setContentView(R.layout.activity_create_sub_department)
 
-        binding.saveSubDepartment.setOnClickListener{
+        saveSubDepartment = findViewById(R.id.saveSubDepartment)
+        txtSelectDeparmentName = findViewById(R.id.txtSelectDeparmentName)
+        checkDepartmentName = findViewById(R.id.checkDepartmentName)
+        SelectSubDepartmentName = findViewById(R.id.SelectSubDepartmentName)
+        checkSubDepartmentName = findViewById(R.id.checkSubDepartmentName)
+        backCreateSubDepartment = findViewById(R.id.backCreateSubDepartment)
+        selectDepartment = findViewById(R.id.selectDepartment)
 
-            if (binding.txtDepartmentName.text.toString().isEmpty()){
-                binding.tvCreateSubDepartment.text = "*Select Department"
+
+        saveSubDepartment.setOnClickListener{
+
+            if (txtSelectDeparmentName.text.toString().isEmpty()){
+                checkDepartmentName.text = "*Select Department"
             }
-            else if(binding.SubDepartmentName.text.toString().isEmpty()){
-                binding.tvCreateSubDepartment.text =""
-                binding.tvSubDepartmentName.text = "*Please enter Client Sub Group Name"
+            else if(SelectSubDepartmentName.text.toString().isEmpty()){
+                checkDepartmentName.text =""
+                checkSubDepartmentName.text = "*Please enter Client Sub Group Name"
             }
             else {
-                binding.tvCreateSubDepartment.text = ""
-                binding.tvSubDepartmentName.text = ""
+                checkDepartmentName.text = ""
+                checkSubDepartmentName.text = ""
 
                 Toast.makeText(this,"successfully Created...", Toast.LENGTH_SHORT).show()
                 Intent(this, SubDepartmentActivity::class.java).also {
@@ -39,31 +52,30 @@ class CreateSubDepartmentActivity : AppCompatActivity() {
         }
 
 
-        binding.backCreateSubDepartment.setOnClickListener{
+        backCreateSubDepartment.setOnClickListener{
             onBackPressed()
         }
-
-        binding.selectDepartment.setOnClickListener {
+//
+        selectDepartment.setOnClickListener {
             Intent(this, ListSubDepartmentActivity::class.java).also {
                 startActivity(it)
             }
 
         }
+
         var receiver_msg: TextView? = null
 
-
-//        receiver_msg = findViewById(R.id.DepatmentGroup);
+        receiver_msg = findViewById(R.id.txtSelectDeparmentName)
 
         val intent = intent
 
         val str = intent.getStringExtra("message_key")
 
-        with(binding.txtDepartmentName) {
+        with(receiver_msg) {
 
             this?.text = str.toString()
         }
     }
-
 
     override fun onBackPressed() {
         finish()

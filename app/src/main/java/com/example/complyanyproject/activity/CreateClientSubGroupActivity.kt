@@ -22,7 +22,7 @@ class CreateClientSubGroupActivity : AppCompatActivity() {
 
                 back = findViewById(R.id.CreatSubDepartmentBack)
                 saved = findViewById(R.id.plus1)
-                ClientGroupName = findViewById(R.id.DepatmentGroup)
+                ClientGroupName = findViewById(R.id.txtClientGroupName)
                 SubClientGroupName = findViewById(R.id.SubDepartmentName)
                 tv_ClientGroupName = findViewById(R.id.tv_CreateSubDepatment)
                 tv_ClientSubGroupName = findViewById(R.id.tv_SubDepartmentName)
@@ -64,7 +64,7 @@ class CreateClientSubGroupActivity : AppCompatActivity() {
             var receiver_msg: TextView? = null
 
 
-        receiver_msg = findViewById(R.id.DepatmentGroup);
+        receiver_msg = findViewById(R.id.txtClientGroupName);
 
         val intent = intent
 
