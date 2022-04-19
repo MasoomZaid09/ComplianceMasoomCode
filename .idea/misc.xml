@@ -42,8 +42,10 @@
         <entry key="app/src/main/res/drawable-v24/ic_forward_arrow.xml" value="0.131" />
         <entry key="app/src/main/res/drawable-v24/ic_stop.xml" value="0.114" />
         <entry key="app/src/main/res/drawable-v24/rounded_edit_text.xml" value="0.1355" />
+        <entry key="app/src/main/res/drawable/edittext_border_1.xml" value="0.1655" />
         <entry key="app/src/main/res/drawable/ic_add_icon.xml" value="0.114" />
         <entry key="app/src/main/res/drawable/ic_arrowdown.xml" value="0.1405" />
+        <entry key="app/src/main/res/drawable/ic_dropdown_arrow.xml" value="0.1655" />
         <entry key="app/src/main/res/drawable/tab_color_selector.xml" value="0.131" />
         <entry key="app/src/main/res/drawable/your_shape_here.xml" value="0.131" />
         <entry key="app/src/main/res/layout/activity_calender_management.xml" value="0.17864583333333334" />
@@ -87,7 +89,7 @@
         <entry key="app/src/main/res/layout/client_management_recycler_layout.xml" value="0.25" />
         <entry key="app/src/main/res/layout/client_sub_group_recycler_layout.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/fragment_business_partner.xml" value="0.17864583333333334" />
-        <entry key="app/src/main/res/layout/fragment_dashboard.xml" value="0.19375" />
+        <entry key="app/src/main/res/layout/fragment_dashboard.xml" value="0.33" />
         <entry key="app/src/main/res/layout/fragment_menu.xml" value="0.22" />
         <entry key="app/src/main/res/layout/fragment_notifications.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/fragment_posts.xml" value="0.21" />
@@ -96,6 +98,7 @@
         <entry key="app/src/main/res/layout/notification_recycler_layout.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/proxy_user_recycler_layout.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/recycler_resource_layout.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/regional_company_recycler_layout.xml" value="0.340625" />
         <entry key="app/src/main/res/layout/sub_department_recycler_layout.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/user_recycler_layout.xml" value="0.22" />
         <entry key="app/src/main/res/menu/bottom_menu.xml" value="0.19375" />

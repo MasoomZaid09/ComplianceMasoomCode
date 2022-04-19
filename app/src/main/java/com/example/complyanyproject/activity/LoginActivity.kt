@@ -6,6 +6,8 @@ import android.os.Bundle
 import android.text.SpannableString
 import android.text.Spanned
 import android.text.style.ForegroundColorSpan
+import android.widget.TextView
+import android.widget.Toast
 import com.example.complyanyproject.R
 import com.example.complyanyproject.adapter.ViewPagerAdapter
 import com.example.complyanyproject.databinding.ActivityLoginBinding
@@ -15,8 +17,8 @@ import com.example.complyanyproject.fragment.UserFragment
 class LoginActivity : AppCompatActivity() {
 
     private lateinit var binding : ActivityLoginBinding
-
     override fun onCreate(savedInstanceState: Bundle?) {
+
         super.onCreate(savedInstanceState)
 
         binding = ActivityLoginBinding.inflate(layoutInflater)

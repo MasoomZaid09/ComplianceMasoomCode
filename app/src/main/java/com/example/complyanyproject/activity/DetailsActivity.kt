@@ -3,6 +3,7 @@ package com.example.complyanyproject.activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import com.example.complyanyproject.databinding.ActivityDetailsBinding
 
 class DetailsActivity : AppCompatActivity() {
@@ -43,4 +44,5 @@ class DetailsActivity : AppCompatActivity() {
     override fun onBackPressed() {
         finish()
     }
+
 }

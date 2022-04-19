@@ -95,6 +95,12 @@
     <string name="employees_state_insurance">Employees State Insurance *</string>
     <string name="generate_complience">Generate Complience</string>
     <string name="sub_law_or_head">Sub-Law or Head</string>
+    <string name="view_reports"><font size="10">View Reports</font></string>
+    <string name="global_trend">Global Trend</string>
+    <string name="compliant">Compliant</string>
+    <string name="non_compliant">Non-Compliant</string>
+    <string name="critical">Critical</string>
+    <string name="non_critical">Non-Critical</string>
 
 
 </resources>
