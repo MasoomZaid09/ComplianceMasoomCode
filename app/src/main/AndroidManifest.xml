@@ -10,6 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ComplyAnyProject">
         <activity
+            android:name=".settingsActivities.UserRoleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".settingsActivities.ComplianceNatureActivity"
+            android:exported="false" />
+        <activity
+            android:name=".settingsActivities.StockExchangeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".settingsActivities.IndustryTypeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".settingsActivities.EntityTypeActivity"
+            android:exported="false" />
+        <activity
             android:name=".activity.SubLawOrSubHeadActivity"
             android:exported="false" />
         <activity
@@ -134,7 +149,7 @@
             android:exported="false" />
         <activity
             android:name=".activity.ListSubDepartmentActivity"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".activity.SplashScreenActivity"
             android:exported="true">
