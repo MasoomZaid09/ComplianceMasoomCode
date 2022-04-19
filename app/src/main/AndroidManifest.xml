@@ -130,6 +130,12 @@
             android:name=".activity.LoginActivity"
             android:exported="false" />
         <activity
+            android:name=".activity.CreateSubDepartmentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ListSubDepartmentActivity"
+            android:exported="false"/>
+        <activity
             android:name=".activity.SplashScreenActivity"
             android:exported="true">
             <intent-filter>
