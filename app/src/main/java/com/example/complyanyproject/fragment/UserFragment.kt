@@ -30,11 +30,10 @@ class UserFragment : Fragment() {
 
         changeColorTextView()
 
-        binding.btnLogin.setOnClickListener {
+        binding.btnContinue.setOnClickListener {
 
             val phoneNumber = binding.etPhone.text.toString().trim()
             val email = binding.etEmail.text.toString().trim()
-            val pass = binding.etPass.text.toString().trim()
 
 //            val checkPass = "^" +
 //                    "(?=.*[0-9])" +   // at least 1 digit
@@ -53,10 +52,43 @@ class UserFragment : Fragment() {
             } else if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
 
                 binding.etEmail.setError("Please enter valid email address")
-            } else if (pass.length < 8) {
-
-                binding.etPass.setError("Password contains atleast 8 characters")
             }else {
+
+                binding.btnContinue.visibility = View.GONE
+                binding.etPass.visibility = View.VISIBLE
+                binding.btnLogin.visibility = View.VISIBLE
+            }
+        }
+
+        binding.btnLogin.setOnClickListener {
+            val pass = binding.etPass.text.toString().trim()
+            val phoneNumber = binding.etPhone.text.toString().trim()
+            val email = binding.etEmail.text.toString().trim()
+
+//            val checkPass = "^" +
+//                    "(?=.*[0-9])" +   // at least 1 digit
+//                    "(?=.*[a-zA-Z])" +   // any letter
+//                    "(?=.*[@#$%^&+=])" +  // at least 1 spacial character
+//                    "(?=\\S+$)" +    // no white space
+//                    ".{8,}" +        // at least 8 character
+//                    "$"
+
+            if (phoneNumber.length < 10) {
+
+                binding.etPhone.setError("Please enter valid number")
+            }else if (email.isEmpty()) {
+
+                binding.etEmail.setError("Please enter email address")
+            } else if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
+
+                binding.etEmail.setError("Please enter valid email address")
+            }
+
+            else if(pass.length < 8) {
+
+            binding.etPass.setError("Password contains atleast 8 characters")
+
+            }else{
 
                 binding.etPhone.text.clear()
                 binding.etEmail.text.clear()
@@ -66,6 +98,7 @@ class UserFragment : Fragment() {
                     startActivity(it)
                 }
             }
+
         }
 
         binding.txtForgotPassword.setOnClickListener {
