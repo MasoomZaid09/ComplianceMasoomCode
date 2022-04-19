@@ -52,6 +52,7 @@
         <entry key="app/src/main/res/layout/activity_client_group.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/activity_client_management.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_client_sub_group.xml" value="0.19375" />
+        <entry key="app/src/main/res/layout/activity_comliance_type.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/activity_compliance_nature.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/activity_configure_standard.xml" value="0.19074074074074074" />
         <entry key="app/src/main/res/layout/activity_country_company.xml" value="0.19375" />
@@ -92,6 +93,7 @@
         <entry key="app/src/main/res/layout/client_management_recycler_layout.xml" value="0.25" />
         <entry key="app/src/main/res/layout/client_sub_group_recycler_layout.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/compliace_nature_recycler_layout.xml" value="0.19375" />
+        <entry key="app/src/main/res/layout/compliance_type_recycler_layout.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/entity_type_recycler_layout.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/fragment_business_partner.xml" value="0.17864583333333334" />
         <entry key="app/src/main/res/layout/fragment_dashboard.xml" value="0.19375" />

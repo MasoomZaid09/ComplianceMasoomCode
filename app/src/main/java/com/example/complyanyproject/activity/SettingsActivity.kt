@@ -58,6 +58,13 @@ class SettingsActivity : AppCompatActivity() {
             }
         }
 
+        // added clicks on Compliance Type
+        binding.complianceTypeLayout.setOnClickListener {
+            Intent(this, ComplianceTypeActivity::class.java).also{
+                startActivity(it)
+            }
+        }
+
     }
 
     override fun onBackPressed() {
