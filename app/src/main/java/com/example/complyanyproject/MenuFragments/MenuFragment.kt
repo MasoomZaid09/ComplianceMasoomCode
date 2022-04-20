@@ -24,6 +24,8 @@ class MenuFragment : Fragment() {
     var flag5 = false
     var flag6 = false
 
+
+
     // Linear Layout
     lateinit var companyManagement : LinearLayout
     lateinit var departmentManagement : LinearLayout

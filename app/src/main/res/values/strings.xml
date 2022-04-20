@@ -107,5 +107,11 @@
     <string name="finance">Finance</string>
     <string name="human_resources_and_administration">Human-Resources and Administration</string>
 
+    <string-array name="numbers">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
 
 </resources>

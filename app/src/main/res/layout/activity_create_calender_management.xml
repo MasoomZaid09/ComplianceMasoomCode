@@ -69,6 +69,7 @@
         <!--added select entity-->
 
             <RelativeLayout
+                android:id="@+id/rlSelectOuterEntity"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="20dp"
@@ -89,7 +90,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
-                    android:src="@drawable/ic_down" />
+                    android:src="@drawable/ic_down"
+                    android:visibility="visible" />
 
                 <ImageView
                     android:id="@+id/selectEntityRight"
@@ -109,6 +111,7 @@
                 android:background="@color/border_color" />
 
             <LinearLayout
+                android:id="@+id/llSelectEntity"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="@dimen/_20mdp"
@@ -229,7 +232,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
-                    android:src="@drawable/ic_down" />
+                    android:src="@drawable/ic_down"
+                    android:visibility="visible" />
 
                 <ImageView
                     android:id="@+id/financialYearRight"
@@ -390,6 +394,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
+                    android:visibility="visible"
                     android:src="@drawable/ic_down" />
 
                 <ImageView
@@ -547,7 +552,7 @@
                     android:textStyle="bold" />
 
                 <ImageView
-                    android:id="@+id/querterDown"
+                    android:id="@+id/quarterDown"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
@@ -1034,6 +1039,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
+                    android:visibility="visible"
                     android:src="@drawable/ic_down" />
 
                 <ImageView
@@ -1417,7 +1423,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
-                    android:src="@drawable/ic_down" />
+                    android:src="@drawable/ic_down"
+                    android:visibility="visible" />
 
                 <ImageView
                     android:id="@+id/GovernmentHolidayRight"
@@ -1560,6 +1567,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
+                    android:visibility="visible"
                     android:src="@drawable/ic_down" />
 
                 <ImageView

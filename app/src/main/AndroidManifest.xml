@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ComplyAnyProject">
         <activity
+            android:name=".selectorActivity.SelectorEntityActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.HolidaysActivity"
+            android:exported="false" />
+        <activity
             android:name=".selectorActivity.CompanySelectorActivity"
             android:exported="false" />
         <activity

@@ -31,7 +31,7 @@ class RegisterEmailNotificationActivity : AppCompatActivity() {
         }
 
         imgFilter.setOnClickListener {
-            Toast.makeText(this, "clicked Save....", Toast.LENGTH_SHORT).show()
+            onBackPressed()
         }
 
     }

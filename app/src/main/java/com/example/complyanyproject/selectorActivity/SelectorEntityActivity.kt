@@ -2,19 +2,18 @@ package com.example.complyanyproject.selectorActivity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.TextView
 import com.example.complyanyproject.R
-import com.example.complyanyproject.databinding.ActivityCompanySelectorBinding
 
-class CompanySelectorActivity : AppCompatActivity() {
-
-    private lateinit var binding : ActivityCompanySelectorBinding
+class SelectorEntityActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityCompanySelectorBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+        setContentView(R.layout.activity_selector_entity)
 
-        binding.backCountry.setOnClickListener {
+        val backSelectorEntity = findViewById<TextView>(R.id.backSelectorEntity)
+
+        backSelectorEntity.setOnClickListener {
             onBackPressed()
         }
     }
