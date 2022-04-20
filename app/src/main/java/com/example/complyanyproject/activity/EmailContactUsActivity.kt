@@ -3,6 +3,7 @@ package com.example.complyanyproject.activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Patterns
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
@@ -11,10 +12,10 @@ import com.example.complyanyproject.R
 
 class EmailContactUsActivity : AppCompatActivity() {
 
-    lateinit var userNameEmail: EditText
-    lateinit var Helpemail: EditText
-    lateinit var subjectEmail: EditText
-    lateinit var messageEmail: EditText
+    lateinit var etUserName: EditText
+    lateinit var etEmail: EditText
+    lateinit var etSubject: EditText
+    lateinit var etMessage: EditText
     lateinit var backEmailContact: TextView
     lateinit var SubmitBtnEmail: Button
     lateinit var userNameEmail_error: TextView
@@ -27,10 +28,10 @@ class EmailContactUsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_email_contact_us)
 
-        userNameEmail = findViewById(R.id.userNameEmail)
-        Helpemail = findViewById(R.id.Helpemail)
-        subjectEmail = findViewById(R.id.subjectEmail)
-        messageEmail = findViewById(R.id.messageEmail)
+        etUserName = findViewById(R.id.etUserName)
+        etEmail = findViewById(R.id.etEmail)
+        etSubject = findViewById(R.id.etSubject)
+        etMessage = findViewById(R.id.etMessage)
         backEmailContact = findViewById(R.id.backEmailContact)
         SubmitBtnEmail = findViewById(R.id.SubmitBtnEmail)
         userNameEmail_error = findViewById(R.id.userNameEmail_error)
@@ -41,31 +42,40 @@ class EmailContactUsActivity : AppCompatActivity() {
 
         SubmitBtnEmail.setOnClickListener {
 
-            if (userNameEmail.text.toString().isEmpty()) {
+            val userName = etUserName.text.toString().trim()
+            val subject = etSubject.text.toString().trim()
+            val email = etEmail.text.toString().trim()
+            val msg = etMessage.text.toString().trim()
+
+
+            if (userName.isEmpty()) {
                 userNameEmail_error.text = "Username is required"
 
-
-            } else if (Helpemail.text.toString().isEmpty()) {
+            } else if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
                 userNameEmail_error.text = ""
-                emailEmail_error.text = "email is required"
+                emailEmail_error.text = "email is invalid"
 
-            } else if (subjectEmail.text.toString().isEmpty()) {
+            } else if (subject.isEmpty()) {
                 emailEmail_error.text = ""
+                userNameEmail_error.text = ""
                 subjectEmail_error.text = "Subject is required"
 
-            } else if (messageEmail.text.toString().isEmpty()) {
+            } else if (msg.isEmpty()) {
                 subjectEmail_error.text = ""
+                emailEmail_error.text = ""
+                userNameEmail_error.text = ""
                 messageEmail_error.text = "Message is required"
             } else {
                 messageEmail_error.text = ""
+                subjectEmail_error.text = ""
+                emailEmail_error.text = ""
+                userNameEmail_error.text = ""
                 Toast.makeText(this, "Added Successfully", Toast.LENGTH_SHORT).show()
 
-                Intent(this, HelpContactActivity::class.java).also {
-                    startActivity(it)
-                    finish()
-                }
+                finish()
             }
         }
+
         backEmailContact.setOnClickListener {
             onBackPressed()
         }
@@ -74,4 +84,5 @@ class EmailContactUsActivity : AppCompatActivity() {
     override fun onBackPressed() {
         finish()
     }
+
 }

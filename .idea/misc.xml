@@ -54,12 +54,14 @@
         <entry key="app/src/main/res/layout/activity_client_management.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_client_sub_group.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/activity_comliance_type.xml" value="0.19375" />
+        <entry key="app/src/main/res/layout/activity_company.xml" value="0.15185185185185185" />
+        <entry key="app/src/main/res/layout/activity_company_selector.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/activity_completed.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/activity_compliance_nature.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/activity_configure_standard.xml" value="0.19074074074074074" />
         <entry key="app/src/main/res/layout/activity_country_company.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/activity_country_region_company.xml" value="0.19375" />
-        <entry key="app/src/main/res/layout/activity_create_calender_management.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/activity_create_calender_management.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_create_client_group.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/activity_create_client_sub_group.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/activity_create_sub_department.xml" value="0.19375" />
@@ -75,6 +77,7 @@
         <entry key="app/src/main/res/layout/activity_help_contact.xml" value="0.10555555555555556" />
         <entry key="app/src/main/res/layout/activity_help_demo.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/activity_help_document.xml" value="0.10555555555555556" />
+        <entry key="app/src/main/res/layout/activity_holidays.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/activity_industry_type.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/activity_law_or_head.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/activity_list_sub_department.xml" value="0.19375" />
@@ -87,6 +90,7 @@
         <entry key="app/src/main/res/layout/activity_register_email_notification.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_resource_management.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_selector_client_sub_group.xml" value="0.19375" />
+        <entry key="app/src/main/res/layout/activity_selector_entity.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/activity_settings.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.1824074074074074" />
         <entry key="app/src/main/res/layout/activity_stock_exchange.xml" value="0.17864583333333334" />
@@ -108,6 +112,7 @@
         <entry key="app/src/main/res/layout/completed_recycler_layout.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/compliace_nature_recycler_layout.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/compliance_type_recycler_layout.xml" value="0.19375" />
+        <entry key="app/src/main/res/layout/dropdown_list.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/entity_type_recycler_layout.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/fragment_business_partner.xml" value="0.17864583333333334" />
         <entry key="app/src/main/res/layout/fragment_dashboard.xml" value="0.3089887640449438" />
