@@ -7,12 +7,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
-import android.widget.LinearLayout
-import android.widget.RelativeLayout
-import android.widget.TextView
+import android.widget.*
 import com.example.complyanyproject.R
 import com.example.complyanyproject.activity.*
+import com.example.complyanyproject.fragment.UserFragment
 
 
 class MenuFragment : Fragment() {
@@ -48,6 +46,7 @@ class MenuFragment : Fragment() {
     lateinit var txtDepartment : TextView
     lateinit var txtSubDepartment : TextView
     lateinit var txtUpdateComplaince : TextView
+    lateinit var txtLogOut : TextView
 
     // Both Arrow Relative Layout
     lateinit var companyArrowLayout : RelativeLayout
@@ -134,6 +133,7 @@ class MenuFragment : Fragment() {
         txtDepartment = view.findViewById(R.id.txtDepartment)
         txtSubDepartment = view.findViewById(R.id.txtSubDepartment)
         txtUpdateComplaince = view.findViewById(R.id.txtUpdateComplaince)
+        txtLogOut = view.findViewById(R.id.txtLogOut)
 
 
         // Both Arrow Relative Layout
@@ -418,6 +418,11 @@ class MenuFragment : Fragment() {
                 startActivity(it)
             }
         }
+//        helpAndSupport.setOnClickListener {
+//            childFragmentManager.beginTransaction()
+//                .replace(R.id.frame, DashboardFragment())
+//                .commit()
+//        }
 
         // standard configure option
         txtStandardComplience.setOnClickListener {
@@ -431,6 +436,7 @@ class MenuFragment : Fragment() {
                 startActivity(it)
             }
         }
+
 
         // added clicks on Settings option
         txtSettings.setOnClickListener {
@@ -459,8 +465,15 @@ class MenuFragment : Fragment() {
             }
         }
 
+
+        // added log out method
+        txtLogOut.setOnClickListener {
+            Toast.makeText(activity as Context,"Log out successfully..", Toast.LENGTH_SHORT).show()
+        }
+
         return view
     }
+
 
     }
 

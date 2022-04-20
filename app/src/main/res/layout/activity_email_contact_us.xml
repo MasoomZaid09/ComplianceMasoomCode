@@ -71,7 +71,7 @@
 
 
         <EditText
-            android:id="@+id/userNameEmail"
+            android:id="@+id/etUserName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
@@ -98,7 +98,7 @@
 
 
         <EditText
-            android:id="@+id/Helpemail"
+            android:id="@+id/etEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
@@ -124,7 +124,7 @@
             android:textSize="10dp"/>
 
         <EditText
-            android:id="@+id/subjectEmail"
+            android:id="@+id/etSubject"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
@@ -151,7 +151,7 @@
 
 
         <EditText
-            android:id="@+id/messageEmail"
+            android:id="@+id/etMessage"
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:layout_marginLeft="10dp"
