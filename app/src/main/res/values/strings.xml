@@ -95,12 +95,17 @@
     <string name="employees_state_insurance">Employees State Insurance *</string>
     <string name="generate_complience">Generate Complience</string>
     <string name="sub_law_or_head">Sub-Law or Head</string>
-    <string name="view_reports"><font size="10">View Reports</font></string>
+    <string name="view_reports"><font size="16">View Reports</font></string>
     <string name="global_trend">Global Trend</string>
     <string name="compliant">Compliant</string>
     <string name="non_compliant">Non-Compliant</string>
     <string name="critical">Critical</string>
     <string name="non_critical">Non-Critical</string>
+    <string name="department">Department</string>
+    <string name="all">All</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="finance">Finance</string>
+    <string name="human_resources_and_administration">Human-Resources and Administration</string>
 
 
 </resources>

@@ -58,4 +58,7 @@ dependencies {
 
     // added dynamic sizes dependency
     implementation 'com.github.MrNouri:DynamicSizes:1.0'
+
+    // mp chart library
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
 }
