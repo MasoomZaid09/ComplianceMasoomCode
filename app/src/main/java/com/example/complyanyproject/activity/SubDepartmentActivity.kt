@@ -56,4 +56,5 @@ class SubDepartmentActivity : AppCompatActivity() {
     override fun onBackPressed() {
         finish()
     }
+
 }

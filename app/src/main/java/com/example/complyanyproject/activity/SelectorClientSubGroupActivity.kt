@@ -1,63 +1,82 @@
 package com.example.complyanyproject.activity
 
+import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.TextView
 import com.example.complyanyproject.R
+import com.example.complyanyproject.databinding.ActivitySelectorClientSubGroupBinding
 
 class SelectorClientSubGroupActivity : AppCompatActivity() {
 
-    lateinit  var txt1: TextView
-    lateinit  var txt2: TextView
-    lateinit  var txt3: TextView
-    lateinit var backSelector : TextView
+    private lateinit var binding : ActivitySelectorClientSubGroupBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_selector_client_sub_group)
-
-        txt1 = findViewById(R.id.txt1)
-        txt2 = findViewById(R.id.txt2)
-        txt3 = findViewById(R.id.txt3)
-        backSelector = findViewById(R.id.backSelector)
+        binding = ActivitySelectorClientSubGroupBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
 
 
-        with(txt1) {
-            this?.setOnClickListener(View.OnClickListener {
 
-                val str = txt1.text.toString()
-                val intent = Intent(applicationContext, CreateClientSubGroupActivity::class.java)
-                intent.putExtra("message_key", str)
-                startActivity(intent)
-                finish()
-            })
+
+//        with(txt1) {
+//            this?.setOnClickListener(View.OnClickListener {
+//
+//                val str = txt1.text.toString()
+//                val intent = Intent(applicationContext, CreateClientSubGroupActivity::class.java)
+//                intent.putExtra("message_key", str)
+//                startActivity(intent)
+//                finish()
+//            })
+//        }
+//
+//        with(txt2) {
+//            this?.setOnClickListener(View.OnClickListener {
+//
+//                val str = txt2.text.toString()
+//                val intent = Intent(applicationContext, CreateClientSubGroupActivity::class.java)
+//                intent.putExtra("message_key", str)
+//                startActivity(intent)
+//                finish()
+//            })
+//        }
+//        with(txt3) {
+//            this?.setOnClickListener(View.OnClickListener {
+//
+//                val str = txt3.text.toString()
+//                val intent = Intent(applicationContext, CreateClientSubGroupActivity::class.java)
+//                intent.putExtra("message_key", str)
+//                startActivity(intent)
+//                finish()
+//            })
+//        }
+
+        binding.txt1.setOnClickListener {
+            val intent = Intent()
+            intent.putExtra("clientSubGroup", binding.txt1.text.toString())
+            setResult(Activity.RESULT_OK, intent)
+            finish()
         }
 
-        with(txt2) {
-            this?.setOnClickListener(View.OnClickListener {
-
-                val str = txt2.text.toString()
-                val intent = Intent(applicationContext, CreateClientSubGroupActivity::class.java)
-                intent.putExtra("message_key", str)
-                startActivity(intent)
-                finish()
-            })
-        }
-        with(txt3) {
-            this?.setOnClickListener(View.OnClickListener {
-
-                val str = txt3.text.toString()
-                val intent = Intent(applicationContext, CreateClientSubGroupActivity::class.java)
-                intent.putExtra("message_key", str)
-                startActivity(intent)
-                finish()
-            })
+        binding.txt2.setOnClickListener {
+            val intent = Intent()
+            intent.putExtra("clientSubGroup", binding.txt2.text.toString())
+            setResult(Activity.RESULT_OK, intent)
+            finish()
         }
 
-        backSelector.setOnClickListener {
+        binding.txt3.setOnClickListener {
+            val intent = Intent()
+            intent.putExtra("clientSubGroup", binding.txt3.text.toString())
+            setResult(Activity.RESULT_OK, intent)
+            finish()
+        }
+
+
+        binding.backSelector.setOnClickListener {
             onBackPressed()
         }
 

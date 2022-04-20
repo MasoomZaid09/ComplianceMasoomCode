@@ -1,5 +1,7 @@
 package com.example.complyanyproject.activity
 
+import android.app.Activity
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
@@ -7,6 +9,7 @@ import android.widget.LinearLayout
 import android.widget.TextView
 import android.widget.Toast
 import com.example.complyanyproject.R
+import com.example.complyanyproject.selectorActivity.CompanySelectorActivity
 
 class RegisterEmailNotificationActivity : AppCompatActivity() {
 
@@ -23,7 +26,9 @@ class RegisterEmailNotificationActivity : AppCompatActivity() {
         imgFilter = findViewById(R.id.imgFilter)
 
         etSelectEntity.setOnClickListener {
-            Toast.makeText(this, "Selecting Entity", Toast.LENGTH_SHORT).show()
+            Intent(this, CompanySelectorActivity::class.java).also{
+                startActivityForResult(it, 1)
+            }
         }
 
         backButton.setOnClickListener {
@@ -38,5 +43,14 @@ class RegisterEmailNotificationActivity : AppCompatActivity() {
 
     override fun onBackPressed() {
         finish()
+    }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        if (requestCode ==  1){
+            if (resultCode == Activity.RESULT_OK){
+                etSelectEntity.text = data?.getStringExtra("hello")
+            }
+        }
     }
 }

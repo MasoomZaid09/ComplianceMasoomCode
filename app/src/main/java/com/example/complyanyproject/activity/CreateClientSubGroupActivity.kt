@@ -1,10 +1,12 @@
 package com.example.complyanyproject.activity
 
+import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.*
 import com.example.complyanyproject.R
+import com.example.complyanyproject.databinding.ActivityCreateClientSubGroupBinding
 
 class CreateClientSubGroupActivity : AppCompatActivity() {
 
@@ -16,9 +18,12 @@ class CreateClientSubGroupActivity : AppCompatActivity() {
     lateinit var tv_ClientSubGroupName: TextView
     lateinit var selectClientGroup: RelativeLayout
 
+    private lateinit var binding : ActivityCreateClientSubGroupBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_create_client_sub_group)
+        binding = ActivityCreateClientSubGroupBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
                 back = findViewById(R.id.CreatSubDepartmentBack)
                 saved = findViewById(R.id.plus1)
@@ -43,41 +48,35 @@ class CreateClientSubGroupActivity : AppCompatActivity() {
                 tv_ClientSubGroupName.text = ""
 
                 Toast.makeText(this,"successfully Created...", Toast.LENGTH_SHORT).show()
-                Intent(this, ClientSubGroupActivity::class.java).also {
-                    startActivity(it)
-                    finish()
+                finish()
                 }
             }
-        }
 
-                back.setOnClickListener{
+
+            binding.CreatSubDepartmentBack.setOnClickListener{
                     onBackPressed()
             }
 
-                selectClientGroup.setOnClickListener {
+            selectClientGroup.setOnClickListener {
             Intent(this, SelectorClientSubGroupActivity::class.java).also {
-                startActivity(it)
-                finish()
+                startActivityForResult(it, 1)
             }
 
         }
-            var receiver_msg: TextView? = null
 
-
-        receiver_msg = findViewById(R.id.txtClientGroupName);
-
-        val intent = intent
-
-        val str = intent.getStringExtra("message_key")
-
-        with(receiver_msg) {
-
-            this?.setText(str)
-        };
     }
 
     override fun onBackPressed() {
         finish()
+    }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        if (requestCode == 1){
+            if (resultCode == Activity.RESULT_OK){
+                binding.txtClientGroupName.text = data?.getStringExtra("clientSubGroup")
+            }
+        }
     }
 
 }

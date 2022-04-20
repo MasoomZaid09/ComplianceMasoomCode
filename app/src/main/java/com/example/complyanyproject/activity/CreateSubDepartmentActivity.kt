@@ -1,5 +1,6 @@
 package com.example.complyanyproject.activity
 
+import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -15,6 +16,7 @@ class CreateSubDepartmentActivity : AppCompatActivity() {
     lateinit var checkSubDepartmentName : TextView
     lateinit var backCreateSubDepartment : TextView
     lateinit var selectDepartment : RelativeLayout
+
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -44,10 +46,7 @@ class CreateSubDepartmentActivity : AppCompatActivity() {
                 checkSubDepartmentName.text = ""
 
                 Toast.makeText(this,"successfully Created...", Toast.LENGTH_SHORT).show()
-                Intent(this, SubDepartmentActivity::class.java).also {
-                    startActivity(it)
                     finish()
-                }
             }
         }
 
@@ -58,26 +57,25 @@ class CreateSubDepartmentActivity : AppCompatActivity() {
 //
         selectDepartment.setOnClickListener {
             Intent(this, ListSubDepartmentActivity::class.java).also {
-                startActivity(it)
+                startActivityForResult(it, 1)
             }
 
         }
 
-        var receiver_msg: TextView? = null
 
-        receiver_msg = findViewById(R.id.txtSelectDeparmentName)
-
-        val intent = intent
-
-        val str = intent.getStringExtra("message_key")
-
-        with(receiver_msg) {
-
-            this?.text = str.toString()
-        }
     }
 
     override fun onBackPressed() {
         finish()
     }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        if (requestCode == 1){
+            if (resultCode == Activity.RESULT_OK){
+                txtSelectDeparmentName.text = data?.getStringExtra("clientSubDepartment")
+            }
+        }
+    }
+
 }

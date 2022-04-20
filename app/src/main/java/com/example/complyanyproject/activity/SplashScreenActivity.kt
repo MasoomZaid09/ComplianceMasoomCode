@@ -1,5 +1,6 @@
 package com.example.complyanyproject.activity
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -9,6 +10,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
+@SuppressLint("CustomSplashScreen")
 class SplashScreenActivity : AppCompatActivity() {
 
 
@@ -19,7 +21,7 @@ class SplashScreenActivity : AppCompatActivity() {
         lifecycleScope.launch(Dispatchers.Main){
             delay(3000)
 
-            Intent(this@SplashScreenActivity, LoginActivity::class.java).also {
+            Intent(this@SplashScreenActivity, SubDepartmentActivity::class.java).also {
                 startActivity(it)
             }
             finish()
