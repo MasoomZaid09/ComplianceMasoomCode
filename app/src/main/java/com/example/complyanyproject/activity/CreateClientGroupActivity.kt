@@ -35,10 +35,7 @@ class CreateClientGroupActivity : AppCompatActivity() {
                 tv_ClientGroup.text = ""
                 val saved = ClientGroupManagement.text.toString().trim()
                 Toast.makeText(this,"$saved saved....", Toast.LENGTH_SHORT).show()
-                Intent(this, ClientGroupActivity::class.java).also {
-                    startActivity(it)
                     finish()
-                }
             }
         }
         backButton.setOnClickListener{
