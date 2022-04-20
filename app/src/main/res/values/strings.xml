@@ -107,5 +107,12 @@
     <string name="finance">Finance</string>
     <string name="human_resources_and_administration">Human-Resources and Administration</string>
 
+    <string-array name="compliance_options">
+        <item>All</item>
+        <item>Compliant</item>
+        <item>Non-Compliant</item>
+        <item>Critical</item>
+        <item>Non-Critical</item>
+    </string-array>
 
 </resources>

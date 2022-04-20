@@ -112,19 +112,26 @@
                             android:paddingEnd="10dp"
                             app:drawableEndCompat="@drawable/ic_dropdown_arrow" />
 
-                        <TextView
+                        <Spinner
+                            android:id="@+id/spinnerDashboardFragment"
+                            android:layout_weight="5"
                             android:layout_width="wrap_content"
                             android:layout_height="35dp"
-                            android:layout_gravity="center_vertical"
-                            android:layout_weight="5"
-                            android:background="@drawable/edittext_border_1"
-                            android:gravity="center_vertical"
-                            android:paddingStart="8dp"
-                            android:paddingEnd="10dp"
-                            android:text="@string/all"
-                            android:textColor="@color/black"
-                            android:textSize="12sp"
-                            app:drawableEndCompat="@drawable/ic_dropdown_arrow" />
+                            android:spinnerMode="dropdown" />
+
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="35dp"-->
+<!--                            android:layout_gravity="center_vertical"-->
+<!--                            android:layout_weight="5"-->
+<!--                            android:background="@drawable/edittext_border_1"-->
+<!--                            android:gravity="center_vertical"-->
+<!--                            android:paddingStart="8dp"-->
+<!--                            android:paddingEnd="10dp"-->
+<!--                            android:text="@string/all"-->
+<!--                            android:textColor="@color/black"-->
+<!--                            android:textSize="12sp"-->
+<!--                            app:drawableEndCompat="@drawable/ic_dropdown_arrow" />-->
 
                     </LinearLayout>
 
