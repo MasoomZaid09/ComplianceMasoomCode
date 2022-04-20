@@ -59,6 +59,6 @@ dependencies {
     // added dynamic sizes dependency
     implementation 'com.github.MrNouri:DynamicSizes:1.0'
 
-    // added dropdown dependency
-    implementation "com.github.skydoves:powerspinner:1.1.9"
+    // mp chart library
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
 }

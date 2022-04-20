@@ -44,6 +44,7 @@
         <entry key="app/src/main/res/drawable-v24/rounded_edit_text.xml" value="0.1355" />
         <entry key="app/src/main/res/drawable/ic_add_icon.xml" value="0.114" />
         <entry key="app/src/main/res/drawable/ic_arrowdown.xml" value="0.1405" />
+        <entry key="app/src/main/res/drawable/ic_rectangle.xml" value="0.171" />
         <entry key="app/src/main/res/drawable/tab_color_selector.xml" value="0.131" />
         <entry key="app/src/main/res/drawable/your_shape_here.xml" value="0.131" />
         <entry key="app/src/main/res/layout/activity_calender_management.xml" value="0.17864583333333334" />
@@ -112,7 +113,7 @@
         <entry key="app/src/main/res/layout/dropdown_list.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/entity_type_recycler_layout.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/fragment_business_partner.xml" value="0.17864583333333334" />
-        <entry key="app/src/main/res/layout/fragment_dashboard.xml" value="0.19375" />
+        <entry key="app/src/main/res/layout/fragment_dashboard.xml" value="0.3089887640449438" />
         <entry key="app/src/main/res/layout/fragment_menu.xml" value="0.22" />
         <entry key="app/src/main/res/layout/fragment_notifications.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/fragment_posts.xml" value="0.21" />

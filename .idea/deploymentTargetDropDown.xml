@@ -7,11 +7,11 @@
         <deviceKey>
           <Key>
             <type value="VIRTUAL_DEVICE_PATH" />
-            <value value="$USER_HOME$/.android/avd/MasoomPhone.avd" />
+            <value value="$USER_HOME$/.android/avd/VK_Emulator.avd" />
           </Key>
         </deviceKey>
       </Target>
     </targetSelectedWithDropDown>
-    <timeTargetWasSelectedWithDropDown value="2022-04-15T11:39:58.219045Z" />
+    <timeTargetWasSelectedWithDropDown value="2022-04-20T08:21:48.761682Z" />
   </component>
 </project>
