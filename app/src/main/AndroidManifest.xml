@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ComplyAnyProject">
         <activity
+            android:name=".selectorActivity.CompanySelectorActivity"
+            android:exported="false" />
+        <activity
             android:name=".postComplainceActivities.CompletedActivity"
             android:exported="false" />
         <activity

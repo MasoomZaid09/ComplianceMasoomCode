@@ -533,7 +533,7 @@
                         android:textStyle="bold" />
 
                     <RelativeLayout
-                        android:id="@+id/rlStateProfessionalTax"
+                        android:id="@+id/rlSelectStateProfessionalTax"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
@@ -545,7 +545,7 @@
                         android:paddingBottom="8dp">
 
                         <TextView
-                            android:id="@+id/txtStateProfessionalTax"
+                            android:id="@+id/txtSelectStateProfessionalTax"
                             android:layout_width="match_parent"
                             android:layout_height="35dp"
                             android:layout_centerVertical="true"

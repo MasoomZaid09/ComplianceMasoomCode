@@ -58,4 +58,7 @@ dependencies {
 
     // added dynamic sizes dependency
     implementation 'com.github.MrNouri:DynamicSizes:1.0'
+
+    // added dropdown dependency
+    implementation "com.github.skydoves:powerspinner:1.1.9"
 }

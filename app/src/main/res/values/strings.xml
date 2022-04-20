@@ -101,6 +101,15 @@
     <string name="non_compliant">Non-Compliant</string>
     <string name="critical">Critical</string>
     <string name="non_critical">Non-Critical</string>
+    <string name="select_regions_company">Select Regions Company</string>
 
+
+    // added string array for drop down
+    <string-array name="numbers">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
 
 </resources>
