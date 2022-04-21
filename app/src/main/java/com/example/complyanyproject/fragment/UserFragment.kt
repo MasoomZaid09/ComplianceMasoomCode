@@ -6,7 +6,7 @@ import android.content.SharedPreferences
 import android.os.Bundle
 import android.text.SpannableString
 import android.text.Spanned
-import android.text.style.ForegroundColorSpan
+import android.text.style.ForegroundColorSpan//
 import android.util.Patterns
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
