@@ -16,6 +16,7 @@ import android.widget.Toast
 import com.example.complyanyproject.R
 import com.example.complyanyproject.activity.ForgetPasswordActivity
 import com.example.complyanyproject.activity.MainActivity
+import com.example.complyanyproject.activity.TermsAndConditionsActivity
 import com.example.complyanyproject.activity.UserActivity
 import com.example.complyanyproject.databinding.FragmentUserBinding
 
@@ -37,8 +38,13 @@ class UserFragment : Fragment() {
 
         sharedPreferences = this.requireActivity().getSharedPreferences(getString(R.string.preference_file_name), Context.MODE_PRIVATE)
 
-            changeColorTextView()
 
+            // added clicks on terms
+            binding.txtTermsOfUse.setOnClickListener {
+                Intent(activity as Context, TermsAndConditionsActivity::class.java).also{
+                    startActivity(it)
+                }
+            }
             // added clicks on continue
             binding.btnContinue.setOnClickListener {
 
@@ -120,15 +126,6 @@ class UserFragment : Fragment() {
             return view
         }
 
-    private fun changeColorTextView() {
-        val mText = binding.txtTerms.text.toString()
-
-        val mSpannableString = SpannableString(mText)
-        val mBlue = ForegroundColorSpan(resources.getColor(R.color.blue))
-
-        mSpannableString.setSpan(mBlue, 32, 44, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
-        binding.txtTerms.text = mSpannableString
-    }
 
     override fun onStart() {
         super.onStart()
