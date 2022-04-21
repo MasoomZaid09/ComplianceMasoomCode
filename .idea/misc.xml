@@ -87,7 +87,7 @@
         <entry key="app/src/main/res/layout/activity_profile.xml" value="0.1824074074074074" />
         <entry key="app/src/main/res/layout/activity_proxy_user.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/activity_regional_company.xml" value="0.19375" />
-        <entry key="app/src/main/res/layout/activity_register_email_notification.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_register_email_notification.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_resource_management.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_selector_client_sub_group.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/activity_selector_company_management.xml" value="0.19375" />
@@ -126,6 +126,8 @@
         <entry key="app/src/main/res/layout/notification_recycler_layout.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/proxy_user_recycler_layout.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/recycler_resource_layout.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/register_email_notification_recycler_layout.xml" value="0.6978723404255319" />
+        <entry key="app/src/main/res/layout/register_email_recyler_layout.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/stock_exchange_recycler_layout.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/sub_department_recycler_layout.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/upcoming_recycler_layout.xml" value="0.19375" />
