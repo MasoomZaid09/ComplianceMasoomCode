@@ -10,13 +10,17 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import com.example.complyanyproject.R
 import com.example.complyanyproject.activity.ForgetPasswordActivity
 import com.example.complyanyproject.activity.MainActivity
+import com.example.complyanyproject.activity.TermsAndConditionsActivity
 import com.example.complyanyproject.activity.UserActivity
 import com.example.complyanyproject.databinding.FragmentUserBinding
 
 class UserFragment : Fragment() {
+
+    lateinit var txtTermsOfUse: TextView
 
     private var _binding: FragmentUserBinding? = null
     private val binding get() = _binding!!
@@ -28,7 +32,9 @@ class UserFragment : Fragment() {
         _binding = FragmentUserBinding.inflate(inflater, container, false)
         val view = binding.root
 
-        changeColorTextView()
+        txtTermsOfUse = view.findViewById(R.id.txtTermsOfUse)
+
+//        changeColorTextView()
 
         // added clicks on continue
         binding.btnContinue.setOnClickListener {
@@ -107,17 +113,24 @@ class UserFragment : Fragment() {
                 startActivity(it)
             }
         }
+
+        txtTermsOfUse.setOnClickListener {
+            Intent(context, TermsAndConditionsActivity::class.java).also {
+                startActivity(it)
+            }
+        }
+
         return view
     }
 
-    private fun changeColorTextView() {
-        val mText = binding.txtTerms.text.toString()
-
-        val mSpannableString = SpannableString(mText)
-        val mBlue = ForegroundColorSpan(resources.getColor(R.color.blue))
-
-        mSpannableString.setSpan(mBlue, 32, 44, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
-        binding.txtTerms.text = mSpannableString
-    }
+//    private fun changeColorTextView() {
+//        val mText = binding.txtTermsOfUse.text.toString()
+//
+//        val mSpannableString = SpannableString(mText)
+//        val mBlue = ForegroundColorSpan(resources.getColor(R.color.blue))
+//
+//        mSpannableString.setSpan(mBlue, 32, 44, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
+//        binding.txtTermsOfUse.text = mSpannableString
+//    }
 
 }
