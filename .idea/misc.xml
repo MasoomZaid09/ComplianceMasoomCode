@@ -90,6 +90,7 @@
         <entry key="app/src/main/res/layout/activity_register_email_notification.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_resource_management.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_selector_client_sub_group.xml" value="0.19375" />
+        <entry key="app/src/main/res/layout/activity_selector_company_management.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/activity_selector_entity.xml" value="0.15185185185185185" />
         <entry key="app/src/main/res/layout/activity_settings.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.1824074074074074" />

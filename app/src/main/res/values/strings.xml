@@ -106,6 +106,8 @@
     <string name="dashboard">Dashboard</string>
     <string name="finance">Finance</string>
     <string name="human_resources_and_administration">Human-Resources and Administration</string>
+    <string name="select_entity_to_view_calender">Select Entity to View Calender</string>
+    <string name="entity_to_view_calender">Entity to View Calender</string>
 
     <string-array name="numbers">
         <item>1</item>

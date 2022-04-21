@@ -22,7 +22,7 @@ class SplashScreenActivity : AppCompatActivity() {
         lifecycleScope.launch(Dispatchers.Main){
             delay(3000)
 
-            Intent(this@SplashScreenActivity, CalenderManagementActivity::class.java).also {
+            Intent(this@SplashScreenActivity, LoginActivity::class.java).also {
                 startActivity(it)
             }
             finish()

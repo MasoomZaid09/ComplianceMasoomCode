@@ -3,6 +3,7 @@ package com.example.complyanyproject.activity
 import android.os.Binder
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import com.example.complyanyproject.R
 import com.example.complyanyproject.databinding.ActivityCountryCompanyBinding
 import com.example.complyanyproject.databinding.ActivityEntityBinding
@@ -18,6 +19,10 @@ class EntityActivity : AppCompatActivity() {
 
         binding.backEntity.setOnClickListener {
             onBackPressed()
+        }
+
+        binding.addIconEntity.setOnClickListener {
+            Toast.makeText(this, "clicked add button..", Toast.LENGTH_SHORT).show()
         }
     }
 

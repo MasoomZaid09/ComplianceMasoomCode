@@ -2,6 +2,7 @@ package com.example.complyanyproject.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import com.example.complyanyproject.R
 import com.example.complyanyproject.databinding.ActivityGlobalCompanyBinding
 import com.example.complyanyproject.databinding.ActivityRegionalCompanyBinding
@@ -17,6 +18,10 @@ class RegionalCompanyActivity : AppCompatActivity() {
 
         binding.backRegionalCompany.setOnClickListener {
             onBackPressed()
+        }
+
+        binding.addIconRegionalCompany.setOnClickListener {
+            Toast.makeText(this, "clicked add button..", Toast.LENGTH_SHORT).show()
         }
     }
 

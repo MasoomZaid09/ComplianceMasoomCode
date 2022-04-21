@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ComplyAnyProject">
         <activity
+            android:name=".selectorActivity.SelectorCalenderManagement"
+            android:exported="false" />
+        <activity
             android:name=".selectorActivity.StateActivity"
             android:exported="false" />
         <activity
