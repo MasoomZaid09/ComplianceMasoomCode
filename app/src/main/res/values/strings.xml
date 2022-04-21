@@ -124,4 +124,7 @@
         <item>Non-Critical</item>
     </string-array>
 
+
+    <string name="preference_file_name">ComplyAnyMasoom</string>
+
 </resources>

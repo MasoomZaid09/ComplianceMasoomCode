@@ -11,7 +11,7 @@ import com.example.complyanyproject.R
 import com.example.complyanyproject.interfaces.OnRecyclerClickListener
 import com.example.complyanyproject.model.ModelClass
 
-class UserAdapter(val context : Context, val itemList : ArrayList<ModelClass>, val onRvClickListener: OnRecyclerClickListener): RecyclerView.Adapter<UserAdapter.UserViewHolder>() {
+class UserAdapter(val context : Context, val itemList : ArrayList<ModelClass>,  val onRvClickListener: OnRecyclerClickListener): RecyclerView.Adapter<UserAdapter.UserViewHolder>() {
 
     class UserViewHolder(view : View) : RecyclerView.ViewHolder(view) {
 

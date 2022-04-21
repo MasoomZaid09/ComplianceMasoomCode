@@ -2,12 +2,14 @@ package com.example.complyanyproject.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.complyanyproject.R
 import com.example.complyanyproject.adapter.ClientManagementAdapter
+import com.example.complyanyproject.interfaces.OnRecyclerClickListener
 import com.example.complyanyproject.model.ClientManagementModelClass
 
 class ClientManagement : AppCompatActivity() {
@@ -61,7 +63,15 @@ class ClientManagement : AppCompatActivity() {
 
 
         recyclerView.layoutManager = LinearLayoutManager(this)
-        adapter = ClientManagementAdapter(this, itemList)
+        adapter = ClientManagementAdapter(this, itemList , object : OnRecyclerClickListener {
+            override fun onClick(pos: Int) {
+
+
+            //                View.GONE
+//                Toast.makeText(this@ClientManagement, "asdahd", Toast.LENGTH_SHORT).show()
+            }
+
+        })
         recyclerView.adapter = adapter
     }
 

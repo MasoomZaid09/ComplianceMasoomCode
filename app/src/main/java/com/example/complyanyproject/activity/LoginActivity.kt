@@ -44,19 +44,10 @@ class LoginActivity : AppCompatActivity() {
         binding.tabLayout.setupWithViewPager(binding.viewPager)
     }
 
-    // added colors in textView
-//    private fun changeColorTextView() {
-//        val mText = binding.txtSupport.text.toString()
-//
-//        val mSpannableString = SpannableString(mText)
-//        val mBlue = ForegroundColorSpan(resources.getColor(R.color.grey))
-//
-//        mSpannableString.setSpan(mBlue, 10, 12, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
-//        binding.txtSupport.text = mSpannableString
-//    }
 
     override fun onBackPressed() {
         finish()
     }
+
 
 }

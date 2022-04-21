@@ -11,6 +11,7 @@ import android.widget.*
 import com.example.complyanyproject.R
 import com.example.complyanyproject.activity.*
 import com.example.complyanyproject.fragment.UserFragment
+import com.example.complyanyproject.fragment.sharedPreferences
 
 
 class MenuFragment : Fragment() {
@@ -468,7 +469,10 @@ class MenuFragment : Fragment() {
 
         // added log out method
         txtLogOut.setOnClickListener {
-            Toast.makeText(activity as Context,"Log out successfully..", Toast.LENGTH_SHORT).show()
+            sharedPreferences.edit().putBoolean("isLoggedIn", false).apply()
+            Intent(activity as Context, LoginActivity::class.java).also{
+                startActivity(it)
+            }
         }
 
         return view

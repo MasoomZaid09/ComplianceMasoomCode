@@ -5,11 +5,13 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.complyanyproject.R
+import com.example.complyanyproject.interfaces.OnRecyclerClickListener
 import com.example.complyanyproject.model.ClientManagementModelClass
 
-class ClientManagementAdapter(val context: Context, val itemList : ArrayList<ClientManagementModelClass>):
+class ClientManagementAdapter(val context: Context, val itemList : ArrayList<ClientManagementModelClass>, val onRvClickListener: OnRecyclerClickListener):
     RecyclerView.Adapter<ClientManagementAdapter.ClientManagementViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ClientManagementAdapter.ClientManagementViewHolder {
@@ -29,6 +31,10 @@ class ClientManagementAdapter(val context: Context, val itemList : ArrayList<Cli
         holder.itemEmail.text = userData.emailId
         holder.itemMobile.text = userData.mobileNo
 
+
+        holder.layout.setOnClickListener {
+            onRvClickListener.onClick(position)
+        }
     }
 
     override fun getItemCount(): Int {
@@ -45,6 +51,7 @@ class ClientManagementAdapter(val context: Context, val itemList : ArrayList<Cli
         val itemContact = view.findViewById<TextView>(R.id.itemContact)
         val itemEmail = view.findViewById<TextView>(R.id.itemEmail)
         val itemMobile = view.findViewById<TextView>(R.id.itemMobile)
+        val layout = view.findViewById<CardView>(R.id.layout)
 
     }
 

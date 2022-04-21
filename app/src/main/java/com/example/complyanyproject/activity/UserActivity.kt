@@ -3,10 +3,12 @@ package com.example.complyanyproject.activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.complyanyproject.R
+import com.example.complyanyproject.adapter.ResourceAdapter
 import com.example.complyanyproject.adapter.UserAdapter
 import com.example.complyanyproject.databinding.ActivityUserBinding
 import com.example.complyanyproject.interfaces.OnRecyclerClickListener
@@ -67,8 +69,7 @@ class UserActivity : AppCompatActivity() {
         recyclerView.layoutManager = LinearLayoutManager(this)
         adapter = UserAdapter(this, itemList, object : OnRecyclerClickListener{
             override fun onClick(pos: Int) {
-                Toast.makeText(this@UserActivity, "item is $pos ", Toast.LENGTH_SHORT).show()
-
+                View.GONE
             }
 
         })
