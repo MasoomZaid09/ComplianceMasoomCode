@@ -30,6 +30,10 @@
         <entry key="app/src/main/res/drawable-anydpi/ic_baseline_edit_24.xml" value="0.127" />
         <entry key="app/src/main/res/drawable-anydpi/ic_baseline_save_24.xml" value="0.127" />
         <entry key="app/src/main/res/drawable-anydpi/ic_home.xml" value="0.114" />
+        <entry key="app/src/main/res/drawable-anydpi/ic_menu.xml" value="0.1515" />
+        <entry key="app/src/main/res/drawable-anydpi/ic_notify.xml" value="0.1515" />
+        <entry key="app/src/main/res/drawable-anydpi/ic_post.xml" value="0.1515" />
+        <entry key="app/src/main/res/drawable-anydpi/ic_report.xml" value="0.1515" />
         <entry key="app/src/main/res/drawable-hdpi/backgroundsearch.xml" value="0.114" />
         <entry key="app/src/main/res/drawable-hdpi/cloud.xml" value="0.114" />
         <entry key="app/src/main/res/drawable-hdpi/ic_back_arrow.xml" value="0.114" />
@@ -42,6 +46,7 @@
         <entry key="app/src/main/res/drawable-v24/ic_forward_arrow.xml" value="0.131" />
         <entry key="app/src/main/res/drawable-v24/ic_stop.xml" value="0.114" />
         <entry key="app/src/main/res/drawable-v24/rounded_edit_text.xml" value="0.1355" />
+        <entry key="app/src/main/res/drawable/edittext_border_1.xml" value="0.1355" />
         <entry key="app/src/main/res/drawable/ic_add_icon.xml" value="0.114" />
         <entry key="app/src/main/res/drawable/ic_arrowdown.xml" value="0.1405" />
         <entry key="app/src/main/res/drawable/ic_rectangle.xml" value="0.171" />
@@ -93,7 +98,7 @@
         <entry key="app/src/main/res/layout/activity_sub_department.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/activity_sub_law_or_sub_head.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/activity_sub_regional_company.xml" value="0.19375" />
-        <entry key="app/src/main/res/layout/activity_support.xml" value="0.19375" />
+        <entry key="app/src/main/res/layout/activity_support.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_testing.xml" value="0.15904232578024796" />
         <entry key="app/src/main/res/layout/activity_this_month.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/activity_today.xml" value="0.19375" />

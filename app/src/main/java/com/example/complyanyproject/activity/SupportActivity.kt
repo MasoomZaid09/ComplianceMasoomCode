@@ -3,11 +3,14 @@ package com.example.complyanyproject.activity
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Patterns
+import android.view.MotionEvent
+import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import com.example.complyanyproject.R
+import com.example.complyanyproject.databinding.ActivitySupportBinding
 
 class SupportActivity : AppCompatActivity() {
 
@@ -17,9 +20,7 @@ class SupportActivity : AppCompatActivity() {
     lateinit var email_et: EditText
     lateinit var mobile_et: EditText
     lateinit var message_et: EditText
-
     lateinit var backSupport: TextView
-
     lateinit var support_btn: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -37,10 +38,23 @@ class SupportActivity : AppCompatActivity() {
         support_btn= findViewById(R.id.support_btn)
         backSupport= findViewById(R.id.backSupport)
 
-
         backSupport.setOnClickListener {
             finish()
         }
+
+        // Adding scrollable behaviour in enter message edittext
+        message_et.setOnTouchListener(View.OnTouchListener { v, event ->
+            if (message_et.hasFocus()) {
+                v.parent.requestDisallowInterceptTouchEvent(true)
+                when (event.action and MotionEvent.ACTION_MASK) {
+                    MotionEvent.ACTION_SCROLL -> {
+                        v.parent.requestDisallowInterceptTouchEvent(false)
+                        return@OnTouchListener true
+                    }
+                }
+            }
+            false
+        })
 
         support_btn.setOnClickListener {
 

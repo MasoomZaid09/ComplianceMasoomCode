@@ -7,16 +7,14 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ArrayAdapter
-import android.widget.ImageView
-import android.widget.Spinner
+import android.widget.*
 import com.example.complyanyproject.R
 import com.example.complyanyproject.activity.DetailsActivity
-import com.example.complyanyproject.activity.RegisterEmailNotificationActivity
 
 class DashboardFragment : Fragment() {
 
     lateinit var profileBtn : ImageView
+    lateinit var btnViewReports : Button
 //    lateinit var spinnerDashboardFragment: Spinner
 
     override fun onCreateView(
@@ -30,12 +28,17 @@ class DashboardFragment : Fragment() {
 //        val arrayAdapter = ArrayAdapter(this, R.layout.fragment_dashboard)
 
         profileBtn = view.findViewById(R.id.toolbarProfileIcon)
+        btnViewReports = view.findViewById(R.id.btnViewReports)
 //        spinnerDashboardFragment = view.findViewById(R.id.spinnerDashboardFragment)
 
         profileBtn.setOnClickListener {
             Intent(activity as Context, DetailsActivity::class.java).also{
                 startActivity(it)
             }
+        }
+
+        btnViewReports.setOnClickListener {
+            Toast.makeText(context, "Clicked on View Reports", Toast.LENGTH_SHORT).show()
         }
 
 

@@ -35,7 +35,8 @@
             android:exported="false" />
         <activity
             android:name=".activity.SupportActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan"/>
         <activity
             android:name=".settingsActivities.ComplianceTypeActivity"
             android:exported="false" />
