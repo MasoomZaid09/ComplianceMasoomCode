@@ -54,6 +54,7 @@
         <entry key="app/src/main/res/layout/activity_client_management.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_client_sub_group.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/activity_comliance_type.xml" value="0.19375" />
+        <entry key="app/src/main/res/layout/activity_company_selector.xml" value="0.15185185185185185" />
         <entry key="app/src/main/res/layout/activity_completed.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/activity_compliance_nature.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/activity_configure_standard.xml" value="0.19074074074074074" />
@@ -76,7 +77,9 @@
         <entry key="app/src/main/res/layout/activity_help_demo.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/activity_help_document.xml" value="0.10555555555555556" />
         <entry key="app/src/main/res/layout/activity_industry_type.xml" value="0.19375" />
+        <entry key="app/src/main/res/layout/activity_law_nature.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/activity_law_or_head.xml" value="0.19375" />
+        <entry key="app/src/main/res/layout/activity_law_type.xml" value="0.3037037037037037" />
         <entry key="app/src/main/res/layout/activity_list_sub_department.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.16666666666666666" />
@@ -87,8 +90,10 @@
         <entry key="app/src/main/res/layout/activity_register_email_notification.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_resource_management.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_selector_client_sub_group.xml" value="0.19375" />
+        <entry key="app/src/main/res/layout/activity_selector_entity.xml" value="0.15185185185185185" />
         <entry key="app/src/main/res/layout/activity_settings.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.1824074074074074" />
+        <entry key="app/src/main/res/layout/activity_state.xml" value="0.15185185185185185" />
         <entry key="app/src/main/res/layout/activity_stock_exchange.xml" value="0.17864583333333334" />
         <entry key="app/src/main/res/layout/activity_sub_department.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/activity_sub_law_or_sub_head.xml" value="0.19375" />

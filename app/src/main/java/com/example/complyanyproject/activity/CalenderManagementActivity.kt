@@ -9,8 +9,6 @@ import com.example.complyanyproject.databinding.ActivityCalenderManagementBindin
 
 class CalenderManagementActivity : AppCompatActivity() {
 
-        // added asdad
-
     private lateinit var binding: ActivityCalenderManagementBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
