@@ -10,6 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ComplyAnyProject">
         <activity
+            android:name=".selectorActivity.SelectorCalenderManagement"
+            android:exported="false" />
+        <activity
+            android:name=".selectorActivity.StateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".selectorActivity.LawTypeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".selectorActivity.LawNatureActivity"
+            android:exported="false" />
+        <activity
             android:name=".selectorActivity.SelectorEntityActivity"
             android:exported="false" />
         <activity

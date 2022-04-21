@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    tools:context=".selectorActivity.CompanySelectorActivity">
+    tools:context=".selectorActivity.LawNatureActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
@@ -16,7 +16,7 @@
         android:paddingHorizontal="8dp">
 
         <TextView
-            android:id="@+id/backCountry"
+            android:id="@+id/backLawNature"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="start"
@@ -34,9 +34,9 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:gravity="center_vertical"
-            android:text="Country"
+            android:text="Law Nature"
             android:textColor="@color/blue"
-            android:textSize="22sp"
+            android:textSize="21sp"
             android:textStyle="bold" />
 
 
@@ -52,7 +52,7 @@
 
     <EditText
         android:paddingStart="5dp"
-        android:id="@+id/searchBarCountry"
+        android:id="@+id/searchBarLawNature"
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:layout_marginHorizontal="9dp"
@@ -77,7 +77,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="10dp"
-            android:text="India"
+            android:text="Voilence"
             android:layout_marginVertical="@dimen/_5mdp"
             android:textColor="@color/black"
             android:textSize="17sp"
@@ -94,7 +94,7 @@
             android:layout_height="wrap_content"
             android:padding="10dp"
             android:layout_marginVertical="@dimen/_5mdp"
-            android:text="USA"
+            android:text="Non Voilence"
             android:textColor="@color/black"
             android:textSize="17sp"
             android:textStyle="bold" />
@@ -109,60 +109,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="10dp"
-            android:text="Pakistan"
+            android:text="GST"
             android:layout_marginVertical="@dimen/_5mdp"
             android:textColor="@color/black"
             android:textSize="17sp"
             android:textStyle="bold" />
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/border_color" />
-
-        <TextView
-            android:id="@+id/txt4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:text="Bangladesh"
-            android:textColor="@color/black"
-            android:layout_marginVertical="@dimen/_5mdp"
-            android:textSize="17sp"
-            android:textStyle="bold" />
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/border_color" />
-
-        <TextView
-            android:id="@+id/txt5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:text="Afghanistan"
-            android:layout_marginVertical="@dimen/_5mdp"
-            android:textColor="@color/black"
-            android:textSize="17sp"
-            android:textStyle="bold" />
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/border_color" />
-
-        <TextView
-            android:id="@+id/txt6"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:text="New Zealand"
-            android:layout_marginVertical="@dimen/_5mdp"
-            android:textColor="@color/black"
-            android:textSize="17sp"
-            android:textStyle="bold" />
 
     </LinearLayout>
+
 
 </LinearLayout>
