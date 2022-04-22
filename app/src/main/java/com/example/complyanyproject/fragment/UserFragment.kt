@@ -109,6 +109,7 @@ class UserFragment : Fragment() {
 
                     Intent(context, MainActivity::class.java).also {
                         startActivity(it)
+                        this.activity?.finish()
                     }
                 }
 
@@ -132,10 +133,7 @@ class UserFragment : Fragment() {
                 this.activity?.finish()
             }
         }
-        else
-        {
-            Toast.makeText(context, "tu mera admi nahi hai", Toast.LENGTH_LONG).show()
-        }
+
     }
 
 }

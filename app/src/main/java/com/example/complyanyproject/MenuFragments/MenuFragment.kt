@@ -480,6 +480,7 @@ class MenuFragment : Fragment() {
             sharedPreferences.edit().putBoolean("isLoggedIn", false).apply()
             Intent(activity as Context, LoginActivity::class.java).also{
                 startActivity(it)
+                this.activity?.finish()
             }
         }
 
