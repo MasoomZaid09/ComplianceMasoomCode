@@ -47,25 +47,23 @@ class UserFragment : Fragment() {
                 val phoneNumber = binding.etPhone.text.toString().trim()
                 val email = binding.etEmail.text.toString().trim()
 
-//            val checkPass = "^" +
-//                    "(?=.*[0-9])" +   // at least 1 digit
-//                    "(?=.*[a-zA-Z])" +   // any letter
-//                    "(?=.*[@#$%^&+=])" +  // at least 1 spacial character
-//                    "(?=\\S+$)" +    // no white space
-//                    ".{8,}" +        // at least 8 character
-//                    "$"
-
                 if (phoneNumber.length < 10) {
 
-                    binding.etPhone.setError("Please enter valid number")
+                    binding.txtPhone.visibility = View.VISIBLE
+                    binding.txtPhone.text = "Please enter valid number"
                 } else if (email.isEmpty()) {
 
-                    binding.etEmail.setError("Please enter email address")
+                    binding.txtPhone.text = ""
+                    binding.txtEmail.visibility = View.VISIBLE
+                    binding.txtEmail.text = "Required"
                 } else if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
 
-                    binding.etEmail.setError("Please enter valid email address")
+                    binding.txtPhone.text = ""
+                    binding.txtEmail.text = "Please enter valid email address"
                 } else {
 
+                    binding.txtPhone.visibility = View.GONE
+                    binding.txtEmail.visibility = View.GONE
                     binding.btnContinue.visibility = View.GONE
                     binding.etPass.visibility = View.VISIBLE
                     binding.btnLogin.visibility = View.VISIBLE
@@ -74,29 +72,19 @@ class UserFragment : Fragment() {
 
             binding.btnLogin.setOnClickListener {
                 val pass = binding.etPass.text.toString().trim()
-                val phoneNumber = binding.etPhone.text.toString().trim()
-                val email = binding.etEmail.text.toString().trim()
 
-                if (phoneNumber.length < 10) {
-
-                    binding.etPhone.setError("Please enter valid number")
-                } else if (email.isEmpty()) {
-
-                    binding.etEmail.setError("Please enter email address")
-                } else if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
-
-                    binding.etEmail.setError("Please enter valid email address")
-                } else if (pass.length < 8) {
-
-                    binding.etPass.setError("Password contains atleast 8 characters")
-
+                if (pass.length < 8) {
+                    binding.txtPassword.visibility = View.VISIBLE
+                    binding.txtPassword.text = "Password must contains atleast 8 characters"
                 } else {
+
+                    binding.txtPassword.text = ""
+                    binding.txtPassword.visibility = View.GONE
 
                     sharedPreferences.edit().putString("userPhone", binding.etPhone.text.toString()).apply()
                     sharedPreferences.edit().putString("userEmail", binding.etEmail.text.toString()).apply()
                     sharedPreferences.edit().putString("userPass", binding.etPass.text.toString()).apply()
                     sharedPreferences.edit().putBoolean("isLoggedIn", true).apply()
-
 
                     binding.etPhone.text.clear()
                     binding.etEmail.text.clear()
