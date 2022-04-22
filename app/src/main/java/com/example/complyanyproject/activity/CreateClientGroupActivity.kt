@@ -34,7 +34,7 @@ class CreateClientGroupActivity : AppCompatActivity() {
             else {
                 tv_ClientGroup.text = ""
                 val saved = ClientGroupManagement.text.toString().trim()
-                Toast.makeText(this,"$saved saved....", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this,"successfully Created", Toast.LENGTH_SHORT).show()
                     finish()
             }
         }

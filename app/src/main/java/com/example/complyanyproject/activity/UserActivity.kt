@@ -35,6 +35,12 @@ class UserActivity : AppCompatActivity() {
             finish()
         }
 
+        binding.toolbarUsersAddIcon.setOnClickListener {
+            Intent(this, CreateUserActivity::class.java).also{
+                startActivity(it)
+            }
+        }
+
 
 
         val data1 = ModelClass("Masoom","0001", "mz@gmail.com","6392654000")

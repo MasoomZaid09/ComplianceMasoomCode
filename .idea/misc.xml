@@ -66,9 +66,12 @@
         <entry key="app/src/main/res/layout/activity_country_company.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/activity_country_region_company.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/activity_create_calender_management.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/activity_create_change_user.xml" value="0.2" />
         <entry key="app/src/main/res/layout/activity_create_client_group.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/activity_create_client_sub_group.xml" value="0.19375" />
+        <entry key="app/src/main/res/layout/activity_create_proxy_user.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/activity_create_sub_department.xml" value="0.19375" />
+        <entry key="app/src/main/res/layout/activity_create_user.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_department.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/activity_details.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_email_contact_us.xml" value="0.10555555555555556" />

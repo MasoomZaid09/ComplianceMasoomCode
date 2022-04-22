@@ -18,6 +18,7 @@ class ListSubDepartmentActivity : AppCompatActivity() {
         binding = ActivityListSubDepartmentBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+
         binding.txt1.setOnClickListener {
             val intent = Intent()
             intent.putExtra("clientSubDepartment", binding.txt1.text.toString())
