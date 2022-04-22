@@ -3,10 +3,12 @@ package com.example.complyanyproject.activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.complyanyproject.R
 import com.example.complyanyproject.adapter.SubDepartmentAdapter
 import com.example.complyanyproject.databinding.ActivitySubDepartmentBinding
+import com.example.complyanyproject.interfaces.OnRecyclerClickListener
 import com.example.complyanyproject.model.SubDepartmentModelClass
 
 class SubDepartmentActivity : AppCompatActivity() {

@@ -109,31 +109,28 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="12dp"
         android:paddingVertical="10dp"
-        android:visibility="visible"
         android:orientation="horizontal">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="230dp"
             android:layout_height="wrap_content"
             android:text="@string/by_signing_in_you_agree_to_our"
-            android:textSize="16sp"/>
+            android:textSize="14sp"/>
 
         <TextView
             android:id="@+id/txtTermsOfUse"
-            android:layout_width="wrap_content"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:text="@string/terms_of_use"
             android:textStyle="bold"
-            android:textSize="16sp"
+            android:textSize="14sp"
             android:textColor="@color/blue"
-            android:layout_marginStart="5dp"/>
-
+            />
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="47dp"
             android:layout_height="wrap_content"
             android:text="@string/policy"
-            android:textSize="16sp"
-            android:layout_marginStart="5dp"/>
+            android:textSize="14sp" />
 
     </LinearLayout>
 

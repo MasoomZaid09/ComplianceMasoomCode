@@ -1,5 +1,6 @@
 package com.example.complyanyproject.MenuFragments
 
+import android.app.AlertDialog
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
@@ -421,11 +422,7 @@ class MenuFragment : Fragment() {
                 startActivity(it)
             }
         }
-//        helpAndSupport.setOnClickListener {
-//            childFragmentManager.beginTransaction()
-//                .replace(R.id.frame, DashboardFragment())
-//                .commit()
-//        }
+
 
         // standard configure option
         txtStandardComplience.setOnClickListener {
@@ -477,11 +474,25 @@ class MenuFragment : Fragment() {
 
         // added log out method
         txtLogOut.setOnClickListener {
-            sharedPreferences.edit().putBoolean("isLoggedIn", false).apply()
-            Intent(activity as Context, LoginActivity::class.java).also{
-                startActivity(it)
-                this.activity?.finish()
+
+            val dialog = AlertDialog.Builder(activity as Context)
+            dialog.setTitle("Log Out")
+            dialog.setMessage("Are you sure you want to logout?")
+            dialog.setIcon(R.drawable.splash_screen)
+            dialog.setPositiveButton("Yes"){text , listener ->
+                sharedPreferences.edit().putBoolean("isLoggedIn", false).apply()
+                Intent(activity as Context, LoginActivity::class.java).also{
+                    startActivity(it)
+                    this.activity?.finish()
+                }
             }
+            dialog.setNegativeButton("No"){text , listener ->
+
+            }
+            dialog.create()
+            dialog.show()
+
+
         }
 
         return view

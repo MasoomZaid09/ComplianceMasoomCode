@@ -97,15 +97,10 @@ class UserFragment : Fragment() {
                     sharedPreferences.edit().putString("userPass", binding.etPass.text.toString()).apply()
                     sharedPreferences.edit().putBoolean("isLoggedIn", true).apply()
 
-                    val flag = sharedPreferences.getString("userPass", "password")
-
-                    Toast.makeText(context, flag, Toast.LENGTH_SHORT).show()
 
                     binding.etPhone.text.clear()
                     binding.etEmail.text.clear()
                     binding.etPass.text.clear()
-
-
 
                     Intent(context, MainActivity::class.java).also {
                         startActivity(it)

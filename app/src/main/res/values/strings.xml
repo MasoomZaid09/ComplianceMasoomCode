@@ -185,7 +185,7 @@
     </string>
     <string name="policy"><font size="17">policy.</font></string>
     <string name="terms_of_use"><font size="17">terms of use</font></string>
-    <string name="by_signing_in_you_agree_to_our"><font size="17">By Signing in, you agree to our</font></string>
+    <string name="by_signing_in_you_agree_to_our"><font size="17">By Signing in, you agree to our  </font></string>
     <string name="preference_file_name">ComplyAnyMasoom</string>
 
 </resources>
