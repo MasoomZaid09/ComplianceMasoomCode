@@ -1345,6 +1345,7 @@
                                     android:layout_height="match_parent"
                                     android:backgroundTint="#FFFFFF"
                                     android:gravity="top|start"
+                                    android:singleLine="false"
                                     android:hint="Enter Reason For Date  Extension"
                                     android:inputType="text"
                                     android:paddingLeft="8dp"
@@ -1424,6 +1425,7 @@
                                     android:layout_height="match_parent"
                                     android:backgroundTint="#FFFFFF"
                                     android:gravity="top|start"
+                                    android:singleLine="false"
                                     android:hint="Enter Date Description"
                                     android:paddingLeft="8dp"
                                     android:textSize="16sp" />
