@@ -48,6 +48,7 @@ class MenuFragment : Fragment() {
     lateinit var txtSubDepartment : TextView
     lateinit var txtUpdateComplaince : TextView
     lateinit var txtLogOut : TextView
+    lateinit var txtNewCompliance : TextView
 
     // Both Arrow Relative Layout
     lateinit var companyArrowLayout : RelativeLayout
@@ -135,6 +136,7 @@ class MenuFragment : Fragment() {
         txtSubDepartment = view.findViewById(R.id.txtSubDepartment)
         txtUpdateComplaince = view.findViewById(R.id.txtUpdateComplaince)
         txtLogOut = view.findViewById(R.id.txtLogOut)
+        txtNewCompliance = view.findViewById(R.id.txtNewCompliance)
 
 
         // Both Arrow Relative Layout
@@ -434,6 +436,12 @@ class MenuFragment : Fragment() {
 
         txtUpdateComplaince.setOnClickListener {
             Intent(activity as Context, UpdateComplainceActivity::class.java).also{
+                startActivity(it)
+            }
+        }
+
+        txtNewCompliance.setOnClickListener {
+            Intent(activity as Context, NewComplianceActivity::class.java).also{
                 startActivity(it)
             }
         }
