@@ -103,36 +103,58 @@
                         android:orientation="horizontal"
                         android:weightSum="10">
 
-                        <TextView
+                        <AutoCompleteTextView
+                            style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
                             android:layout_width="wrap_content"
-                            android:layout_height="35dp"
+                            android:layout_height="32dp"
                             android:layout_marginEnd="8dp"
                             android:layout_weight="5"
                             android:background="@drawable/edittext_border_1"
                             android:paddingStart="8dp"
                             android:paddingEnd="10dp"
-                            app:drawableEndCompat="@drawable/ic_dropdown_arrow" />
+                            android:textColor="@color/black"
+                            app:drawableEndCompat="@drawable/ic_dropdown_arrow"
+                            android:drawableTint="@color/black"/>
 
-<!--                        <Spinner-->
-<!--                            android:id="@+id/spinnerDashboardFragment"-->
-<!--                            android:layout_weight="5"-->
-<!--                            android:layout_width="wrap_content"-->
-<!--                            android:layout_height="35dp"-->
-<!--                            android:spinnerMode="dropdown"/>-->
-
-                        <TextView
+                        <AutoCompleteTextView
+                            style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
                             android:layout_width="wrap_content"
-                            android:layout_height="35dp"
-                            android:layout_gravity="center_vertical"
+                            android:layout_height="32dp"
+                            android:layout_marginEnd="8dp"
                             android:layout_weight="5"
                             android:background="@drawable/edittext_border_1"
-                            android:gravity="center_vertical"
                             android:paddingStart="8dp"
                             android:paddingEnd="10dp"
-                            android:text="@string/all"
                             android:textColor="@color/black"
-                            android:textSize="12sp"
-                            app:drawableEndCompat="@drawable/ic_dropdown_arrow" />
+                            app:drawableEndCompat="@drawable/ic_dropdown_arrow"
+                            android:drawableTint="@color/black"/>
+
+<!--                        <TextView-->
+<!--                            style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="35dp"-->
+<!--                            android:layout_marginEnd="8dp"-->
+<!--                            android:layout_weight="5"-->
+<!--                            android:background="@drawable/edittext_border_1"-->
+<!--                            android:paddingStart="8dp"-->
+<!--                            android:paddingEnd="10dp"-->
+<!--                            android:textColor="@color/black"-->
+<!--                            app:drawableEndCompat="@drawable/ic_dropdown_arrow" />-->
+
+<!--                        <TextView-->
+<!--                            style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="35dp"-->
+<!--                            android:layout_gravity="center_vertical"-->
+<!--                            android:layout_weight="5"-->
+<!--                            android:background="@drawable/edittext_border_1"-->
+<!--                            android:gravity="center_vertical"-->
+<!--                            android:paddingStart="8dp"-->
+<!--                            android:paddingEnd="10dp"-->
+<!--                            android:text="@string/all"-->
+<!--                            android:textColor="@color/black"-->
+<!--                            android:textSize="12sp"-->
+<!--                            app:drawableEndCompat="@drawable/ic_dropdown_arrow" />-->
 
                     </LinearLayout>
 
@@ -146,7 +168,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginEnd="5dp"
+                            android:layout_marginEnd="30dp"
                             android:layout_weight="5"
                             android:drawablePadding="5dp"
                             android:gravity="center_vertical"
@@ -164,8 +186,6 @@
                             android:layout_weight="5"
                             android:drawablePadding="5dp"
                             android:gravity="center_vertical"
-                            android:paddingStart="20dp"
-                            android:paddingEnd="0dp"
                             android:text="@string/non_compliant"
                             android:textSize="12sp"
                             app:drawableStartCompat="@drawable/ic_rectangle"
@@ -182,7 +202,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginEnd="5dp"
+                            android:layout_marginEnd="30dp"
                             android:layout_weight="5"
                             android:drawablePadding="5dp"
                             android:gravity="center_vertical"
@@ -200,8 +220,6 @@
                             android:layout_weight="5"
                             android:drawablePadding="5dp"
                             android:gravity="center_vertical"
-                            android:paddingStart="20dp"
-                            android:paddingEnd="0dp"
                             android:text="@string/non_critical"
                             android:textSize="12sp"
                             app:drawableStartCompat="@drawable/ic_rectangle"

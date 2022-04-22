@@ -14,10 +14,10 @@
     <color name="imp_color">#6d7ea3</color>
     <color name="border_color">#b5b4b1</color>
     <color name="blue_1">#0d337c</color>
-    <color name="red_1">#F6360C</color>
+    <color name="light_green_1">#00643E</color>
     <color name="green_1">#033B02</color>
-    <color name="light_red_1">#A04E3C</color>
-    <color name="light_green_1">#345C33</color>
-    <color name="blue_2">#001D61</color>
+    <color name="light_red_1">#C74637</color>
+    <color name="red_1">#FD1813</color>
+    <color name="blue_2">#062343</color>
 
 </resources>
