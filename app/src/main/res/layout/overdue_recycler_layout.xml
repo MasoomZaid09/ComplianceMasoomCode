@@ -3,10 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginHorizontal="10dp"
+    android:layout_marginHorizontal="15dp"
     android:padding="10dp"
     app:cardCornerRadius="10dp"
-    android:layout_marginVertical="5dp">
+    android:layout_marginVertical="8dp"
+    android:paddingHorizontal="20dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -17,7 +18,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="5dp"
             android:orientation="horizontal"
             android:weightSum="10">
 
@@ -58,7 +60,8 @@
             android:id="@+id/law"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
             android:maxLines="1"
             android:text="Law/Head:"
             android:textColor="@color/blue"
@@ -69,9 +72,10 @@
             android:id="@+id/sub_law"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="15dp"
             android:maxLines="1"
             android:text="Sub-Law/Sub-Head:"
+            android:layout_marginStart="5dp"
             android:textColor="@color/blue"
             android:textSize="12sp"
             android:textStyle="bold" />
@@ -79,9 +83,9 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-
+            android:layout_marginTop="15dp"
             android:orientation="horizontal"
+            android:layout_marginStart="5dp"
             android:weightSum="10">
 
             <TextView
@@ -109,8 +113,9 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="15dp"
             android:orientation="horizontal"
+            android:layout_marginStart="5dp"
             android:weightSum="10">
 
             <TextView
@@ -136,8 +141,9 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="15dp"
             android:orientation="horizontal"
+            android:layout_marginStart="5dp"
             android:weightSum="10">
 
             <TextView
@@ -163,8 +169,9 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="15dp"
             android:orientation="horizontal"
+            android:layout_marginStart="5dp"
             android:weightSum="10">
 
             <TextView
@@ -190,8 +197,9 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="12dp"
             android:orientation="horizontal"
+            android:layout_marginStart="5dp"
             android:weightSum="10">
 
             <TextView
@@ -220,9 +228,10 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="10dp"
             android:maxLines="1"
             android:text="Delay / Early:"
+            android:layout_marginStart="5dp"
             android:textColor="@color/blue"
             android:textSize="12sp"
             android:textStyle="bold" />
@@ -230,7 +239,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="15dp"
             android:orientation="horizontal"
             android:weightSum="10">
 
@@ -240,6 +249,7 @@
                 android:layout_weight="2"
                 android:text="Remarks:"
                 android:textColor="@color/blue"
+                android:layout_marginStart="5dp"
                 android:textSize="12sp"
                 android:textStyle="bold" />
 

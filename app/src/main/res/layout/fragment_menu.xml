@@ -63,29 +63,30 @@
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="22dp"
+                        android:layout_marginStart="22dp"
                         android:layout_weight="0.08"
                         android:src="@drawable/company" />
 
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="10dp"
                         android:layout_weight="0.8"
-                        android:gravity="left"
-                        android:text="Company Management"
+                        android:gravity="start"
+                        android:text="@string/company_management"
                         android:textColor="#0A3383"
-                        android:textSize="15dp"
+                        android:textSize="15sp"
                         android:textStyle="bold"
                         tools:layout_editor_absoluteX="2dp"
                         tools:layout_editor_absoluteY="115dp" />
 
                     <RelativeLayout
                         android:id="@+id/companyArrowLayout"
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="0.1"
-                        android:gravity="center">
+                        android:gravity="center"
+                        android:layout_marginEnd="15dp">
 
                         <ImageView
                             android:id="@+id/companyArrowRight"
@@ -123,9 +124,9 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Global Company"
+                            android:text="@string/global_company"
                             android:textColor="#0A3383"
-                            android:textSize="13dp"
+                            android:textSize="13sp"
                             tools:layout_editor_absoluteX="2dp"
                             tools:layout_editor_absoluteY="115dp" />
 
@@ -145,9 +146,9 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Regional Company"
+                            android:text="@string/regional_company"
                             android:textColor="#0A3383"
-                            android:textSize="13dp"
+                            android:textSize="13sp"
                             tools:layout_editor_absoluteX="2dp"
                             tools:layout_editor_absoluteY="115dp" />
 
@@ -168,9 +169,9 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Sub-Regional Company"
+                            android:text="@string/sub_regional_company"
                             android:textColor="#0A3383"
-                            android:textSize="13dp"
+                            android:textSize="13sp"
                             tools:layout_editor_absoluteX="2dp"
                             tools:layout_editor_absoluteY="115dp" />
 
@@ -191,9 +192,9 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
 
-                            android:text="Country Company"
+                            android:text="@string/country_company"
                             android:textColor="#0A3383"
-                            android:textSize="13dp"
+                            android:textSize="13sp"
                             tools:layout_editor_absoluteX="2dp"
                             tools:layout_editor_absoluteY="115dp" />
 
@@ -213,9 +214,9 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Country Region Company"
+                            android:text="@string/country_region_company"
                             android:textColor="#0A3383"
-                            android:textSize="13dp"
+                            android:textSize="13sp"
                             tools:layout_editor_absoluteX="2dp"
                             tools:layout_editor_absoluteY="115dp" />
 
@@ -235,9 +236,9 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Entity"
+                            android:text="@string/entity"
                             android:textColor="#0A3383"
-                            android:textSize="13dp"
+                            android:textSize="13sp"
                             tools:layout_editor_absoluteX="2dp"
                             tools:layout_editor_absoluteY="115dp" />
 
@@ -262,19 +263,19 @@
 
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="22dp"
+                        android:layout_marginStart="22dp"
                         android:layout_weight="0.08"
                         android:src="@drawable/department" />
 
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="10dp"
                         android:layout_weight="0.8"
-                        android:gravity="left"
-                        android:text="Department Management"
+                        android:gravity="start"
+                        android:text="@string/department_management"
                         android:textColor="#0A3383"
-                        android:textSize="15dp"
+                        android:textSize="15sp"
                         android:textStyle="bold"
                         tools:layout_editor_absoluteX="2dp"
                         tools:layout_editor_absoluteY="115dp" />
@@ -282,10 +283,11 @@
 
                     <RelativeLayout
                         android:id="@+id/departmentArrowLayout"
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="0.1"
-                        android:gravity="center">
+                        android:gravity="center"
+                        android:layout_marginEnd="15dp">
 
                         <ImageView
                             android:id="@+id/departmentArrowRight"
@@ -324,9 +326,9 @@
                             android:id="@+id/txtDepartment"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Department"
+                            android:text="@string/department"
                             android:textColor="#0A3383"
-                            android:textSize="13dp"
+                            android:textSize="13sp"
                             tools:layout_editor_absoluteX="2dp"
                             tools:layout_editor_absoluteY="115dp" />
 
@@ -347,9 +349,9 @@
                             android:id="@+id/txtSubDepartment"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Sub-Department"
+                            android:text="@string/sub_department"
                             android:textColor="#0A3383"
-                            android:textSize="13dp"
+                            android:textSize="13sp"
                             tools:layout_editor_absoluteX="2dp"
                             tools:layout_editor_absoluteY="115dp" />
 
@@ -357,7 +359,9 @@
                             android:layout_width="match_parent"
                             android:layout_height="0.5dp"
                             android:background="#D2D6DE" />
+
                     </LinearLayout>
+
                 </LinearLayout>
 
                 <LinearLayout
@@ -370,33 +374,32 @@
                     android:orientation="horizontal">
 
                     <ImageView
-
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="22dp"
+                        android:layout_marginStart="22dp"
                         android:layout_weight="0.08"
                         android:src="@drawable/law" />
 
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="10dp"
                         android:layout_weight="0.8"
-                        android:gravity="left"
-                        android:text="Law or Head Management"
+                        android:gravity="start"
+                        android:text="@string/law_or_head_management"
                         android:textColor="#0A3383"
-                        android:textSize="15dp"
+                        android:textSize="15sp"
                         android:textStyle="bold"
                         tools:layout_editor_absoluteX="2dp"
                         tools:layout_editor_absoluteY="115dp" />
 
-
                     <RelativeLayout
                         android:id="@+id/lawOrheadArrowLayout"
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="0.1"
-                        android:gravity="center">
+                        android:gravity="center"
+                        android:layout_marginEnd="15dp">
 
                         <ImageView
                             android:id="@+id/lawOrheadArrowRight"
@@ -433,9 +436,9 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Law or Head"
+                            android:text="@string/law_or_head"
                             android:textColor="#0A3383"
-                            android:textSize="13dp"
+                            android:textSize="13sp"
                             tools:layout_editor_absoluteX="2dp"
                             tools:layout_editor_absoluteY="115dp" />
 
@@ -455,9 +458,9 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="sub-Law or Sub-Head"
+                            android:text="@string/sub_law_or_sub_head"
                             android:textColor="#0A3383"
-                            android:textSize="13dp"
+                            android:textSize="13sp"
                             tools:layout_editor_absoluteX="2dp"
                             tools:layout_editor_absoluteY="115dp" />
 
@@ -480,7 +483,7 @@
                     <ImageView
                         android:layout_width="20dp"
                         android:layout_height="match_parent"
-                        android:layout_marginLeft="24dp"
+                        android:layout_marginStart="24dp"
                         android:src="@drawable/calendarr"
                         app:tint="@color/black"/>
 
@@ -488,12 +491,12 @@
                         android:id="@+id/txtCalenderManagement"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="9dp"
-                        android:layout_marginRight="10dp"
-                        android:gravity="left"
-                        android:text="Calendar Management"
+                        android:layout_marginStart="13dp"
+                        android:layout_marginEnd="10dp"
+                        android:gravity="start"
+                        android:text="@string/calendar_management"
                         android:textColor="#0A3383"
-                        android:textSize="15dp"
+                        android:textSize="15sp"
                         android:textStyle="bold"
                         tools:layout_editor_absoluteX="2dp"
                         tools:layout_editor_absoluteY="115dp" />
@@ -517,19 +520,19 @@
 
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="22dp"
+                        android:layout_marginStart="22dp"
                         android:layout_weight="0.07"
                         android:src="@drawable/users" />
 
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="8dp"
+                        android:layout_marginStart="11dp"
                         android:layout_weight="0.8"
-                        android:gravity="left"
-                        android:text="User Management"
+                        android:gravity="start"
+                        android:text="@string/user_management"
                         android:textColor="#0A3383"
-                        android:textSize="15dp"
+                        android:textSize="15sp"
                         android:textStyle="bold"
                         tools:layout_editor_absoluteX="2dp"
                         tools:layout_editor_absoluteY="115dp" />
@@ -537,10 +540,11 @@
 
                     <RelativeLayout
                         android:id="@+id/userManagementArrowLayout"
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="0.1"
-                        android:gravity="center">
+                        android:gravity="center"
+                        android:layout_marginEnd="15dp">
 
                         <ImageView
                             android:id="@+id/userManagementArrowRight"
@@ -579,9 +583,9 @@
                             android:id="@+id/userId"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Users"
+                            android:text="@string/users"
                             android:textColor="#0A3383"
-                            android:textSize="13dp"
+                            android:textSize="13sp"
 
                             tools:layout_editor_absoluteX="2dp"
                             tools:layout_editor_absoluteY="115dp" />
@@ -603,9 +607,9 @@
                             android:id="@+id/changeUserId"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Change User"
+                            android:text="@string/change_user"
                             android:textColor="#0A3383"
-                            android:textSize="13dp"
+                            android:textSize="13sp"
                             tools:layout_editor_absoluteX="2dp"
                             tools:layout_editor_absoluteY="115dp" />
 
@@ -626,9 +630,9 @@
                             android:id="@+id/proxyUserId"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Proxy User"
+                            android:text="@string/proxy_user"
                             android:textColor="#0A3383"
-                            android:textSize="13dp"
+                            android:textSize="13sp"
                             tools:layout_editor_absoluteX="2dp"
                             tools:layout_editor_absoluteY="115dp" />
 
@@ -653,19 +657,19 @@
 
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="22dp"
+                        android:layout_marginStart="22dp"
                         android:layout_weight="0.08"
                         android:src="@drawable/department" />
 
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="10dp"
                         android:layout_weight="0.8"
-                        android:gravity="left"
-                        android:text="Client Group Management"
+                        android:gravity="start"
+                        android:text="@string/client_group_management"
                         android:textColor="#0A3383"
-                        android:textSize="15dp"
+                        android:textSize="15sp"
                         android:textStyle="bold"
                         tools:layout_editor_absoluteX="2dp"
                         tools:layout_editor_absoluteY="115dp" />
@@ -673,10 +677,11 @@
 
                     <RelativeLayout
                         android:id="@+id/clientGroupManagementArrowLayout"
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="0.1"
-                        android:gravity="center">
+                        android:gravity="center"
+                        android:layout_marginEnd="15dp">
 
                         <ImageView
                             android:id="@+id/clientGroupManagementArrowRight"
@@ -713,9 +718,9 @@
                             android:id="@+id/clientGroupId"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Client Group"
+                            android:text="@string/client_group"
                             android:textColor="#0A3383"
-                            android:textSize="13dp"
+                            android:textSize="13sp"
                             tools:layout_editor_absoluteX="2dp"
                             tools:layout_editor_absoluteY="115dp" />
 
@@ -736,9 +741,9 @@
                             android:id="@+id/clientSubGroupId"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Client Sub-Group"
+                            android:text="@string/client_sub_group"
                             android:textColor="#0A3383"
-                            android:textSize="13dp"
+                            android:textSize="13sp"
                             tools:layout_editor_absoluteX="2dp"
                             tools:layout_editor_absoluteY="115dp" />
 
@@ -760,7 +765,7 @@
                     <ImageView
                         android:layout_width="25dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="22dp"
+                        android:layout_marginStart="22dp"
                         android:src="@drawable/users" />
 
                     <TextView
@@ -768,10 +773,10 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
                         android:layout_marginRight="10dp"
-                        android:gravity="left"
-                        android:text="Client Management"
+                        android:gravity="start"
+                        android:text="@string/client_management"
                         android:textColor="#0A3383"
-                        android:textSize="15dp"
+                        android:textSize="15sp"
                         android:textStyle="bold"
                         tools:layout_editor_absoluteX="2dp"
                         tools:layout_editor_absoluteY="115dp" />
@@ -794,19 +799,19 @@
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="22dp"
+                        android:layout_marginStart="22dp"
                         android:layout_weight="0.08"
                         android:src="@drawable/done" />
 
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="8dp"
+                        android:layout_marginStart="11dp"
                         android:layout_weight="0.8"
-                        android:gravity="left"
-                        android:text="Compliance Management"
+                        android:gravity="start"
+                        android:text="@string/compliance_management"
                         android:textColor="#0A3383"
-                        android:textSize="15dp"
+                        android:textSize="15sp"
                         android:textStyle="bold"
                         tools:layout_editor_absoluteX="2dp"
                         tools:layout_editor_absoluteY="115dp" />
@@ -854,9 +859,9 @@
                             android:id="@+id/txtStandardComplience"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Standard Compliance"
+                            android:text="@string/standard_compliance"
                             android:textColor="#0A3383"
-                            android:textSize="13dp"
+                            android:textSize="13sp"
                             tools:layout_editor_absoluteX="2dp"
                             tools:layout_editor_absoluteY="115dp" />
 
@@ -877,9 +882,9 @@
                             android:id="@+id/txtNewCompliance"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="New Compliance"
+                            android:text="@string/new_compliance"
                             android:textColor="#0A3383"
-                            android:textSize="13dp"
+                            android:textSize="13sp"
                             tools:layout_editor_absoluteX="2dp"
                             tools:layout_editor_absoluteY="115dp" />
 
@@ -900,9 +905,9 @@
                             android:id="@+id/txtUpdateComplaince"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Update Compliance"
+                            android:text="@string/update_compliance"
                             android:textColor="#0A3383"
-                            android:textSize="13dp"
+                            android:textSize="13sp"
                             tools:layout_editor_absoluteX="2dp"
                             tools:layout_editor_absoluteY="115dp" />
 
@@ -926,19 +931,19 @@
                     <ImageView
                         android:layout_width="20dp"
                         android:layout_height="20dp"
-                        android:layout_marginLeft="25dp"
+                        android:layout_marginStart="25dp"
                         android:src="@drawable/support" />
 
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="13dp"
-                        android:layout_marginRight="10dp"
-                        android:gravity="left"
-                        android:text="Help &amp; Support "
+                        android:layout_marginStart="13dp"
+                        android:layout_marginEnd="10dp"
+                        android:gravity="start"
+                        android:text="@string/help_amp_support"
                         android:textColor="#0A3383"
-                        android:textSize="15dp"
+                        android:textSize="15sp"
                         android:textStyle="bold" />
                 </LinearLayout>
 
@@ -953,7 +958,7 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="25dp"
+                        android:layout_marginStart="25dp"
                         android:src="@drawable/ic_settings"
                         app:tint="@color/black"/>
 
@@ -961,12 +966,12 @@
                         android:id="@+id/txtSettings"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="11dp"
-                        android:layout_marginRight="10dp"
-                        android:gravity="left"
-                        android:text="Settings"
+                        android:layout_marginStart="9dp"
+                        android:layout_marginEnd="10dp"
+                        android:gravity="start"
+                        android:text="@string/settings"
                         android:textColor="#0A3383"
-                        android:textSize="18sp"
+                        android:textSize="16sp"
                         android:textStyle="bold" />
 
                     <View
@@ -987,19 +992,19 @@
                     <ImageView
                         android:layout_width="20dp"
                         android:layout_height="20dp"
-                        android:layout_marginLeft="27dp"
+                        android:layout_marginStart="27dp"
                         android:src="@drawable/logout" />
 
                     <TextView
                         android:id="@+id/txtLogOut"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="11dp"
-                        android:layout_marginRight="10dp"
-                        android:gravity="left"
-                        android:text="Logout"
+                        android:layout_marginStart="11dp"
+                        android:layout_marginEnd="10dp"
+                        android:gravity="start"
+                        android:text="@string/logout"
                         android:textColor="#0A3383"
-                        android:textSize="15dp"
+                        android:textSize="16sp"
                         android:textStyle="bold" />
 
                     <View

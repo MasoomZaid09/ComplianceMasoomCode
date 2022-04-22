@@ -187,5 +187,32 @@
     <string name="terms_of_use"><font size="17">terms of use</font></string>
     <string name="by_signing_in_you_agree_to_our"><font size="17">By Signing in, you agree to our  </font></string>
     <string name="preference_file_name">ComplyAnyMasoom</string>
+    <string name="logout">Logout</string>
+    <string name="settings">Settings</string>
+    <string name="help_amp_support"><![CDATA[Help & Support]]></string>
+    <string name="update_compliance">Update Compliance</string>
+    <string name="new_compliance">New Compliance</string>
+    <string name="standard_compliance">Standard Compliance</string>
+    <string name="compliance_management">Compliance Management</string>
+    <string name="client_management">Client Management</string>
+    <string name="client_sub_group">Client Sub-Group</string>
+    <string name="client_group">Client Group</string>
+    <string name="client_group_management">Client Group Management</string>
+    <string name="proxy_user">Proxy User</string>
+    <string name="change_user">Change User</string>
+    <string name="user_management">User Management</string>
+    <string name="calendar_management">Calendar Management</string>
+    <string name="sub_law_or_sub_head">sub-Law or Sub-Head</string>
+    <string name="law_or_head">Law or Head</string>
+    <string name="law_or_head_management">Law or Head Management</string>
+    <string name="sub_department">Sub-Department</string>
+    <string name="department_management">Department Management</string>
+    <string name="entity">Entity</string>
+    <string name="country_region_company">Country Region Company</string>
+    <string name="country_company">Country Company</string>
+    <string name="sub_regional_company">Sub-Regional Company</string>
+    <string name="regional_company">Regional Company</string>
+    <string name="global_company">Global Company</string>
+    <string name="company_management">Company Management</string>
 
 </resources>
