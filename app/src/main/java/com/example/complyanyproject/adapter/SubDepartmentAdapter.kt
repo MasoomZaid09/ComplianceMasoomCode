@@ -32,18 +32,41 @@ class SubDepartmentAdapter(val context : Context, val itemList : ArrayList<SubDe
         holder.subDepartmentName.text = userData.subDepartmentName
 
         holder.imgBlock1.setOnClickListener {
-            val dialog = AlertDialog.Builder(context)
-            dialog.setTitle("Block")
-            dialog.setMessage("Are you sure you want to Block?")
-            dialog.setIcon(R.drawable.ic_block)
-            dialog.setPositiveButton("Yes"){text , listener ->
-                holder.imgBlock1.setImageDrawable(context.resources.getDrawable(R.drawable.ic_baseline_block_24))
-            }
-            dialog.setNegativeButton("No"){text , listener ->
 
+            if (holder.flag == true){
+
+                val dialog = AlertDialog.Builder(context)
+                dialog.setTitle("Unblock")
+                dialog.setMessage("Are you sure you want to Unblock?")
+                dialog.setIcon(R.drawable.ic_block)
+                dialog.setPositiveButton("Yes"){text , listener ->
+                    holder.imgBlock1.setImageDrawable(context.resources.getDrawable(R.drawable.ic_block))
+                }
+                dialog.setNegativeButton("No"){text , listener ->
+
+                }
+                dialog.create()
+                dialog.show()
+
+                holder.flag = false
+
+            }else{
+
+                val dialog = AlertDialog.Builder(context)
+                dialog.setTitle("Block")
+                dialog.setMessage("Are you sure you want to Block?")
+                dialog.setIcon(R.drawable.ic_baseline_block_24)
+                dialog.setPositiveButton("Yes"){text , listener ->
+                    holder.imgBlock1.setImageDrawable(context.resources.getDrawable(R.drawable.ic_baseline_block_24))
+                }
+                dialog.setNegativeButton("No"){text , listener ->
+
+                }
+                dialog.create()
+                dialog.show()
+
+                holder.flag = true
             }
-            dialog.create()
-            dialog.show()
 
         }
 
@@ -57,5 +80,6 @@ class SubDepartmentAdapter(val context : Context, val itemList : ArrayList<SubDe
         val departmentName : TextView = view.findViewById(R.id.departmentName)
         val subDepartmentName : TextView = view.findViewById(R.id.subDepartmentName)
         val imgBlock1 : ImageView = view.findViewById(R.id.imgBlock1)
+        var flag = false
     }
 }
