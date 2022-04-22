@@ -1,7 +1,9 @@
 package com.example.complyanyproject.activity
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -18,6 +20,7 @@ class ChangeUserActivity : AppCompatActivity() {
     lateinit var recyclerView : RecyclerView
     lateinit var adapter: ChangeUserAdapter
     lateinit var backChangeUser : TextView
+    lateinit var addIconChangeUser : TextView
 
     val itemList : ArrayList<ChangeUserModelClass> = ArrayList()
 
@@ -27,10 +30,18 @@ class ChangeUserActivity : AppCompatActivity() {
 
         recyclerView = findViewById(R.id.recyclerView)
         backChangeUser = findViewById(R.id.backChangeUser)
+        addIconChangeUser = findViewById(R.id.addIconChangeUser)
 
         backChangeUser.setOnClickListener {
             onBackPressed()
         }
+
+        addIconChangeUser.setOnClickListener {
+            Intent(this, CreateChangeUserActivity::class.java).also{
+                startActivity(it)
+            }
+        }
+
 
         val data2 = ChangeUserModelClass("Vishal","0002", "vk@gmail.com","4664546434")
         val data3 = ChangeUserModelClass("Mohit","0003", "mk@gmail.com","4654132463")

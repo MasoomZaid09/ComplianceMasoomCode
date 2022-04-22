@@ -1,5 +1,6 @@
 package com.example.complyanyproject.activity
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
@@ -16,6 +17,7 @@ class ProxyUserActivity : AppCompatActivity() {
     lateinit var recyclerView : RecyclerView
     lateinit var adapter: ProxyUserAdapter
     lateinit var backProxyUser : TextView
+    lateinit var addIconProxyUser : TextView
 
     val itemList : ArrayList<ProxyUserModelClass> = ArrayList()
 
@@ -26,10 +28,20 @@ class ProxyUserActivity : AppCompatActivity() {
 
         recyclerView = findViewById(R.id.recyclerView)
         backProxyUser = findViewById(R.id.backProxyUser)
+        addIconProxyUser = findViewById(R.id.addIconProxyUser)
 
+        // added back method
         backProxyUser.setOnClickListener {
             onBackPressed()
         }
+
+        // added clicks on add button
+        addIconProxyUser.setOnClickListener {
+            Intent(this, CreateProxyUserActivity::class.java).also{
+                startActivity(it)
+            }
+        }
+
 
         val data2 = ProxyUserModelClass("Harry Porter","rakesh", "Food Department","14-4-2002")
         val data3 = ProxyUserModelClass("Harry Porter","rakesh", "Food Department","14-4-2002")

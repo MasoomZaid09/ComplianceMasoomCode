@@ -48,6 +48,7 @@ class MenuFragment : Fragment() {
     lateinit var txtSubDepartment : TextView
     lateinit var txtUpdateComplaince : TextView
     lateinit var txtLogOut : TextView
+    lateinit var txtNewCompliance : TextView
 
     // Both Arrow Relative Layout
     lateinit var companyArrowLayout : RelativeLayout
@@ -135,6 +136,7 @@ class MenuFragment : Fragment() {
         txtSubDepartment = view.findViewById(R.id.txtSubDepartment)
         txtUpdateComplaince = view.findViewById(R.id.txtUpdateComplaince)
         txtLogOut = view.findViewById(R.id.txtLogOut)
+        txtNewCompliance = view.findViewById(R.id.txtNewCompliance)
 
 
         // Both Arrow Relative Layout
@@ -438,6 +440,12 @@ class MenuFragment : Fragment() {
             }
         }
 
+        txtNewCompliance.setOnClickListener {
+            Intent(activity as Context, NewComplianceActivity::class.java).also{
+                startActivity(it)
+            }
+        }
+
 
         // added clicks on Settings option
         txtSettings.setOnClickListener {
@@ -472,6 +480,7 @@ class MenuFragment : Fragment() {
             sharedPreferences.edit().putBoolean("isLoggedIn", false).apply()
             Intent(activity as Context, LoginActivity::class.java).also{
                 startActivity(it)
+                this.activity?.finish()
             }
         }
 
