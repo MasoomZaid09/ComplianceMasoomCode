@@ -105,7 +105,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="*"
+                                android:text=" *"
                                 android:textColor="#FF0808"
                                 android:textStyle="bold" />
 
@@ -131,7 +131,7 @@
                                 android:layout_centerVertical="true"
                                 android:layout_marginLeft="8dp"
                                 android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_right_24"
-                                android:text="Select Department"
+                                android:hint="Select Department"
                                 android:textSize="16sp" />
 
                         </RelativeLayout>

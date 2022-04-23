@@ -62,8 +62,16 @@ class SupportActivity : AppCompatActivity() {
             val mobile =  mobile_et.text.toString()
             val msg = message_et.text.toString()
 
-            if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()){
+            if(email.isEmpty()){
+                textview1.text = "Required"
+            }
+            else if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()){
                 textview1.text = "Enter Valid Email Address"
+            }
+            else if(mobile.isEmpty()){
+                textview3.text = ""
+                textview1.text = ""
+                textview2.text = "Required"
             }
             else if (mobile.length < 10) {
                 textview3.text = ""
@@ -73,15 +81,17 @@ class SupportActivity : AppCompatActivity() {
             else if (msg.isEmpty()){
                 textview1.text = ""
                 textview2.text = ""
-                textview3.text= "This field is required*"
+                textview3.text= "Required*"
             }
             else{
-                email_et.text.clear()
-                mobile_et.text.clear()
-                message_et.text.clear()
                 textview1.text = ""
                 textview2.text = ""
                 textview3.text=""
+
+                email_et.text.clear()
+                mobile_et.text.clear()
+                message_et.text.clear()
+
                 finish()
             }
         }

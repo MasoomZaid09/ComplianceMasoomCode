@@ -98,16 +98,33 @@
                         app:layout_constraintEnd_toEndOf="@+id/circleImageView" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
-
-                <TextView
+                
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="15dp"
-                    android:text="@string/first_name"
-                    android:textColor="@color/blue"
-                    android:textSize="17sp"
-                    android:textStyle="bold" />
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/first_name"
+                        android:textColor="@color/blue"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" *"
+                        android:textColor="@color/red"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+                
+
 
                 <EditText
                     android:id="@+id/etFirstName"
@@ -127,14 +144,43 @@
                     tools:ignore="RtlSymmetry" />
 
                 <TextView
+                    android:id="@+id/txtFirstName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:visibility="gone"
+                    android:layout_marginHorizontal="10dp"
+                    android:textColor="#FF0808"
+                    android:textSize="10dp" />
+
+
+<!--                added last name code-->
+
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="15dp"
-                    android:text="@string/last_name"
-                    android:textColor="@color/blue"
-                    android:textSize="17sp"
-                    android:textStyle="bold" />
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/last_name"
+                        android:textColor="@color/blue"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" *"
+                        android:textColor="@color/red"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
 
                 <EditText
                     android:id="@+id/etLastName"
@@ -154,14 +200,44 @@
                     tools:ignore="RtlSymmetry" />
 
                 <TextView
+                    android:id="@+id/txtLastName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:visibility="gone"
+                    android:layout_marginHorizontal="10dp"
+                    android:textColor="#FF0808"
+                    android:textSize="10dp" />
+
+
+<!--                 added email code-->
+
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="15dp"
-                    android:text="@string/email"
-                    android:textColor="@color/blue"
-                    android:textSize="17sp"
-                    android:textStyle="bold" />
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/email"
+                        android:textColor="@color/blue"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" *"
+                        android:textColor="@color/red"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
 
                 <EditText
                     android:id="@+id/etEmail"
@@ -181,14 +257,44 @@
                     tools:ignore="RtlSymmetry" />
 
                 <TextView
+                    android:id="@+id/txtEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:visibility="gone"
+                    android:layout_marginHorizontal="10dp"
+                    android:textColor="#FF0808"
+                    android:textSize="10dp" />
+
+
+<!--                added mobile number code-->
+
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="15dp"
-                    android:text="@string/mobile_number"
-                    android:textColor="@color/blue"
-                    android:textSize="17sp"
-                    android:textStyle="bold" />
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mobile_number"
+                        android:textColor="@color/blue"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" *"
+                        android:textColor="@color/red"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -225,6 +331,16 @@
 
                 </LinearLayout>
 
+                <TextView
+                    android:id="@+id/txtPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:visibility="gone"
+                    android:layout_marginHorizontal="10dp"
+                    android:textColor="#FF0808"
+                    android:textSize="10dp" />
+
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -250,6 +366,16 @@
                     android:paddingStart="7dp"
                     android:textSize="15sp"
                     tools:ignore="RtlSymmetry" />
+
+                <TextView
+                    android:id="@+id/txtAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:visibility="gone"
+                    android:layout_marginHorizontal="10dp"
+                    android:textColor="#FF0808"
+                    android:textSize="10dp" />
 
 
             </LinearLayout>

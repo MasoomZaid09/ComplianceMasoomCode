@@ -4,10 +4,9 @@ import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.ImageView
-import android.widget.LinearLayout
-import android.widget.TextView
-import android.widget.Toast
+import android.util.Patterns
+import android.view.View
+import android.widget.*
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.complyanyproject.R
@@ -20,6 +19,14 @@ class RegisterEmailNotificationActivity : AppCompatActivity() {
     lateinit var etSelectEntity: TextView
     lateinit var backButton : LinearLayout
     lateinit var imgFilter : ImageView
+
+    lateinit var etUserRegister : EditText
+    lateinit var etEmailRegister : EditText
+
+    lateinit var txtUserName : TextView
+    lateinit var txtEmailID : TextView
+    lateinit var txtEntity : TextView
+
 
     lateinit var recyclerView : RecyclerView
     lateinit var adapter : RegisterEmailNotificationAdapter
@@ -34,6 +41,11 @@ class RegisterEmailNotificationActivity : AppCompatActivity() {
         backButton = findViewById(R.id.backButton)
         imgFilter = findViewById(R.id.imgFilter)
         recyclerView = findViewById(R.id.recyclerViewRegisterEmail)
+        etEmailRegister = findViewById(R.id.etEmailRegister)
+        etUserRegister = findViewById(R.id.etUserRegister)
+        txtUserName = findViewById(R.id.txtUserName)
+        txtEmailID = findViewById(R.id.txtEmailID)
+        txtEntity = findViewById(R.id.txtEntity)
 
         etSelectEntity.setOnClickListener {
             Intent(this, CompanySelectorActivity::class.java).also{
@@ -46,7 +58,47 @@ class RegisterEmailNotificationActivity : AppCompatActivity() {
         }
 
         imgFilter.setOnClickListener {
-            onBackPressed()
+
+            val userName = etUserRegister.text.toString().trim()
+            val email = etEmailRegister.text.toString().trim()
+
+            if (userName.isEmpty()){
+                txtUserName.visibility = View.VISIBLE
+                txtUserName.text = "Required"
+            }
+            else if(email.isEmpty()){
+                txtUserName.visibility = View.GONE
+                txtEmailID.visibility = View.VISIBLE
+                txtEmailID.text = "Required"
+            }
+            else if(!Patterns.EMAIL_ADDRESS.matcher(email).matches()){
+                txtUserName.visibility = View.GONE
+                txtEmailID.visibility = View.VISIBLE
+                txtEmailID.text = "Please enter valid email"
+            }
+            else if(etSelectEntity.text.isEmpty()){
+                txtUserName.visibility = View.GONE
+                txtEmailID.visibility = View.GONE
+                txtEntity.visibility = View.VISIBLE
+                txtEntity.text = "Required"
+            }
+            else{
+                txtUserName.visibility = View.GONE
+                txtEmailID.visibility = View.GONE
+                txtEntity.visibility = View.GONE
+
+                txtEntity.text = ""
+                txtUserName.text = ""
+                txtEmailID.text = ""
+
+                etEmailRegister.text.clear()
+                etUserRegister.text.clear()
+                etSelectEntity.text = ""
+
+                Toast.makeText(this, "Registered..", Toast.LENGTH_SHORT).show()
+                onBackPressed()
+            }
+
         }
 
 

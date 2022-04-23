@@ -51,7 +51,7 @@
                     android:layout_gravity="center"
                     android:text="@string/register_email_notification"
                     android:textColor="@color/blue"
-                    android:textSize="16sp"
+                    android:textSize="21sp"
                     android:textStyle="bold" />
 
                 <ImageView
@@ -109,6 +109,7 @@
                 </LinearLayout>
 
                 <EditText
+                    android:id="@+id/etUserRegister"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:layout_marginTop="5dp"
@@ -116,6 +117,15 @@
                     android:hint="@string/enter_user_name"
                     android:inputType="text"
                     android:paddingHorizontal="10dp" />
+
+                <TextView
+                    android:id="@+id/txtUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:visibility="gone"
+                    android:textColor="#FF0808"
+                    android:textSize="10dp" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -140,6 +150,7 @@
                 </LinearLayout>
 
                 <EditText
+                    android:id="@+id/etEmailRegister"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:layout_marginTop="5dp"
@@ -147,6 +158,15 @@
                     android:hint="@string/enter_email_id"
                     android:inputType="textEmailAddress"
                     android:paddingHorizontal="10dp" />
+
+                <TextView
+                    android:id="@+id/txtEmailID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:visibility="gone"
+                    android:textColor="#FF0808"
+                    android:textSize="10dp" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -178,8 +198,17 @@
                     android:background="@drawable/edittext_border"
                     android:gravity="center_vertical"
                     android:paddingHorizontal="10dp"
-                    android:text="@string/select_entity_name"
+                    android:hint="@string/select_entity_name"
                     app:drawableEndCompat="@drawable/ic_down_arrow" />
+
+                <TextView
+                    android:id="@+id/txtEntity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:visibility="gone"
+                    android:textColor="#FF0808"
+                    android:textSize="10dp" />
 
                 <LinearLayout
                     android:layout_width="match_parent"

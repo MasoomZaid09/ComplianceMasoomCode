@@ -6,6 +6,7 @@ import android.net.Uri
 import android.os.Bundle
 import android.provider.MediaStore
 import android.util.Patterns
+import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.complyanyproject.databinding.ActivityProfileBinding
@@ -42,30 +43,48 @@ class ProfileActivity : AppCompatActivity() {
                 val mobileNumber = binding.etMobileNumber.text.toString()
 
                 if (firstName.isEmpty()){
-                    binding.etFirstName.setError("This field is required")
+                    binding.txtFirstName.visibility = View.VISIBLE
+                    binding.txtFirstName.text = "Required"
                 }
                 else if(firstName.length < 2){
-                    binding.etFirstName.setError("First name contains atleast 2 characters")
+                    binding.txtFirstName.text = "First name contains atleast 2 characters"
                 }
                 else if (lastName.isEmpty()){
-                    binding.etLastName.setError("This field is required")
+                    binding.txtLastName.visibility = View.VISIBLE
+                    binding.txtLastName.text = "Required"
                 }
                 else if (lastName.length < 2){
-                    binding.etLastName.setError("Last name contains atleast 2 characters")
+                    binding.txtLastName.text = "Last name contains atleast 2 characters"
                 }
                 else if (lastName == firstName){
-                    binding.etLastName.setError("Last name must be diffrerent")
+                    binding.txtLastName.text = "Last name must be diffrerent"
                 }
                 else if (email.isEmpty()){
-                    binding.etEmail.setError("This field is required")
+                    binding.txtEmail.visibility = View.VISIBLE
+                    binding.txtEmail.text = "Required"
                 }
                 else if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()){
-                    binding.etEmail.setError("Please enter valid email")
+                    binding.txtEmail.text = "Please enter valid email"
                 }
                 else if(mobileNumber.length < 10){
-                    binding.etMobileNumber.setError("Please enter valid number")
+                    binding.txtPhone.visibility = View.VISIBLE
+                    binding.txtPhone.text = "Please enter valid number"
                 }
                 else{
+
+                    // hide tv texts
+                    binding.txtFirstName.visibility = View.GONE
+                    binding.txtLastName.visibility = View.GONE
+                    binding.txtEmail.visibility = View.GONE
+                    binding.txtPhone.visibility = View.GONE
+
+                    // remove texts of tv texts
+                    binding.txtFirstName.text = ""
+                    binding.txtLastName.text = ""
+                    binding.txtEmail.text = ""
+                    binding.txtPhone.text = ""
+
+                    // remove texts from edit text
                     binding.etFirstName.text.clear()
                     binding.etLastName.text.clear()
                     binding.etEmail.text.clear()
@@ -77,6 +96,7 @@ class ProfileActivity : AppCompatActivity() {
         }
 
 
+        // added image picker code
         binding.imageIcon.setOnClickListener {
             val galleryIntent = Intent(
                 Intent.ACTION_PICK,
@@ -101,6 +121,8 @@ class ProfileActivity : AppCompatActivity() {
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
+
+        // added image in image view
         if (resultCode == Activity.RESULT_CANCELED) {
             return
         }
