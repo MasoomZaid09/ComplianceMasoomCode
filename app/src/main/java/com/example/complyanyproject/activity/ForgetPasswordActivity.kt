@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Patterns
+import android.view.View
 import android.widget.Toast
 import com.example.complyanyproject.databinding.ActivityForgetPasswordBinding
 import java.util.regex.Pattern
@@ -28,18 +29,30 @@ class ForgetPasswordActivity : AppCompatActivity() {
             val email = binding.etEmail.text.toString().trim()
 
             if(customerCode.isEmpty()){
-                binding.etCustomerCode.setError("customer code atleast 8 digits")
+                binding.txtCustomerCode.visibility = View.VISIBLE
+                binding.txtCustomerCode.text = "Required"
             }
             else if(customerCode.length < 8){
-                binding.etCustomerCode.setError("Enter valid customer code")
+                binding.txtCustomerCode.visibility = View.VISIBLE
+                binding.txtCustomerCode.text = "Customer code contains atleast 8 characters"
             }
             else if(email.isEmpty()){
-                binding.etEmail.setError("Please enter email address")
+                binding.txtCustomerCode.visibility = View.GONE
+                binding.txtEmailForgot.visibility = View.VISIBLE
+                binding.txtEmailForgot.text = "Required"
             }
             else if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()){
-                binding.etEmail.setError("Enter valid email address")
+                binding.txtCustomerCode.visibility = View.GONE
+                binding.txtEmailForgot.visibility = View.VISIBLE
+                binding.txtEmailForgot.text = "Enter valid email address"
             }
             else{
+                binding.txtCustomerCode.visibility = View.GONE
+                binding.txtEmailForgot.visibility = View.GONE
+
+                binding.txtCustomerCode.text = ""
+                binding.txtEmailForgot.text = ""
+
                 binding.etCustomerCode.text.clear()
                 binding.etEmail.text.clear()
 
