@@ -20,6 +20,8 @@ class DashboardFragment : Fragment() {
     lateinit var profileBtn : ImageView
     lateinit var btnViewReports : Button
     lateinit var barChart1: BarChart
+    lateinit var dashboardDropdown1: AutoCompleteTextView
+    lateinit var dashboardDropdown2: AutoCompleteTextView
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -33,6 +35,8 @@ class DashboardFragment : Fragment() {
         profileBtn = view.findViewById(R.id.toolbarProfileIcon)
         btnViewReports = view.findViewById(R.id.btnViewReports)
         barChart1 = view.findViewById(R.id.barChart1)
+        dashboardDropdown1 = view.findViewById(R.id.dashboardDropdown1)
+        dashboardDropdown2 = view.findViewById(R.id.dashboardDropdown2)
 
         profileBtn.setOnClickListener {
             Intent(activity as Context, DetailsActivity::class.java).also{
@@ -43,6 +47,11 @@ class DashboardFragment : Fragment() {
         btnViewReports.setOnClickListener {
             Toast.makeText(context, "Clicked on View Reports", Toast.LENGTH_SHORT).show()
         }
+
+        // added drop down code
+        val dashboard_options = resources.getStringArray(R.array.dashboard_options)
+        val adapter = ArrayAdapter(activity as Context, R.layout.dropdown_list, dashboard_options)
+        dashboardDropdown2.setAdapter(adapter)
 
         return view
     }

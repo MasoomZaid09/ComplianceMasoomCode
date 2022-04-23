@@ -115,7 +115,7 @@
         <item>4</item>
     </string-array>
 
-    <string-array name="compliance_options">
+    <string-array name="dashboard_options">
         <item>All</item>
         <item>Compliant</item>
         <item>Non-Compliant</item>

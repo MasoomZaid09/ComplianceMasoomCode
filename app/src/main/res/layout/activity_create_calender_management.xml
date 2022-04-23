@@ -252,7 +252,6 @@
                 android:layout_marginVertical="5dp"
                 android:background="@color/border_color" />
 
-
             <LinearLayout
                 android:id="@+id/llFinanancialYear"
                 android:layout_width="match_parent"
