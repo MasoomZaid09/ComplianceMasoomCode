@@ -215,4 +215,16 @@
     <string name="global_company">Global Company</string>
     <string name="company_management">Company Management</string>
 
+
+    // added array string
+    <string-array name="entity_list">
+        <item>sdad</item>
+        <item>asdasd</item>
+        <item>asdad</item>
+        <item>dsd</item>
+        <item>wqqq</item>
+        <item>axazz</item>
+        <item>qeqw</item>
+    </string-array>
+
 </resources>

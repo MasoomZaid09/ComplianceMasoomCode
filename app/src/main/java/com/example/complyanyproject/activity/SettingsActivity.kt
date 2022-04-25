@@ -65,6 +65,13 @@ class SettingsActivity : AppCompatActivity() {
             }
         }
 
+        // added clicks on backup
+        binding.backupLayout.setOnClickListener {
+            Intent(this, BackupActivity::class.java).also{
+                startActivity(it)
+            }
+        }
+
     }
 
     override fun onBackPressed() {
