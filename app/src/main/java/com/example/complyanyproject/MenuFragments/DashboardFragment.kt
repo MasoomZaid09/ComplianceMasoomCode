@@ -2,6 +2,7 @@ package com.example.complyanyproject.MenuFragments
 
 import android.content.Context
 import android.content.Intent
+import android.graphics.Color
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -14,14 +15,21 @@ import com.github.mikephil.charting.charts.BarChart
 import com.github.mikephil.charting.data.BarData
 import com.github.mikephil.charting.data.BarDataSet
 import com.github.mikephil.charting.data.BarEntry
+import com.github.mikephil.charting.utils.ColorTemplate
 
 class DashboardFragment : Fragment() {
+
+    lateinit var barList: ArrayList<BarEntry>
+    lateinit var barDataSet: BarDataSet
+    lateinit var barData: BarData
 
     lateinit var profileBtn : ImageView
     lateinit var btnViewReports : Button
     lateinit var barChart1: BarChart
+    lateinit var barChart2: BarChart
     lateinit var dashboardDropdown1: AutoCompleteTextView
     lateinit var dashboardDropdown2: AutoCompleteTextView
+    lateinit var dashboardDropdown3: AutoCompleteTextView
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -35,8 +43,10 @@ class DashboardFragment : Fragment() {
         profileBtn = view.findViewById(R.id.toolbarProfileIcon)
         btnViewReports = view.findViewById(R.id.btnViewReports)
         barChart1 = view.findViewById(R.id.barChart1)
+        barChart2 = view.findViewById(R.id.barChart2)
         dashboardDropdown1 = view.findViewById(R.id.dashboardDropdown1)
         dashboardDropdown2 = view.findViewById(R.id.dashboardDropdown2)
+        dashboardDropdown3 = view.findViewById(R.id.dashboardDropdown3)
 
         profileBtn.setOnClickListener {
             Intent(activity as Context, DetailsActivity::class.java).also{
@@ -52,6 +62,24 @@ class DashboardFragment : Fragment() {
         val dashboard_options = resources.getStringArray(R.array.dashboard_options)
         val adapter = ArrayAdapter(activity as Context, R.layout.dropdown_list, dashboard_options)
         dashboardDropdown2.setAdapter(adapter)
+
+        barList = ArrayList()
+        barList.add(BarEntry(1f, 500f))
+        barList.add(BarEntry(2f, 100f))
+        barList.add(BarEntry(3f, 300f))
+        barList.add(BarEntry(4f, 800f))
+        barList.add(BarEntry(5f, 400f))
+        barList.add(BarEntry(6f, 1000f))
+        barList.add(BarEntry(7f, 800f))
+        barDataSet = BarDataSet(barList, "Static Data Entry")
+        barData = BarData(barDataSet)
+        barChart1.data = barData
+        barChart2.data = barData
+        barDataSet.setColors(ColorTemplate.JOYFUL_COLORS, 250)
+        barDataSet.valueTextColor = Color.BLACK
+        barDataSet.valueTextSize = 15f
+        barChart1.animateY(5000)
+        barChart2.animateY(5000)
 
         return view
     }

@@ -210,7 +210,8 @@
                     <com.github.mikephil.charting.charts.BarChart
                         android:id="@+id/barChart1"
                         android:layout_width="match_parent"
-                        android:layout_height="350dp" />
+                        android:layout_height="350dp"
+                        android:layout_marginTop="10dp"/>
 
                 </LinearLayout>
 
@@ -307,7 +308,8 @@
                     <com.github.mikephil.charting.charts.BarChart
                         android:id="@+id/barChart2"
                         android:layout_width="match_parent"
-                        android:layout_height="350dp" />
+                        android:layout_height="350dp"
+                        android:layout_marginTop="10dp"/>
 
                 </LinearLayout>
 
