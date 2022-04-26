@@ -3,12 +3,9 @@ package com.example.complyanyproject.activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.complyanyproject.R
-import com.example.complyanyproject.databinding.ActivityCompanyBinding
-import com.example.complyanyproject.databinding.ActivityConfigureStandardBinding
 import com.example.complyanyproject.databinding.ActivitySettingsBinding
 import com.example.complyanyproject.settingsActivities.*
-import com.example.complyanyproject.subscriptionTabs.SubscriptionSettingActivity
+import com.example.complyanyproject.settingsActivities.SubscriptionSettingActivity
 
 class SettingsActivity : AppCompatActivity() {
 
