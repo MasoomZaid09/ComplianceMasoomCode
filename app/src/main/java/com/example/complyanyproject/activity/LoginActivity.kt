@@ -14,6 +14,7 @@ import com.example.complyanyproject.adapter.ViewPagerAdapter
 import com.example.complyanyproject.databinding.ActivityLoginBinding
 import com.example.complyanyproject.fragment.BusinessPartnerFragment
 import com.example.complyanyproject.fragment.UserFragment
+import com.example.complyanyproject.subscriptionTabs.BusinessFragment
 
 class LoginActivity : AppCompatActivity() {
 

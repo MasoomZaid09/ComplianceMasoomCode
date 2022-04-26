@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ComplyAnyProject">
         <activity
+            android:name=".subscriptionTabs.SubscriptionSettingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".settingsActivities.SubscriptionActivity"
+            android:exported="false" />
+        <activity
             android:name=".settingsActivities.BackupActivity"
             android:exported="false" />
         <activity
