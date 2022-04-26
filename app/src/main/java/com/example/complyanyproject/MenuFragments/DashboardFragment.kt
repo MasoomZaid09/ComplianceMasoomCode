@@ -63,14 +63,16 @@ class DashboardFragment : Fragment() {
         val adapter = ArrayAdapter(activity as Context, R.layout.dropdown_list, dashboard_options)
         dashboardDropdown2.setAdapter(adapter)
 
+        // added graph code
         barList = ArrayList()
-        barList.add(BarEntry(1f, 500f))
+        barList.add(BarEntry(1f, 0f))
         barList.add(BarEntry(2f, 100f))
-        barList.add(BarEntry(3f, 300f))
+        barList.add(BarEntry(3f, 700f))
         barList.add(BarEntry(4f, 800f))
-        barList.add(BarEntry(5f, 400f))
-        barList.add(BarEntry(6f, 1000f))
-        barList.add(BarEntry(7f, 800f))
+        barList.add(BarEntry(5f, 0f))
+        barList.add(BarEntry(6f, 0f))
+        barList.add(BarEntry(7f, 0f))
+
         barDataSet = BarDataSet(barList, "Static Data Entry")
         barData = BarData(barDataSet)
         barChart1.data = barData
@@ -78,6 +80,7 @@ class DashboardFragment : Fragment() {
         barDataSet.setColors(ColorTemplate.JOYFUL_COLORS, 250)
         barDataSet.valueTextColor = Color.BLACK
         barDataSet.valueTextSize = 15f
+        // adding delay
         barChart1.animateY(5000)
         barChart2.animateY(5000)
 
