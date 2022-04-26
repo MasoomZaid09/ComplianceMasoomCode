@@ -227,4 +227,26 @@
         <item>qeqw</item>
     </string-array>
 
+
+    // string array for register email notification
+    <string-array name="country_list">
+        <item>India</item>
+        <item>Pakistan</item>
+        <item>Austrailia</item>
+        <item>America</item>
+        <item>Dubai</item>
+        <item>Russia</item>
+        <item>Ukraine</item>
+        <item>Bangladesh</item>
+        <item>Maldives</item>
+        <item>Ethopia</item>
+        <item>Rome</item>
+        <item>New Zealand</item>
+        <item>South Africa</item>
+        <item>Zimbabwe</item>
+        <item>England</item>
+
+
+    </string-array>
+
 </resources>
