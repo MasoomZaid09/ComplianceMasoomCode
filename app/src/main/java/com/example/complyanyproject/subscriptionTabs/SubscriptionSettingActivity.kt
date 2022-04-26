@@ -117,7 +117,9 @@ class SubscriptionSettingActivity : AppCompatActivity() {
 
         // added clicks on search button
         binding.btnSearch.setOnClickListener {
-            Toast.makeText(this, "Searching....", Toast.LENGTH_SHORT).show()
+
+            val search = binding.etTransactionSearch.text.toString().trim()
+            Toast.makeText(this, "Searching $search", Toast.LENGTH_SHORT).show()
         }
 
         // added clicks on reset button
