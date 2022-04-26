@@ -21,7 +21,6 @@ class SubscriptionSettingActivity : AppCompatActivity() {
         setContentView(binding.root)
 
 
-
         /////////////////professinals///////////////////////
         binding.btnProfessional.setBackgroundColor(Color.parseColor("#003B79"))
         binding.btnProfessional.setTextColor(Color.parseColor("#FFFFFF"))

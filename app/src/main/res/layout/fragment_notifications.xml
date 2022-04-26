@@ -45,7 +45,6 @@
 
 
     <EditText
-        android:paddingStart="5dp"
         android:id="@+id/searchNotificationBar"
         android:layout_width="match_parent"
         android:layout_height="45dp"
@@ -56,6 +55,11 @@
         android:drawableStart="@drawable/ic_search"
         android:drawablePadding="5dp"
         android:hint="@string/search"
+        android:paddingStart="5dp"
+        android:maxLength="12"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:inputType="text"
         tools:ignore="RtlSymmetry" />
 
 
