@@ -3,12 +3,6 @@ package com.example.complyanyproject.activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.text.SpannableString
-import android.text.Spanned
-import android.text.style.ForegroundColorSpan
-import android.widget.TextView
-import android.widget.Toast
-import com.example.complyanyproject.R
 import com.example.complyanyproject.adapter.ViewPagerAdapter
 import com.example.complyanyproject.databinding.ActivityLoginBinding
 import com.example.complyanyproject.fragment.BusinessPartnerFragment
