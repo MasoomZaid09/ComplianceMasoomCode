@@ -245,8 +245,11 @@
         <item>South Africa</item>
         <item>Zimbabwe</item>
         <item>England</item>
-
-
     </string-array>
+
+    <string-array name="masoom">
+        <item></item>
+    </string-array>
+
 
 </resources>

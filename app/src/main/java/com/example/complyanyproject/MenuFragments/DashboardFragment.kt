@@ -27,9 +27,6 @@ class DashboardFragment : Fragment() {
     lateinit var btnViewReports : Button
     lateinit var barChart1: BarChart
     lateinit var barChart2: BarChart
-    lateinit var dashboardDropdown1: AutoCompleteTextView
-    lateinit var dashboardDropdown2: AutoCompleteTextView
-    lateinit var dashboardDropdown3: AutoCompleteTextView
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -44,9 +41,7 @@ class DashboardFragment : Fragment() {
         btnViewReports = view.findViewById(R.id.btnViewReports)
         barChart1 = view.findViewById(R.id.barChart1)
         barChart2 = view.findViewById(R.id.barChart2)
-        dashboardDropdown1 = view.findViewById(R.id.dashboardDropdown1)
-        dashboardDropdown2 = view.findViewById(R.id.dashboardDropdown2)
-        dashboardDropdown3 = view.findViewById(R.id.dashboardDropdown3)
+
 
         profileBtn.setOnClickListener {
             Intent(activity as Context, DetailsActivity::class.java).also{
@@ -58,10 +53,10 @@ class DashboardFragment : Fragment() {
             Toast.makeText(context, "Clicked on View Reports", Toast.LENGTH_SHORT).show()
         }
 
-        // added drop down code
-        val dashboard_options = resources.getStringArray(R.array.dashboard_options)
-        val adapter = ArrayAdapter(activity as Context, R.layout.dropdown_list, dashboard_options)
-        dashboardDropdown2.setAdapter(adapter)
+//        // added drop down code
+//        val dashboard_options = resources.getStringArray(R.array.dashboard_options)
+//        val adapter = ArrayAdapter(activity as Context, R.layout.dropdown_list, dashboard_options)
+//        dashboardDropdown2.setAdapter(adapter)
 
         // added graph code
         barList = ArrayList()
@@ -86,35 +81,5 @@ class DashboardFragment : Fragment() {
 
         return view
     }
-
-//    private fun setBarChart() {
-//        val entries = ArrayList<BarEntry>()
-//        entries.add(BarEntry(8f, 0f))
-//        entries.add(BarEntry(2f, 1f))
-//        entries.add(BarEntry(5f, 2f))
-//        entries.add(BarEntry(20f, 3f))
-//        entries.add(BarEntry(15f, 4f))
-//        entries.add(BarEntry(19f, 5f))
-//
-//        val barDataSet = BarDataSet(entries, "Employees")
-//
-//        val labels = ArrayList<String>()
-//        labels.add("18-Jan")
-//        labels.add("19-Jan")
-//        labels.add("20-Jan")
-//        labels.add("21-Jan")
-//        labels.add("22-Jan")
-//        labels.add("23-Jan")
-//        val data = BarData(labels, barDataSet)
-//        barChart1.data = data // set the data and list of tables into chart
-//
-//        barChart1.setDescription("Set Bar Chart Description") // set the description
-//
-////        barDataSet.setColors(ColorTemplate.COLORFUL_COLORS)
-//        barDataSet.color = resources.getColor(R.color.colorAccent)
-//
-//        barChart1.animateY(5000)
-//
-//    }
 
 }
