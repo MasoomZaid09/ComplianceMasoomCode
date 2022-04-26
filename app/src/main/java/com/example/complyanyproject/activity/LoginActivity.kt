@@ -1,6 +1,5 @@
 package com.example.complyanyproject.activity
 
-
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -43,7 +42,6 @@ class LoginActivity : AppCompatActivity() {
         binding.viewPager.adapter = adapter
         binding.tabLayout.setupWithViewPager(binding.viewPager)
     }
-
 
     override fun onBackPressed() {
         finish()
