@@ -258,7 +258,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="@dimen/_20mdp"
                 android:orientation="vertical"
-                android:visibility="visible">
+                android:visibility="gone">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -280,22 +280,22 @@
                         android:layout_gravity="center_vertical"
                         android:textColor="@color/blue"/>
 
-                    <com.google.android.material.textfield.TextInputLayout
-                        android:layout_marginHorizontal="@dimen/_10mdp"
-                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="120dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/square_blue_bg">
 
-                        <AutoCompleteTextView
-                            android:id="@+id/financialFromAutoComplete1"
+                        <Spinner
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:textColor="@color/black"
-                            android:layout_weight="1"
-                            android:textSize="10sp"
-                            android:text="1" />
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="-10dp"
+                            android:entries="@array/numbers"
+                            android:spinnerMode="dropdown" />
 
-                    </com.google.android.material.textfield.TextInputLayout>
+                    </RelativeLayout>
 
                 </LinearLayout>
 
@@ -312,39 +312,39 @@
                         android:layout_gravity="center_vertical"
                         android:textColor="@color/blue"/>
 
-                    <com.google.android.material.textfield.TextInputLayout
-                        android:layout_marginHorizontal="@dimen/_10mdp"
-                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="120dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/square_blue_bg">
 
-                        <AutoCompleteTextView
-                            android:id="@+id/financialToAutoComplete1"
+                        <Spinner
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:textColor="@color/black"
-                            android:layout_weight="1"
-                            android:textSize="10sp"
-                            android:text="1" />
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="-10dp"
+                            android:entries="@array/numbers"
+                            android:spinnerMode="dropdown" />
 
-                    </com.google.android.material.textfield.TextInputLayout>
+                    </RelativeLayout>
 
-                    <com.google.android.material.textfield.TextInputLayout
-                        android:layout_marginHorizontal="@dimen/_10mdp"
-                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="120dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/square_blue_bg">
 
-                        <AutoCompleteTextView
-                            android:id="@+id/financialToAutoComplete2"
+                        <Spinner
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:textColor="@color/black"
-                            android:layout_weight="1"
-                            android:textSize="10sp"
-                            android:text="1" />
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="-10dp"
+                            android:entries="@array/numbers"
+                            android:spinnerMode="dropdown" />
 
-                    </com.google.android.material.textfield.TextInputLayout>
+                    </RelativeLayout>
 
 
                 </LinearLayout>
@@ -367,8 +367,8 @@
                     android:layout_alignParentStart="true"
                     android:text="Semi-Monthly"
                     android:textColor="@color/blue"
-                    android:textStyle="bold"
-                    android:textSize="18sp" />
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
                 <ImageView
                     android:id="@+id/semiMonthlyDown"
@@ -424,39 +424,39 @@
                         android:layout_gravity="center_vertical"
                         android:textColor="@color/blue"/>
 
-                    <com.google.android.material.textfield.TextInputLayout
-                        android:layout_marginHorizontal="@dimen/_10mdp"
-                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="120dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/square_blue_bg">
 
-                        <AutoCompleteTextView
-                            android:id="@+id/periodFromAutoComplete1"
+                        <Spinner
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:textColor="@color/black"
-                            android:layout_weight="1"
-                            android:textSize="10sp"
-                            android:text="1" />
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="-10dp"
+                            android:entries="@array/numbers"
+                            android:spinnerMode="dropdown" />
 
-                    </com.google.android.material.textfield.TextInputLayout>
+                    </RelativeLayout>
 
-                    <com.google.android.material.textfield.TextInputLayout
-                        android:layout_marginHorizontal="@dimen/_10mdp"
-                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="120dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/square_blue_bg">
 
-                        <AutoCompleteTextView
-                            android:id="@+id/periodFromAutoComplete2"
+                        <Spinner
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:textColor="@color/black"
-                            android:layout_weight="1"
-                            android:textSize="10sp"
-                            android:text="1" />
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="-10dp"
+                            android:entries="@array/numbers"
+                            android:spinnerMode="dropdown" />
 
-                    </com.google.android.material.textfield.TextInputLayout>
+                    </RelativeLayout>
 
 
                 </LinearLayout>
@@ -474,39 +474,39 @@
                         android:layout_gravity="center_vertical"
                         android:textColor="@color/blue"/>
 
-                    <com.google.android.material.textfield.TextInputLayout
-                        android:layout_marginHorizontal="@dimen/_10mdp"
-                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="120dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/square_blue_bg">
 
-                        <AutoCompleteTextView
-                            android:id="@+id/periodToAutoComplete1"
+                        <Spinner
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:textColor="@color/black"
-                            android:layout_weight="1"
-                            android:textSize="10sp"
-                            android:text="1" />
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="-10dp"
+                            android:entries="@array/numbers"
+                            android:spinnerMode="dropdown" />
 
-                    </com.google.android.material.textfield.TextInputLayout>
+                    </RelativeLayout>
 
-                    <com.google.android.material.textfield.TextInputLayout
-                        android:layout_marginHorizontal="@dimen/_10mdp"
-                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="120dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/square_blue_bg">
 
-                        <AutoCompleteTextView
-                            android:id="@+id/periodToAutoComplete2"
+                        <Spinner
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:textColor="@color/black"
-                            android:layout_weight="1"
-                            android:textSize="10sp"
-                            android:text="1" />
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="-10dp"
+                            android:entries="@array/numbers"
+                            android:spinnerMode="dropdown" />
 
-                    </com.google.android.material.textfield.TextInputLayout>
+                    </RelativeLayout>
 
 
                 </LinearLayout>
@@ -585,39 +585,39 @@
                         android:layout_gravity="center_vertical"
                         android:textColor="@color/blue"/>
 
-                    <com.google.android.material.textfield.TextInputLayout
-                        android:layout_marginHorizontal="@dimen/_10mdp"
-                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="120dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/square_blue_bg">
 
-                        <AutoCompleteTextView
-                            android:id="@+id/quarter1FromAutoComplete1"
+                        <Spinner
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:textColor="@color/black"
-                            android:layout_weight="1"
-                            android:textSize="10sp"
-                            android:text="1" />
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="-10dp"
+                            android:entries="@array/numbers"
+                            android:spinnerMode="dropdown" />
 
-                    </com.google.android.material.textfield.TextInputLayout>
+                    </RelativeLayout>
 
-                    <com.google.android.material.textfield.TextInputLayout
-                        android:layout_marginHorizontal="@dimen/_10mdp"
-                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="120dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/square_blue_bg">
 
-                        <AutoCompleteTextView
-                            android:id="@+id/quarter1FromAutoComplete2"
+                        <Spinner
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:textColor="@color/black"
-                            android:layout_weight="1"
-                            android:textSize="10sp"
-                            android:text="1" />
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="-10dp"
+                            android:entries="@array/numbers"
+                            android:spinnerMode="dropdown" />
 
-                    </com.google.android.material.textfield.TextInputLayout>
+                    </RelativeLayout>
 
 
                 </LinearLayout>
@@ -635,39 +635,39 @@
                         android:layout_gravity="center_vertical"
                         android:textColor="@color/blue"/>
 
-                    <com.google.android.material.textfield.TextInputLayout
-                        android:layout_marginHorizontal="@dimen/_10mdp"
-                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="120dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/square_blue_bg">
 
-                        <AutoCompleteTextView
-                            android:id="@+id/quarter1ToAutoComplete1"
+                        <Spinner
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:textColor="@color/black"
-                            android:layout_weight="1"
-                            android:textSize="10sp"
-                            android:text="1" />
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="-10dp"
+                            android:entries="@array/numbers"
+                            android:spinnerMode="dropdown" />
 
-                    </com.google.android.material.textfield.TextInputLayout>
+                    </RelativeLayout>
 
-                    <com.google.android.material.textfield.TextInputLayout
-                        android:layout_marginHorizontal="@dimen/_10mdp"
-                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="120dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/square_blue_bg">
 
-                        <AutoCompleteTextView
-                            android:id="@+id/quarter1ToAutoComplete2"
+                        <Spinner
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:textColor="@color/black"
-                            android:layout_weight="1"
-                            android:textSize="10sp"
-                            android:text="1" />
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="-10dp"
+                            android:entries="@array/numbers"
+                            android:spinnerMode="dropdown" />
 
-                    </com.google.android.material.textfield.TextInputLayout>
+                    </RelativeLayout>
 
 
                 </LinearLayout>
@@ -693,39 +693,39 @@
                         android:layout_gravity="center_vertical"
                         android:textColor="@color/blue"/>
 
-                    <com.google.android.material.textfield.TextInputLayout
-                        android:layout_marginHorizontal="@dimen/_10mdp"
-                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="120dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/square_blue_bg">
 
-                        <AutoCompleteTextView
-                            android:id="@+id/quarter2FromAutoComplete1"
+                        <Spinner
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:textColor="@color/black"
-                            android:layout_weight="1"
-                            android:textSize="10sp"
-                            android:text="1" />
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="-10dp"
+                            android:entries="@array/numbers"
+                            android:spinnerMode="dropdown" />
 
-                    </com.google.android.material.textfield.TextInputLayout>
+                    </RelativeLayout>
 
-                    <com.google.android.material.textfield.TextInputLayout
-                        android:layout_marginHorizontal="@dimen/_10mdp"
-                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="120dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/square_blue_bg">
 
-                        <AutoCompleteTextView
-                            android:id="@+id/quarter2FromAutoComplete2"
+                        <Spinner
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:textColor="@color/black"
-                            android:layout_weight="1"
-                            android:textSize="10sp"
-                            android:text="1" />
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="-10dp"
+                            android:entries="@array/numbers"
+                            android:spinnerMode="dropdown" />
 
-                    </com.google.android.material.textfield.TextInputLayout>
+                    </RelativeLayout>
 
 
                 </LinearLayout>
@@ -743,39 +743,39 @@
                         android:layout_gravity="center_vertical"
                         android:textColor="@color/blue"/>
 
-                    <com.google.android.material.textfield.TextInputLayout
-                        android:layout_marginHorizontal="@dimen/_10mdp"
-                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="120dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/square_blue_bg">
 
-                        <AutoCompleteTextView
-                            android:id="@+id/quarter2ToAutoComplete1"
+                        <Spinner
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:textColor="@color/black"
-                            android:layout_weight="1"
-                            android:textSize="10sp"
-                            android:text="1" />
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="-10dp"
+                            android:entries="@array/numbers"
+                            android:spinnerMode="dropdown" />
 
-                    </com.google.android.material.textfield.TextInputLayout>
+                    </RelativeLayout>
 
-                    <com.google.android.material.textfield.TextInputLayout
-                        android:layout_marginHorizontal="@dimen/_10mdp"
-                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="120dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/square_blue_bg">
 
-                        <AutoCompleteTextView
-                            android:id="@+id/quarter2ToAutoComplete2"
+                        <Spinner
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:textColor="@color/black"
-                            android:layout_weight="1"
-                            android:textSize="10sp"
-                            android:text="1" />
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="-10dp"
+                            android:entries="@array/numbers"
+                            android:spinnerMode="dropdown" />
 
-                    </com.google.android.material.textfield.TextInputLayout>
+                    </RelativeLayout>
 
 
                 </LinearLayout>
@@ -800,39 +800,39 @@
                         android:layout_gravity="center_vertical"
                         android:textColor="@color/blue"/>
 
-                    <com.google.android.material.textfield.TextInputLayout
-                        android:layout_marginHorizontal="@dimen/_10mdp"
-                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="120dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/square_blue_bg">
 
-                        <AutoCompleteTextView
-                            android:id="@+id/quarter3FromAutoComplete1"
+                        <Spinner
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:textColor="@color/black"
-                            android:layout_weight="1"
-                            android:textSize="10sp"
-                            android:text="1" />
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="-10dp"
+                            android:entries="@array/numbers"
+                            android:spinnerMode="dropdown" />
 
-                    </com.google.android.material.textfield.TextInputLayout>
+                    </RelativeLayout>
 
-                    <com.google.android.material.textfield.TextInputLayout
-                        android:layout_marginHorizontal="@dimen/_10mdp"
-                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="120dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/square_blue_bg">
 
-                        <AutoCompleteTextView
-                            android:id="@+id/quarter3FromAutoComplete2"
+                        <Spinner
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:textColor="@color/black"
-                            android:layout_weight="1"
-                            android:textSize="10sp"
-                            android:text="1" />
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="-10dp"
+                            android:entries="@array/numbers"
+                            android:spinnerMode="dropdown" />
 
-                    </com.google.android.material.textfield.TextInputLayout>
+                    </RelativeLayout>
 
 
                 </LinearLayout>
@@ -850,39 +850,39 @@
                         android:layout_gravity="center_vertical"
                         android:textColor="@color/blue"/>
 
-                    <com.google.android.material.textfield.TextInputLayout
-                        android:layout_marginHorizontal="@dimen/_10mdp"
-                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="120dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/square_blue_bg">
 
-                        <AutoCompleteTextView
-                            android:id="@+id/quarter3ToAutoComplete1"
+                        <Spinner
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:textColor="@color/black"
-                            android:layout_weight="1"
-                            android:textSize="10sp"
-                            android:text="1" />
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="-10dp"
+                            android:entries="@array/numbers"
+                            android:spinnerMode="dropdown" />
 
-                    </com.google.android.material.textfield.TextInputLayout>
+                    </RelativeLayout>
 
-                    <com.google.android.material.textfield.TextInputLayout
-                        android:layout_marginHorizontal="@dimen/_10mdp"
-                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="120dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/square_blue_bg">
 
-                        <AutoCompleteTextView
-                            android:id="@+id/quarter3ToAutoComplete2"
+                        <Spinner
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:textColor="@color/black"
-                            android:layout_weight="1"
-                            android:textSize="10sp"
-                            android:text="1" />
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="-10dp"
+                            android:entries="@array/numbers"
+                            android:spinnerMode="dropdown" />
 
-                    </com.google.android.material.textfield.TextInputLayout>
+                    </RelativeLayout>
 
 
                 </LinearLayout>
@@ -907,39 +907,39 @@
                         android:layout_gravity="center_vertical"
                         android:textColor="@color/blue"/>
 
-                    <com.google.android.material.textfield.TextInputLayout
-                        android:layout_marginHorizontal="@dimen/_10mdp"
-                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="120dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/square_blue_bg">
 
-                        <AutoCompleteTextView
-                            android:id="@+id/quarter4FromAutoComplete1"
+                        <Spinner
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:textColor="@color/black"
-                            android:layout_weight="1"
-                            android:textSize="10sp"
-                            android:text="1" />
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="-10dp"
+                            android:entries="@array/numbers"
+                            android:spinnerMode="dropdown" />
 
-                    </com.google.android.material.textfield.TextInputLayout>
+                    </RelativeLayout>
 
-                    <com.google.android.material.textfield.TextInputLayout
-                        android:layout_marginHorizontal="@dimen/_10mdp"
-                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="120dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/square_blue_bg">
 
-                        <AutoCompleteTextView
-                            android:id="@+id/quarter4FromAutoComplete2"
+                        <Spinner
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:textColor="@color/black"
-                            android:layout_weight="1"
-                            android:textSize="10sp"
-                            android:text="1" />
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="-10dp"
+                            android:entries="@array/numbers"
+                            android:spinnerMode="dropdown" />
 
-                    </com.google.android.material.textfield.TextInputLayout>
+                    </RelativeLayout>
 
 
                 </LinearLayout>
@@ -957,39 +957,39 @@
                         android:layout_gravity="center_vertical"
                         android:textColor="@color/blue"/>
 
-                    <com.google.android.material.textfield.TextInputLayout
-                        android:layout_marginHorizontal="@dimen/_10mdp"
-                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="120dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/square_blue_bg">
 
-                        <AutoCompleteTextView
-                            android:id="@+id/quarter4ToAutoComplete1"
+                        <Spinner
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:textColor="@color/black"
-                            android:layout_weight="1"
-                            android:textSize="10sp"
-                            android:text="1" />
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="-10dp"
+                            android:entries="@array/numbers"
+                            android:spinnerMode="dropdown" />
 
-                    </com.google.android.material.textfield.TextInputLayout>
+                    </RelativeLayout>
 
-                    <com.google.android.material.textfield.TextInputLayout
-                        android:layout_marginHorizontal="@dimen/_10mdp"
-                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="120dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/square_blue_bg">
 
-                        <AutoCompleteTextView
-                            android:id="@+id/quarter4ToAutoComplete2"
+                        <Spinner
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:textColor="@color/black"
-                            android:layout_weight="1"
-                            android:textSize="10sp"
-                            android:text="1" />
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="-10dp"
+                            android:entries="@array/numbers"
+                            android:spinnerMode="dropdown" />
 
-                    </com.google.android.material.textfield.TextInputLayout>
+                    </RelativeLayout>
 
 
                 </LinearLayout>
@@ -1068,39 +1068,39 @@
                         android:layout_gravity="center_vertical"
                         android:textColor="@color/blue"/>
 
-                    <com.google.android.material.textfield.TextInputLayout
-                        android:layout_marginHorizontal="@dimen/_10mdp"
-                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="120dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/square_blue_bg">
 
-                        <AutoCompleteTextView
-                            android:id="@+id/halfYear1FromAutoComplete1"
+                        <Spinner
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:textColor="@color/black"
-                            android:layout_weight="1"
-                            android:textSize="10sp"
-                            android:text="1" />
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="-10dp"
+                            android:entries="@array/numbers"
+                            android:spinnerMode="dropdown" />
 
-                    </com.google.android.material.textfield.TextInputLayout>
+                    </RelativeLayout>
 
-                    <com.google.android.material.textfield.TextInputLayout
-                        android:layout_marginHorizontal="@dimen/_10mdp"
-                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="120dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/square_blue_bg">
 
-                        <AutoCompleteTextView
-                            android:id="@+id/halfYear1FromAutoComplete2"
+                        <Spinner
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:textColor="@color/black"
-                            android:layout_weight="1"
-                            android:textSize="10sp"
-                            android:text="1" />
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="-10dp"
+                            android:entries="@array/numbers"
+                            android:spinnerMode="dropdown" />
 
-                    </com.google.android.material.textfield.TextInputLayout>
+                    </RelativeLayout>
 
 
                 </LinearLayout>
@@ -1118,39 +1118,39 @@
                         android:layout_gravity="center_vertical"
                         android:textColor="@color/blue"/>
 
-                    <com.google.android.material.textfield.TextInputLayout
-                        android:layout_marginHorizontal="@dimen/_10mdp"
-                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="120dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/square_blue_bg">
 
-                        <AutoCompleteTextView
-                            android:id="@+id/halfYear1ToAutoComplete1"
+                        <Spinner
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:textColor="@color/black"
-                            android:layout_weight="1"
-                            android:textSize="10sp"
-                            android:text="1" />
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="-10dp"
+                            android:entries="@array/numbers"
+                            android:spinnerMode="dropdown" />
 
-                    </com.google.android.material.textfield.TextInputLayout>
+                    </RelativeLayout>
 
-                    <com.google.android.material.textfield.TextInputLayout
-                        android:layout_marginHorizontal="@dimen/_10mdp"
-                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="120dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/square_blue_bg">
 
-                        <AutoCompleteTextView
-                            android:id="@+id/halfYear1ToAutoComplete2"
+                        <Spinner
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:textColor="@color/black"
-                            android:layout_weight="1"
-                            android:textSize="10sp"
-                            android:text="1" />
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="-10dp"
+                            android:entries="@array/numbers"
+                            android:spinnerMode="dropdown" />
 
-                    </com.google.android.material.textfield.TextInputLayout>
+                    </RelativeLayout>
 
 
                 </LinearLayout>
@@ -1176,39 +1176,39 @@
                         android:layout_gravity="center_vertical"
                         android:textColor="@color/blue"/>
 
-                    <com.google.android.material.textfield.TextInputLayout
-                        android:layout_marginHorizontal="@dimen/_10mdp"
-                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="120dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/square_blue_bg">
 
-                        <AutoCompleteTextView
-                            android:id="@+id/halfYear2FromAutoComplete1"
+                        <Spinner
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:textColor="@color/black"
-                            android:layout_weight="1"
-                            android:textSize="10sp"
-                            android:text="1" />
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="-10dp"
+                            android:entries="@array/numbers"
+                            android:spinnerMode="dropdown" />
 
-                    </com.google.android.material.textfield.TextInputLayout>
+                    </RelativeLayout>
 
-                    <com.google.android.material.textfield.TextInputLayout
-                        android:layout_marginHorizontal="@dimen/_10mdp"
-                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="120dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/square_blue_bg">
 
-                        <AutoCompleteTextView
-                            android:id="@+id/halfYear2FromAutoComplete2"
+                        <Spinner
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:textColor="@color/black"
-                            android:layout_weight="1"
-                            android:textSize="10sp"
-                            android:text="1" />
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="-10dp"
+                            android:entries="@array/numbers"
+                            android:spinnerMode="dropdown" />
 
-                    </com.google.android.material.textfield.TextInputLayout>
+                    </RelativeLayout>
 
 
                 </LinearLayout>
@@ -1226,39 +1226,39 @@
                         android:layout_gravity="center_vertical"
                         android:textColor="@color/blue"/>
 
-                    <com.google.android.material.textfield.TextInputLayout
-                        android:layout_marginHorizontal="@dimen/_10mdp"
-                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="120dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/square_blue_bg">
 
-                        <AutoCompleteTextView
-                            android:id="@+id/halfYear2ToAutoComplete1"
+                        <Spinner
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:textColor="@color/black"
-                            android:layout_weight="1"
-                            android:textSize="10sp"
-                            android:text="1" />
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="-10dp"
+                            android:entries="@array/numbers"
+                            android:spinnerMode="dropdown" />
 
-                    </com.google.android.material.textfield.TextInputLayout>
+                    </RelativeLayout>
 
-                    <com.google.android.material.textfield.TextInputLayout
-                        android:layout_marginHorizontal="@dimen/_10mdp"
-                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="120dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/square_blue_bg">
 
-                        <AutoCompleteTextView
-                            android:id="@+id/halfYear2ToAutoComplete2"
+                        <Spinner
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:textColor="@color/black"
-                            android:layout_weight="1"
-                            android:textSize="10sp"
-                            android:text="1" />
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="-10dp"
+                            android:entries="@array/numbers"
+                            android:spinnerMode="dropdown" />
 
-                    </com.google.android.material.textfield.TextInputLayout>
+                    </RelativeLayout>
 
 
                 </LinearLayout>
@@ -1588,39 +1588,39 @@
                         android:layout_height="wrap_content"
                         android:text="Manual"/>
 
-                    <com.google.android.material.textfield.TextInputLayout
-                        android:layout_marginHorizontal="@dimen/_10mdp"
-                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="120dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/square_blue_bg">
 
-                        <AutoCompleteTextView
-                            android:id="@+id/manualAutoComplete"
+                        <Spinner
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:textColor="@color/black"
-                            android:layout_weight="1"
-                            android:textSize="10sp"
-                            android:text="1" />
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="-10dp"
+                            android:entries="@array/numbers"
+                            android:spinnerMode="dropdown" />
 
-                    </com.google.android.material.textfield.TextInputLayout>
+                    </RelativeLayout>
 
-                    <com.google.android.material.textfield.TextInputLayout
-                        android:layout_marginHorizontal="@dimen/_10mdp"
-                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="120dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/square_blue_bg">
 
-                        <AutoCompleteTextView
-                            android:id="@+id/autoAutoComplete"
+                        <Spinner
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:textColor="@color/black"
-                            android:layout_weight="1"
-                            android:textSize="10sp"
-                            android:text="1" />
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="-10dp"
+                            android:entries="@array/numbers"
+                            android:spinnerMode="dropdown" />
 
-                    </com.google.android.material.textfield.TextInputLayout>
+                    </RelativeLayout>
 
 
                 </LinearLayout>
