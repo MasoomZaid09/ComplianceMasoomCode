@@ -280,24 +280,6 @@
                         android:layout_gravity="center_vertical"
                         android:textColor="@color/blue"/>
 
-
-<!--                    <com.google.android.material.textfield.TextInputLayout-->
-<!--                        android:layout_marginHorizontal="@dimen/_10mdp"-->
-<!--                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"-->
-<!--                        android:layout_width="wrap_content"-->
-<!--                        android:layout_height="wrap_content">-->
-
-<!--                        <AutoCompleteTextView-->
-<!--                            android:id="@+id/financialFromAutoComplete1"-->
-<!--                            android:layout_width="match_parent"-->
-<!--                            android:layout_height="match_parent"-->
-<!--                            android:textColor="@color/black"-->
-<!--                            android:layout_weight="1"-->
-<!--                            android:textSize="10sp"-->
-<!--                            android:text="1" />-->
-
-<!--                    </com.google.android.material.textfield.TextInputLayout>-->
-
                     <com.google.android.material.textfield.TextInputLayout
                         android:layout_marginHorizontal="@dimen/_10mdp"
                         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
@@ -314,7 +296,6 @@
                             android:text="1" />
 
                     </com.google.android.material.textfield.TextInputLayout>
-
 
                 </LinearLayout>
 
