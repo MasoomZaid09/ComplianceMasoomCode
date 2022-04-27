@@ -305,7 +305,7 @@
                         android:layout_height="wrap_content">
 
                         <AutoCompleteTextView
-                            android:id="@+id/financialFromAutoComplete2"
+                            android:id="@+id/financialFromAutoComplete1"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:textColor="@color/black"

@@ -12,6 +12,7 @@ import android.widget.*
 import com.example.complyanyproject.R
 import com.example.complyanyproject.activity.DetailsActivity
 import com.github.mikephil.charting.charts.BarChart
+import com.github.mikephil.charting.components.YAxis
 import com.github.mikephil.charting.data.BarData
 import com.github.mikephil.charting.data.BarDataSet
 import com.github.mikephil.charting.data.BarEntry
@@ -58,15 +59,17 @@ class DashboardFragment : Fragment() {
 //        val adapter = ArrayAdapter(activity as Context, R.layout.dropdown_list, dashboard_options)
 //        dashboardDropdown2.setAdapter(adapter)
 
-        // added graph code
+        // added bar chart static data
         barList = ArrayList()
         barList.add(BarEntry(1f, 0f))
-        barList.add(BarEntry(2f, 100f))
-        barList.add(BarEntry(3f, 700f))
-        barList.add(BarEntry(4f, 800f))
-        barList.add(BarEntry(5f, 0f))
-        barList.add(BarEntry(6f, 0f))
+        barList.add(BarEntry(2f, 0f))
+        barList.add(BarEntry(3f, 0f))
+        barList.add(BarEntry(4f, 100f))
+        barList.add(BarEntry(5f, 700f))
+        barList.add(BarEntry(6f, 800f))
         barList.add(BarEntry(7f, 0f))
+        barList.add(BarEntry(8f, 0f))
+        barList.add(BarEntry(9f, 0f))
 
         barDataSet = BarDataSet(barList, "Static Data Entry")
         barData = BarData(barDataSet)
