@@ -12,28 +12,18 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.complyanyproject.databinding.ActivityProfileBinding
 import java.io.IOException
 
+
 class ProfileActivity : AppCompatActivity() {
 
 
     private lateinit var binding: ActivityProfileBinding
     val SELECT_REQUEST_CODE = 1
-//    var flag1 = false
-//    var flag2 = false
-//    var flag3 = false
-//    var flag4 = false
-//    var validateVariable = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityProfileBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
-
-
-//        setFirstNameFocusChangeListener()
-//        setLastNameFocusChangeListener()
-//        setEmailFocusChangeListener()
-//        setMobileNumberFocusChangeListener()
 
         binding.btnUpate.setOnClickListener {
 
@@ -65,6 +55,10 @@ class ProfileActivity : AppCompatActivity() {
                 }
                 else if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()){
                     binding.txtEmail.text = "Please enter valid email"
+                }
+                else if(mobileNumber.isEmpty()){
+                    binding.txtPhone.visibility = View.VISIBLE
+                    binding.txtPhone.text = "Required"
                 }
                 else if(mobileNumber.length < 10){
                     binding.txtPhone.visibility = View.VISIBLE
@@ -118,6 +112,7 @@ class ProfileActivity : AppCompatActivity() {
         }
 
     }
+
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)

@@ -123,7 +123,8 @@
                         android:textStyle="bold" />
 
                 </LinearLayout>
-                
+
+<!--                android:digits="qwertzuiopasdfghjklyxcvbnmABCDEFGHIJKLMNOPQRSTUVWXYZ "-->
 
 
                 <EditText
@@ -137,7 +138,7 @@
                     android:inputType="text"
                     android:maxLength="30"
                     android:maxLines="1"
-                    android:digits="qwertzuiopasdfghjklyxcvbnmABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                    android:digits=" ,qwertzuiopasdfghjklyxcvbnm,ABCDEFGHIJKLMNOPQRSTUVWXYZ"
                     android:paddingHorizontal="5dp"
                     android:paddingStart="7dp"
                     android:textSize="15sp"
