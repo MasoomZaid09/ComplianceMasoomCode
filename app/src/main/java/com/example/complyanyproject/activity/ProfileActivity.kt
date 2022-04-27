@@ -12,9 +12,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.complyanyproject.databinding.ActivityProfileBinding
 import java.io.IOException
 
-
 class ProfileActivity : AppCompatActivity() {
-
 
     private lateinit var binding: ActivityProfileBinding
     val SELECT_REQUEST_CODE = 1
