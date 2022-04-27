@@ -109,9 +109,8 @@
                             android:layout_height="40dp"
                             android:layout_weight="5"
                             android:entries="@array/masoom"
-                            android:layout_marginEnd="5dp"
-                            android:layout_marginStart="0dp"/>
-
+                            android:layout_marginStart="0dp"
+                            android:layout_marginEnd="5dp"/>
 
                         <Spinner
                             android:layout_width="wrap_content"
@@ -120,7 +119,6 @@
                             android:entries="@array/dashboard_options"
                             android:layout_marginStart="5dp"
                             android:layout_marginEnd="0dp"/>
-
 
 <!--                        <com.google.android.material.textfield.TextInputLayout-->
 <!--                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"-->
@@ -293,7 +291,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
                         android:entries="@array/masoom"
-                        android:background="@drawable/edittext_border_2"
                         android:layout_marginHorizontal="5dp"
                         android:layout_marginVertical="5dp"/>
 
