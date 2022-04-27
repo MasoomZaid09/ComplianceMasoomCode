@@ -63,10 +63,6 @@ class CreateCalenderManagementActivity : AppCompatActivity() {
             }
         }
 
-        // added drop down code
-        val numbers = resources.getStringArray(R.array.numbers)
-        val adapter = ArrayAdapter(this, R.layout.dropdown_list, numbers)
-        binding.financialFromAutoComplete1.setAdapter(adapter)
 
         // added calender picker code
         val calendar: Calendar = Calendar.getInstance()

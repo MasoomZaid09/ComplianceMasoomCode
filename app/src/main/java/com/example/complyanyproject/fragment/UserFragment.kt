@@ -47,10 +47,14 @@ class UserFragment : Fragment() {
                 val phoneNumber = binding.etPhone.text.toString().trim()
                 val email = binding.etEmail.text.toString().trim()
 
-                if (phoneNumber.length < 10) {
-
+                if(phoneNumber.isEmpty()){
+                    binding.txtPhone.visibility = View.VISIBLE
+                    binding.txtPhone.text = "Required"
+                }
+                else if (phoneNumber.length < 10) {
                     binding.txtPhone.visibility = View.VISIBLE
                     binding.txtPhone.text = "Please enter valid number"
+
                 } else if (email.isEmpty()) {
 
                     binding.txtPhone.text = ""
