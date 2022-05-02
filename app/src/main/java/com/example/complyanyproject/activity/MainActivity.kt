@@ -18,6 +18,8 @@ class MainActivity : AppCompatActivity() {
 
         defaultMenuOpen()
 
+        // added unnecessary comment...
+
         // set on click listeners on Bottom Nav Bar
         binding.bottomNavigationView.setOnItemSelectedListener {
             when(it.itemId){
