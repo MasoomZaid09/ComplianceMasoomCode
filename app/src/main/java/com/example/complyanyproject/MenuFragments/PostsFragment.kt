@@ -32,7 +32,6 @@ class PostsFragment : Fragment() {
     lateinit var upcomingLayout: RelativeLayout
     lateinit var completedLayout : RelativeLayout
 
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -72,7 +71,6 @@ class PostsFragment : Fragment() {
             val intent = Intent(context, CompletedActivity::class.java)
             startActivity(intent)
         }
-
 
         // added calender code
         FromdateTextView = view.findViewById(R.id.from_date_Text)
