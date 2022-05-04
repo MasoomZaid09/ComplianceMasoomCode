@@ -133,7 +133,7 @@
         <entry key="app/src/main/res/layout/fragment_notifications.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/fragment_posts.xml" value="0.21" />
         <entry key="app/src/main/res/layout/fragment_professional.xml" value="0.19375" />
-        <entry key="app/src/main/res/layout/fragment_reports.xml" value="0.2" />
+        <entry key="app/src/main/res/layout/fragment_reports.xml" value="0.33" />
         <entry key="app/src/main/res/layout/fragment_user.xml" value="0.22" />
         <entry key="app/src/main/res/layout/industry_type_recycler_layout.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/notification_recycler_layout.xml" value="0.19375" />
