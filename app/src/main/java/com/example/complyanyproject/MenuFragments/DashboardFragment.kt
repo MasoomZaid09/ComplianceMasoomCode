@@ -76,7 +76,7 @@ class DashboardFragment : Fragment() {
         barChart1.data = barData
         barChart2.data = barData
 //        barDataSet.setColors(ColorTemplate.JOYFUL_COLORS, 250)
-        barDataSet.setColors(Color.YELLOW, Color.YELLOW, Color.YELLOW, Color.rgb(199, 70, 55), Color.rgb(3, 59, 2), Color.rgb(253, 24, 19), Color.YELLOW, Color.YELLOW, Color.YELLOW)
+        barDataSet.setColors(Color.LTGRAY, Color.LTGRAY, Color.LTGRAY, Color.rgb(199, 70, 55), Color.rgb(3, 59, 2), Color.rgb(253, 24, 19), Color.LTGRAY, Color.LTGRAY, Color.LTGRAY)
         barDataSet.valueTextColor = Color.BLACK
         barDataSet.valueTextSize = 15f
         // adding delay
