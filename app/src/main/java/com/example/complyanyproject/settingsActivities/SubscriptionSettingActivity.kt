@@ -12,14 +12,12 @@ import com.example.complyanyproject.selectorActivity.CompanySelectorActivity
 
 class SubscriptionSettingActivity : AppCompatActivity() {
 
-
     private lateinit var binding : ActivitySubscriptionSettingBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivitySubscriptionSettingBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
 
         /////////////////professinals///////////////////////
         binding.btnProfessional.setBackgroundColor(Color.parseColor("#003B79"))

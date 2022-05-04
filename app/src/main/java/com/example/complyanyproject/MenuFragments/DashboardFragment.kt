@@ -80,8 +80,8 @@ class DashboardFragment : Fragment() {
         barDataSet.valueTextColor = Color.BLACK
         barDataSet.valueTextSize = 15f
         // adding delay
-        barChart1.animateY(5000)
-        barChart2.animateY(5000)
+        barChart1.animateY(3000)
+        barChart2.animateY(3000)
 
         return view
     }
