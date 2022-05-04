@@ -29,7 +29,7 @@ class ComplianceTypeActivity : AppCompatActivity() {
         }
 
         val data1 = ComplianceTypeModelClass("Labour Law")
-        val data2 = ComplianceTypeModelClass("Labour Law" )
+        val data2 = ComplianceTypeModelClass("Labour Law")
         val data3 = ComplianceTypeModelClass("Labour Law")
         val data4 = ComplianceTypeModelClass("Labour Law")
         val data5 = ComplianceTypeModelClass("Labour Law")
