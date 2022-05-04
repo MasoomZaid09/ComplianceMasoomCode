@@ -18,7 +18,7 @@ class ChangePasswordActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
-        binding.toolbarBackIcon.setOnClickListener {
+        binding.backChangePassword.setOnClickListener {
             onBackPressed()
         }
 
