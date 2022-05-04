@@ -1541,7 +1541,8 @@
                             android:inputType="number"
                             android:padding="5dp"
                             android:singleLine="true"
-                            android:textSize="10dp" />
+                            android:textSize="10dp"
+                            android:maxLength="8"/>
 
                     </LinearLayout>
 
@@ -1592,7 +1593,8 @@
                             android:inputType="number"
                             android:padding="5dp"
                             android:singleLine="true"
-                            android:textSize="10dp" />
+                            android:textSize="10dp"
+                            android:maxLength="8"/>
 
                     </LinearLayout>
 
@@ -1643,7 +1645,8 @@
                             android:inputType="number"
                             android:padding="5dp"
                             android:singleLine="true"
-                            android:textSize="10dp" />
+                            android:textSize="10dp"
+                            android:maxLength="8"/>
 
                     </LinearLayout>
 
@@ -1694,7 +1697,8 @@
                             android:inputType="number"
                             android:padding="5dp"
                             android:singleLine="true"
-                            android:textSize="10dp" />
+                            android:textSize="10dp"
+                            android:maxLength="8"/>
 
                     </LinearLayout>
 
@@ -1745,7 +1749,8 @@
                             android:inputType="number"
                             android:padding="5dp"
                             android:singleLine="true"
-                            android:textSize="10dp" />
+                            android:textSize="10dp"
+                            android:maxLength="8"/>
 
                     </LinearLayout>
 
@@ -1796,7 +1801,8 @@
                             android:inputType="number"
                             android:padding="5dp"
                             android:singleLine="true"
-                            android:textSize="10dp" />
+                            android:textSize="10dp"
+                            android:maxLength="8"/>
 
                     </LinearLayout>
 
@@ -1848,7 +1854,8 @@
                             android:inputType="number"
                             android:padding="5dp"
                             android:singleLine="true"
-                            android:textSize="10dp" />
+                            android:textSize="10dp"
+                            android:maxLength="8"/>
 
                     </LinearLayout>
 
@@ -5288,16 +5295,18 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="10dp"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:weightSum="10"
+                android:layout_gravity="center_vertical">
 
                 <EditText
+                    android:layout_weight="5"
                     android:id="@+id/etTransactionSearch"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
                     android:layout_marginVertical="5dp"
                     android:background="@drawable/backgroundsearch"
                     android:drawableStart="@drawable/ic_search"
-                    android:gravity="center_vertical"
                     android:hint="Search"
                     android:maxLength="12"
                     android:maxLines="1"
@@ -5307,23 +5316,27 @@
                     android:textSize="15sp" />
 
                 <Button
+                    android:layout_weight="2.5"
                     android:id="@+id/btnSearch"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="42dp"
                     android:layout_marginStart="5dp"
-                    android:layout_marginTop="5dp"
                     android:background="@drawable/backgroundbutton"
                     android:text="Search"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="5dp"
                     android:textAllCaps="false"
                     android:textColor="@color/white"
                     android:textSize="12sp" />
 
                 <Button
+                    android:layout_weight="2.5"
                     android:id="@+id/btnReset"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="42dp"
                     android:layout_marginStart="5dp"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="5dp"
                     android:background="@drawable/backgroundbutton"
                     android:text="Reset"
                     android:textAllCaps="false"

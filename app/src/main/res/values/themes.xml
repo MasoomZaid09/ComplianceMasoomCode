@@ -30,7 +30,7 @@
 
     // date picker
     <style name="DatePickerTheme" parent="ThemeOverlay.AppCompat.Dialog">
-        <item name="colorAccent">@color/teal_200</item>
+        <item name="colorAccent">@color/blue</item>
     </style>
 
 </resources>
