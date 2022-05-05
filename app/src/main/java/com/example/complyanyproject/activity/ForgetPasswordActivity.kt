@@ -57,6 +57,8 @@ class ForgetPasswordActivity : AppCompatActivity() {
                 binding.etEmail.text.clear()
 
                 Toast.makeText(this, "Submitted...", Toast.LENGTH_SHORT).show()
+
+                finish()
             }
         }
 

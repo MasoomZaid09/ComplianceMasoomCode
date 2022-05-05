@@ -42,47 +42,46 @@ class UserFragment : Fragment() {
                 }
             }
             // added clicks on continue
-            binding.btnContinue.setOnClickListener {
+            binding.btnLogin.setOnClickListener {
 
                 val phoneNumber = binding.etPhone.text.toString().trim()
                 val email = binding.etEmail.text.toString().trim()
-
-                if(phoneNumber.isEmpty()){
-                    binding.txtPhone.visibility = View.VISIBLE
-                    binding.txtPhone.text = "Required"
-                }
-                else if (phoneNumber.length < 10) {
-                    binding.txtPhone.visibility = View.VISIBLE
-                    binding.txtPhone.text = "Please enter valid number"
-
-                } else if (email.isEmpty()) {
-
-                    binding.txtPhone.text = ""
-                    binding.txtEmail.visibility = View.VISIBLE
-                    binding.txtEmail.text = "Required"
-                } else if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
-
-                    binding.txtPhone.text = ""
-                    binding.txtEmail.text = "Please enter valid email address"
-                } else {
-                    binding.txtPhone.visibility = View.GONE
-                    binding.txtEmail.visibility = View.GONE
-                    binding.btnContinue.visibility = View.GONE
-                    binding.etPass.visibility = View.VISIBLE
-                    binding.btnLogin.visibility = View.VISIBLE
-                }
-            }
-
-            binding.btnLogin.setOnClickListener {
                 val pass = binding.etPass.text.toString().trim()
 
-                if (pass.length < 8) {
-                    binding.txtPassword.visibility = View.VISIBLE
-                    binding.txtPassword.text = "Password must contains atleast 8 characters"
-                } else {
-
+                if(phoneNumber.isEmpty()){
+                    binding.txtPhone.text = "Please enter phone number"
+                    binding.txtEmail.text = ""
                     binding.txtPassword.text = ""
-                    binding.txtPassword.visibility = View.GONE
+                }
+                else if (phoneNumber.length != 10) {
+                    binding.txtPhone.text = "Phone number must contain 10 digits"
+                    binding.txtEmail.text = ""
+                    binding.txtPassword.text = ""
+                }
+                else if (email.isEmpty()) {
+                    binding.txtPhone.text = ""
+                    binding.txtEmail.text = "Please enter email address"
+                    binding.txtPassword.text = ""
+                }
+                else if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
+                    binding.txtPhone.text = ""
+                    binding.txtEmail.text = "Please enter valid email address"
+                    binding.txtPassword.text = ""
+                }
+                else if (pass.isEmpty()) {
+                    binding.txtPhone.text = ""
+                    binding.txtEmail.text = ""
+                    binding.txtPassword.text = "Please enter your password"
+                }
+                else if (pass.length < 8) {
+                    binding.txtPhone.text = ""
+                    binding.txtEmail.text = ""
+                    binding.txtPassword.text = "Password must contains atleast 8 characters"
+                }
+                else {
+                    binding.txtPhone.text = ""
+                    binding.txtEmail.text = ""
+                    binding.txtPassword.text = ""
 
                     sharedPreferences.edit().putString("userPhone", binding.etPhone.text.toString()).apply()
                     sharedPreferences.edit().putString("userEmail", binding.etEmail.text.toString()).apply()
@@ -98,8 +97,7 @@ class UserFragment : Fragment() {
                         this.activity?.finish()
                     }
                 }
-
-           }
+            }
 
             binding.txtForgotPassword.setOnClickListener {
                 Intent(context, ForgetPasswordActivity::class.java).also {

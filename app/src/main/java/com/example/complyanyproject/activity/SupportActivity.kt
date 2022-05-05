@@ -73,7 +73,7 @@ class SupportActivity : AppCompatActivity() {
                 textview1.text = ""
                 textview2.text = "Please enter mobile number"
             }
-            else if (mobile.length < 10) {
+            else if (mobile.length != 10) {
                 textview3.text = ""
                 textview1.text = ""
                 textview2.text = "Mobile number must contain 10 digits"
