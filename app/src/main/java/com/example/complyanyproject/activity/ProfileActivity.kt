@@ -31,44 +31,60 @@ class ProfileActivity : AppCompatActivity() {
                 val mobileNumber = binding.etMobileNumber.text.toString()
 
                 if (firstName.isEmpty()){
-                    binding.txtFirstName.visibility = View.VISIBLE
-                    binding.txtFirstName.text = "Required"
+                    binding.txtFirstName.text = "Please enter your first name"
+                    binding.txtLastName.text = ""
+                    binding.txtEmail.text = ""
+                    binding.txtPhone.text = ""
                 }
                 else if(firstName.length < 2){
-                    binding.txtFirstName.text = "First name contains atleast 2 characters"
+                    binding.txtFirstName.text = "First name must contain at least 2 characters"
+                    binding.txtLastName.text = ""
+                    binding.txtEmail.text = ""
+                    binding.txtPhone.text = ""
                 }
                 else if (lastName.isEmpty()){
-                    binding.txtLastName.visibility = View.VISIBLE
-                    binding.txtLastName.text = "Required"
+                    binding.txtFirstName.text = ""
+                    binding.txtLastName.text = "Please enter your last name"
+                    binding.txtEmail.text = ""
+                    binding.txtPhone.text = ""
                 }
                 else if (lastName.length < 2){
-                    binding.txtLastName.text = "Last name contains atleast 2 characters"
+                    binding.txtFirstName.text = ""
+                    binding.txtLastName.text = "Last name must contain at least 2 characters"
+                    binding.txtEmail.text = ""
+                    binding.txtPhone.text = ""
                 }
                 else if (lastName == firstName){
-                    binding.txtLastName.text = "Last name must be diffrerent"
+                    binding.txtFirstName.text = ""
+                    binding.txtLastName.text = "First name and last name can't be same"
+                    binding.txtEmail.text = ""
+                    binding.txtPhone.text = ""
                 }
                 else if (email.isEmpty()){
-                    binding.txtEmail.visibility = View.VISIBLE
-                    binding.txtEmail.text = "Required"
+                    binding.txtFirstName.text = ""
+                    binding.txtLastName.text = ""
+                    binding.txtEmail.text = "Please enter email address"
+                    binding.txtPhone.text = ""
                 }
                 else if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()){
-                    binding.txtEmail.text = "Please enter valid email"
+                    binding.txtFirstName.text = ""
+                    binding.txtLastName.text = ""
+                    binding.txtEmail.text = "Please enter valid email address"
+                    binding.txtPhone.text = ""
                 }
                 else if(mobileNumber.isEmpty()){
-                    binding.txtPhone.visibility = View.VISIBLE
-                    binding.txtPhone.text = "Required"
+                    binding.txtFirstName.text = ""
+                    binding.txtLastName.text = ""
+                    binding.txtEmail.text = ""
+                    binding.txtPhone.text = "Please enter your mobile number"
                 }
-                else if(mobileNumber.length < 10){
-                    binding.txtPhone.visibility = View.VISIBLE
-                    binding.txtPhone.text = "Please enter valid number"
+                else if(mobileNumber.length != 10){
+                    binding.txtFirstName.text = ""
+                    binding.txtLastName.text = ""
+                    binding.txtEmail.text = ""
+                    binding.txtPhone.text = "Mobile number must contain 10 digits"
                 }
                 else{
-
-                    // hide tv texts
-                    binding.txtFirstName.visibility = View.GONE
-                    binding.txtLastName.visibility = View.GONE
-                    binding.txtEmail.visibility = View.GONE
-                    binding.txtPhone.visibility = View.GONE
 
                     // remove texts of tv texts
                     binding.txtFirstName.text = ""
