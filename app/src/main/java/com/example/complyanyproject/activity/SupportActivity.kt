@@ -63,30 +63,32 @@ class SupportActivity : AppCompatActivity() {
             val msg = message_et.text.toString()
 
             if(email.isEmpty()){
-                textview1.text = "Required"
+                textview1.text = "Please enter email address"
             }
             else if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()){
-                textview1.text = "Enter Valid Email Address"
+                textview1.text = "Please enter valid email address"
             }
             else if(mobile.isEmpty()){
                 textview3.text = ""
                 textview1.text = ""
-                textview2.text = "Required"
+                textview2.text = "Please enter mobile number"
             }
             else if (mobile.length < 10) {
                 textview3.text = ""
                 textview1.text = ""
-                textview2.text = "Mobile number is invalid"
+                textview2.text = "Mobile number must contain 10 digits"
             }
             else if (msg.isEmpty()){
                 textview1.text = ""
                 textview2.text = ""
-                textview3.text= "Required*"
+                textview3.text= "This field can't be empty"
             }
             else{
                 textview1.text = ""
                 textview2.text = ""
-                textview3.text=""
+                textview3.text = ""
+
+                Toast.makeText(this, "Submitted", Toast.LENGTH_SHORT).show()
 
                 email_et.text.clear()
                 mobile_et.text.clear()

@@ -65,7 +65,6 @@ class UserFragment : Fragment() {
                     binding.txtPhone.text = ""
                     binding.txtEmail.text = "Please enter valid email address"
                 } else {
-
                     binding.txtPhone.visibility = View.GONE
                     binding.txtEmail.visibility = View.GONE
                     binding.btnContinue.visibility = View.GONE
@@ -100,7 +99,7 @@ class UserFragment : Fragment() {
                     }
                 }
 
-            }
+           }
 
             binding.txtForgotPassword.setOnClickListener {
                 Intent(context, ForgetPasswordActivity::class.java).also {

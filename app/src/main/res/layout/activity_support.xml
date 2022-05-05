@@ -87,7 +87,7 @@
                         android:background="@drawable/backgroundsearch"
                         android:hint="Enter Email Address"
                         android:inputType="textEmailAddress"
-                        android:maxLength="45"
+                        android:maxLength="30"
                         android:maxLines="1"
                         android:padding="10dp"
                         android:textColorHint="#C3C3C3"
@@ -101,7 +101,7 @@
                         android:paddingBottom="3dp"
                         android:text=""
                         android:textColor="#F33E08"
-                        android:textSize="11dp"
+                        android:textSize="11sp"
                         android:visibility="visible" />
 
 
@@ -113,7 +113,7 @@
                         android:gravity="center_vertical"
                         android:hint="Enter Mobile Number"
                         android:inputType="number"
-                        android:maxLength="12"
+                        android:maxLength="10"
                         android:maxLines="1"
                         android:padding="10dp"
                         android:textColorHint="#C3C3C3"
@@ -144,6 +144,7 @@
                         android:scrollbars="vertical"
                         android:singleLine="false"
                         android:ellipsize="start"
+                        android:maxLength="200"
                         android:textColorHint="#C3C3C3"
                         android:textSize="13sp"
                         />
