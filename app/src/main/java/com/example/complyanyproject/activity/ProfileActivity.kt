@@ -103,7 +103,6 @@ class ProfileActivity : AppCompatActivity() {
                 }
         }
 
-
         // added image picker code
         binding.imageIcon.setOnClickListener {
             val galleryIntent = Intent(
