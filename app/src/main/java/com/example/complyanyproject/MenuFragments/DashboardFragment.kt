@@ -4,20 +4,18 @@ import android.content.Context
 import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.*
+import androidx.fragment.app.Fragment
 import com.example.complyanyproject.R
 import com.example.complyanyproject.activity.DetailsActivity
 import com.github.mikephil.charting.charts.BarChart
 import com.github.mikephil.charting.components.XAxis
-import com.github.mikephil.charting.components.YAxis
 import com.github.mikephil.charting.data.BarData
 import com.github.mikephil.charting.data.BarDataSet
 import com.github.mikephil.charting.data.BarEntry
-import com.github.mikephil.charting.utils.ColorTemplate
 
 class DashboardFragment : Fragment() {
 
@@ -72,6 +70,16 @@ class DashboardFragment : Fragment() {
         barList.add(BarEntry(8f, 0f))
         barList.add(BarEntry(9f, 0f))
         barList.add(BarEntry(10f, 0f))
+
+        val xAxis1: XAxis = barChart1.getXAxis()
+        xAxis1.position = XAxis.XAxisPosition.BOTTOM
+        xAxis1.granularity = 1f
+        xAxis1.isGranularityEnabled = true
+
+        val xAxis2: XAxis = barChart2.getXAxis()
+        xAxis2.position = XAxis.XAxisPosition.BOTTOM
+        xAxis2.granularity = 1f
+        xAxis2.isGranularityEnabled = true
 
         barDataSet = BarDataSet(barList, "Static Data Entry")
         barData = BarData(barDataSet)
