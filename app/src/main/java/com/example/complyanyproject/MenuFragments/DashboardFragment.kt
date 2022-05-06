@@ -12,6 +12,7 @@ import android.widget.*
 import com.example.complyanyproject.R
 import com.example.complyanyproject.activity.DetailsActivity
 import com.github.mikephil.charting.charts.BarChart
+import com.github.mikephil.charting.components.XAxis
 import com.github.mikephil.charting.components.YAxis
 import com.github.mikephil.charting.data.BarData
 import com.github.mikephil.charting.data.BarDataSet
@@ -70,13 +71,15 @@ class DashboardFragment : Fragment() {
         barList.add(BarEntry(7f, 400f))
         barList.add(BarEntry(8f, 0f))
         barList.add(BarEntry(9f, 0f))
+        barList.add(BarEntry(10f, 0f))
 
         barDataSet = BarDataSet(barList, "Static Data Entry")
         barData = BarData(barDataSet)
         barChart1.data = barData
         barChart2.data = barData
+
 //        barDataSet.setColors(ColorTemplate.JOYFUL_COLORS, 250)
-        barDataSet.setColors(Color.LTGRAY, Color.LTGRAY, Color.LTGRAY, Color.rgb(199, 70, 55), Color.rgb(3, 59, 2), Color.rgb(253, 24, 19), Color.rgb(0, 100, 62), Color.LTGRAY, Color.LTGRAY)
+        barDataSet.setColors(Color.LTGRAY, Color.LTGRAY, Color.LTGRAY, Color.rgb(199, 70, 55), Color.rgb(3, 59, 2), Color.rgb(253, 24, 19), Color.rgb(0, 100, 62), Color.LTGRAY, Color.LTGRAY, Color.LTGRAY)
         barDataSet.valueTextColor = Color.BLACK
         barDataSet.valueTextSize = 15f
         // adding delay

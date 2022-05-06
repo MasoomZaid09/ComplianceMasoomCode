@@ -75,7 +75,7 @@
             android:drawableLeft="@drawable/ic_search"
             android:hint="Search"
             android:inputType="text"
-            android:maxLength="12"
+            android:maxLength="20"
             android:maxLines="1"
             android:padding="10dp"
             android:singleLine="true"

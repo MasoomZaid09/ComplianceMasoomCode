@@ -55,7 +55,6 @@
         android:layout_height="1dp"
         android:background="@color/grey"/>
 
-
     <EditText
         android:id="@+id/searchChangeUser"
         android:layout_width="match_parent"
@@ -68,7 +67,7 @@
         android:drawablePadding="5dp"
         android:hint="@string/search"
         android:inputType="text"
-        android:maxLength="30"
+        android:maxLength="20"
         android:maxLines="1"
         android:paddingStart="5dp"
         android:singleLine="true"
