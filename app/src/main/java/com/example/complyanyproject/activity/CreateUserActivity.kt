@@ -59,41 +59,41 @@ class CreateUserActivity : AppCompatActivity() {
             }
         }
 
-        binding.rlSelectEntityCreateUser.setOnClickListener {
-            Intent(this, CompanySelectorActivity::class.java).also{
-                startActivityForResult(it, 6)
-            }
-        }
-
-        binding.rlSelectDepartmentCreateUser.setOnClickListener {
-            Intent(this, CompanySelectorActivity::class.java).also{
-                startActivityForResult(it, 7)
-            }
-        }
-
-        binding.rlSelectSubDepartmentCreateUser.setOnClickListener {
-            Intent(this, CompanySelectorActivity::class.java).also{
-                startActivityForResult(it, 8)
-            }
-        }
-
-        binding.rlSelectUserRoleCreateUser.setOnClickListener {
-            Intent(this, CompanySelectorActivity::class.java).also{
-                startActivityForResult(it, 9)
-            }
-        }
-
-        binding.rlSelectManagerCreateUser.setOnClickListener {
-            Intent(this, CompanySelectorActivity::class.java).also{
-                startActivityForResult(it, 10)
-            }
-        }
-
-        binding.rlSelectEscalationManagerCreateUser.setOnClickListener {
-            Intent(this, CompanySelectorActivity::class.java).also{
-                startActivityForResult(it, 11)
-            }
-        }
+//        binding.rlSelectEntityCreateUser.setOnClickListener {
+//            Intent(this, CompanySelectorActivity::class.java).also{
+//                startActivityForResult(it, 6)
+//            }
+//        }
+//
+//        binding.rlSelectDepartmentCreateUser.setOnClickListener {
+//            Intent(this, CompanySelectorActivity::class.java).also{
+//                startActivityForResult(it, 7)
+//            }
+//        }
+//
+//        binding.rlSelectSubDepartmentCreateUser.setOnClickListener {
+//            Intent(this, CompanySelectorActivity::class.java).also{
+//                startActivityForResult(it, 8)
+//            }
+//        }
+//
+//        binding.rlSelectUserRoleCreateUser.setOnClickListener {
+//            Intent(this, CompanySelectorActivity::class.java).also{
+//                startActivityForResult(it, 9)
+//            }
+//        }
+//
+//        binding.rlSelectManagerCreateUser.setOnClickListener {
+//            Intent(this, CompanySelectorActivity::class.java).also{
+//                startActivityForResult(it, 10)
+//            }
+//        }
+//
+//        binding.rlSelectEscalationManagerCreateUser.setOnClickListener {
+//            Intent(this, CompanySelectorActivity::class.java).also{
+//                startActivityForResult(it, 11)
+//            }
+//        }
 
     }
 
@@ -137,41 +137,41 @@ class CreateUserActivity : AppCompatActivity() {
 
 
         // added text in select law and user
-        if (requestCode == 6){
-            if (resultCode == Activity.RESULT_OK){
-                binding.txtEntityNameCreateUser.text = data?.getStringExtra("hello")
-            }
-        }
-
-        if (requestCode == 7){
-            if (resultCode == Activity.RESULT_OK){
-                binding.txtDepartmentCreateUser.text = data?.getStringExtra("hello")
-            }
-        }
-
-        if (requestCode == 8){
-            if (resultCode == Activity.RESULT_OK){
-                binding.txtSubDepartmentCreateUser.text = data?.getStringExtra("hello")
-            }
-        }
-
-        if (requestCode == 9){
-            if (resultCode == Activity.RESULT_OK){
-                binding.txtUserRoleCreateUser.text = data?.getStringExtra("hello")
-            }
-        }
-
-        if (requestCode == 10){
-            if (resultCode == Activity.RESULT_OK){
-                binding.txtManagerCreateUser.text = data?.getStringExtra("hello")
-            }
-        }
-
-        if (requestCode == 11){
-            if (resultCode == Activity.RESULT_OK){
-                binding.txtEscalaionManagerCreateUser.text = data?.getStringExtra("hello")
-            }
-        }
+//        if (requestCode == 6){
+//            if (resultCode == Activity.RESULT_OK){
+//                binding.txtEntityNameCreateUser.text = data?.getStringExtra("hello")
+//            }
+//        }
+//
+//        if (requestCode == 7){
+//            if (resultCode == Activity.RESULT_OK){
+//                binding.txtDepartmentCreateUser.text = data?.getStringExtra("hello")
+//            }
+//        }
+//
+//        if (requestCode == 8){
+//            if (resultCode == Activity.RESULT_OK){
+//                binding.txtSubDepartmentCreateUser.text = data?.getStringExtra("hello")
+//            }
+//        }
+//
+//        if (requestCode == 9){
+//            if (resultCode == Activity.RESULT_OK){
+//                binding.txtUserRoleCreateUser.text = data?.getStringExtra("hello")
+//            }
+//        }
+//
+//        if (requestCode == 10){
+//            if (resultCode == Activity.RESULT_OK){
+//                binding.txtManagerCreateUser.text = data?.getStringExtra("hello")
+//            }
+//        }
+//
+//        if (requestCode == 11){
+//            if (resultCode == Activity.RESULT_OK){
+//                binding.txtEscalaionManagerCreateUser.text = data?.getStringExtra("hello")
+//            }
+//        }
 
 
     }
