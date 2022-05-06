@@ -51,20 +51,20 @@
 
 
     <EditText
-        android:paddingStart="5dp"
         android:id="@+id/searchBarLawNature"
         android:layout_width="match_parent"
-        android:layout_height="45dp"
+        android:layout_height="41dp"
         android:layout_marginHorizontal="9dp"
         android:layout_marginVertical="5dp"
         android:background="@drawable/rounded_edit_text"
         android:drawableStart="@drawable/ic_search"
         android:drawablePadding="5dp"
-        android:maxLength="12"
-        android:maxLines="1"
-        android:singleLine="true"
+        android:hint="@string/search"
         android:inputType="text"
-        android:hint="@string/search" />
+        android:maxLength="20"
+        android:maxLines="1"
+        android:paddingStart="5dp"
+        android:singleLine="true" />
 
 
 
