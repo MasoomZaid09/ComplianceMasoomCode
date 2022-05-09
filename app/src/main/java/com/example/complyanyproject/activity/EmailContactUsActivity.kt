@@ -49,28 +49,29 @@ class EmailContactUsActivity : AppCompatActivity() {
 
 
             if (userName.isEmpty()) {
-                userNameEmail_error.text = "Required"
+                userNameEmail_error.text = "*Please enter user name."
             }
             else if (userName.length < 6){
-                userNameEmail_error.text = "Please enter valid user name"
+                userNameEmail_error.text = "*User name must contains 6 characters."
             }
             else if (email.isEmpty()){
                     userNameEmail_error.text = ""
-                    emailEmail_error.text = "Required"
+                    emailEmail_error.text = "*Please enter email address."
+
             } else if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
                 userNameEmail_error.text = ""
-                emailEmail_error.text = "Please enter valid email"
+                emailEmail_error.text = "*Please enter valid email."
 
             } else if (subject.isEmpty()) {
                 emailEmail_error.text = ""
                 userNameEmail_error.text = ""
-                subjectEmail_error.text = "Required"
+                subjectEmail_error.text = "*Please enter subject."
 
             } else if (msg.isEmpty()) {
                 subjectEmail_error.text = ""
                 emailEmail_error.text = ""
                 userNameEmail_error.text = ""
-                messageEmail_error.text = "Required"
+                messageEmail_error.text = "*Please enter some message."
             } else {
                 messageEmail_error.text = ""
                 subjectEmail_error.text = ""

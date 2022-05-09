@@ -64,23 +64,23 @@ class RegisterEmailNotificationActivity : AppCompatActivity() {
 
             if (userName.isEmpty()){
                 txtUserName.visibility = View.VISIBLE
-                txtUserName.text = "Required"
+                txtUserName.text = "*Please enter user name."
             }
             else if(email.isEmpty()){
                 txtUserName.visibility = View.GONE
                 txtEmailID.visibility = View.VISIBLE
-                txtEmailID.text = "Required"
+                txtEmailID.text = "*Please enter email address."
             }
             else if(!Patterns.EMAIL_ADDRESS.matcher(email).matches()){
                 txtUserName.visibility = View.GONE
                 txtEmailID.visibility = View.VISIBLE
-                txtEmailID.text = "Please enter valid email"
+                txtEmailID.text = "*Please enter valid email."
             }
             else if(etSelectEntity.text.isEmpty()){
                 txtUserName.visibility = View.GONE
                 txtEmailID.visibility = View.GONE
                 txtEntity.visibility = View.VISIBLE
-                txtEntity.text = "Required"
+                txtEntity.text = "*Please enter entity name."
             }
             else{
                 txtUserName.visibility = View.GONE

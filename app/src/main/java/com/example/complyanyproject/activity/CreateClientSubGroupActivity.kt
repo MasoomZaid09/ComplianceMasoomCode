@@ -37,11 +37,11 @@ class CreateClientSubGroupActivity : AppCompatActivity() {
                 saved.setOnClickListener{
 
             if (ClientGroupName.text.toString().isEmpty()){
-                tv_ClientGroupName.text = "Required"
+                tv_ClientGroupName.text = "*Please enter client group name."
             }
             else if(SubClientGroupName.text.toString().isEmpty()){
                 tv_ClientGroupName.text =""
-                tv_ClientSubGroupName.text = "Required"
+                tv_ClientSubGroupName.text = "*Please enter client sub group name."
             }
             else {
                 tv_ClientGroupName.text = ""

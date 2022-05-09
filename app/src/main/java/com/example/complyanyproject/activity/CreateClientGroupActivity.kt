@@ -29,11 +29,10 @@ class CreateClientGroupActivity : AppCompatActivity() {
         SaveButton.setOnClickListener{
 
             if (ClientGroupManagement.text.toString().isEmpty()){
-                tv_ClientGroup.text = "Required"
+                tv_ClientGroup.text = "*Please enter client group name."
             }
             else {
                 tv_ClientGroup.text = ""
-                val saved = ClientGroupManagement.text.toString().trim()
                 Toast.makeText(this,"successfully Created", Toast.LENGTH_SHORT).show()
                     finish()
             }

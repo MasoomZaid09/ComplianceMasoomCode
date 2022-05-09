@@ -31,58 +31,58 @@ class ProfileActivity : AppCompatActivity() {
                 val mobileNumber = binding.etMobileNumber.text.toString()
 
                 if (firstName.isEmpty()){
-                    binding.txtFirstName.text = "Please enter your first name"
+                    binding.txtFirstName.text = "*Please enter your first name."
                     binding.txtLastName.text = ""
                     binding.txtEmail.text = ""
                     binding.txtPhone.text = ""
                 }
                 else if(firstName.length < 2){
-                    binding.txtFirstName.text = "First name must contain at least 2 characters"
+                    binding.txtFirstName.text = "*First name must contain at least 2 characters."
                     binding.txtLastName.text = ""
                     binding.txtEmail.text = ""
                     binding.txtPhone.text = ""
                 }
                 else if (lastName.isEmpty()){
                     binding.txtFirstName.text = ""
-                    binding.txtLastName.text = "Please enter your last name"
+                    binding.txtLastName.text = "*Please enter your last name."
                     binding.txtEmail.text = ""
                     binding.txtPhone.text = ""
                 }
                 else if (lastName.length < 2){
                     binding.txtFirstName.text = ""
-                    binding.txtLastName.text = "Last name must contain at least 2 characters"
+                    binding.txtLastName.text = "*Last name must contain at least 2 characters."
                     binding.txtEmail.text = ""
                     binding.txtPhone.text = ""
                 }
                 else if (lastName == firstName){
                     binding.txtFirstName.text = ""
-                    binding.txtLastName.text = "First name and last name can't be same"
+                    binding.txtLastName.text = "*First name and last name can't be same."
                     binding.txtEmail.text = ""
                     binding.txtPhone.text = ""
                 }
                 else if (email.isEmpty()){
                     binding.txtFirstName.text = ""
                     binding.txtLastName.text = ""
-                    binding.txtEmail.text = "Please enter email address"
+                    binding.txtEmail.text = "*Please enter email address."
                     binding.txtPhone.text = ""
                 }
                 else if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()){
                     binding.txtFirstName.text = ""
                     binding.txtLastName.text = ""
-                    binding.txtEmail.text = "Please enter valid email address"
+                    binding.txtEmail.text = "*Please enter valid email address."
                     binding.txtPhone.text = ""
                 }
                 else if(mobileNumber.isEmpty()){
                     binding.txtFirstName.text = ""
                     binding.txtLastName.text = ""
                     binding.txtEmail.text = ""
-                    binding.txtPhone.text = "Please enter your mobile number"
+                    binding.txtPhone.text = "*Please enter your mobile number."
                 }
                 else if(mobileNumber.length != 10){
                     binding.txtFirstName.text = ""
                     binding.txtLastName.text = ""
                     binding.txtEmail.text = ""
-                    binding.txtPhone.text = "Mobile number must contain 10 digits"
+                    binding.txtPhone.text = "*Mobile number must contain 10 digits."
                 }
                 else{
 

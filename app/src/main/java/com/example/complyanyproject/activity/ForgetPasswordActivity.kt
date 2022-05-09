@@ -30,21 +30,21 @@ class ForgetPasswordActivity : AppCompatActivity() {
 
             if(customerCode.isEmpty()){
                 binding.txtCustomerCode.visibility = View.VISIBLE
-                binding.txtCustomerCode.text = "Please enter customer code"
+                binding.txtCustomerCode.text = "*Please enter customer code."
             }
             else if(customerCode.length < 8){
                 binding.txtCustomerCode.visibility = View.VISIBLE
-                binding.txtCustomerCode.text = "Customer code must contain atleast 8 characters"
+                binding.txtCustomerCode.text = "*Customer code must contain atleast 8 characters."
             }
             else if(email.isEmpty()){
                 binding.txtCustomerCode.visibility = View.GONE
                 binding.txtEmailForgot.visibility = View.VISIBLE
-                binding.txtEmailForgot.text = "Please enter email address"
+                binding.txtEmailForgot.text = "*Please enter email address."
             }
             else if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()){
                 binding.txtCustomerCode.visibility = View.GONE
                 binding.txtEmailForgot.visibility = View.VISIBLE
-                binding.txtEmailForgot.text = "Please enter valid email address"
+                binding.txtEmailForgot.text = "*Please enter valid email address."
             }
             else{
                 binding.txtCustomerCode.visibility = View.GONE

@@ -38,34 +38,34 @@ class ChangePasswordActivity : AppCompatActivity() {
 
             if (oldPass.isEmpty()){
                 binding.txtOldPassword.visibility = View.VISIBLE
-                binding.txtOldPassword.text = "Required"
+                binding.txtOldPassword.text = "*Please enter old password."
             }
             else if (newPass.isEmpty()){
                 binding.txtOldPassword.visibility = View.GONE
                 binding.txtNewPassword.visibility = View.VISIBLE
-                binding.txtNewPassword.text = "Required"
+                binding.txtNewPassword.text = "*Please enter new password."
             }
             else if (oldPass == newPass){
                 binding.txtOldPassword.visibility = View.GONE
-                binding.txtNewPassword.text = "New password must me different"
+                binding.txtNewPassword.text = "*New password must me different."
             }
             else if(newPass.length < 8){
                 binding.txtOldPassword.visibility = View.GONE
-                binding.txtNewPassword.text = "Password must contain at least 8 characters"
+                binding.txtNewPassword.text = "*Password must contain at least 8 characters."
             }
             else if (!newPass.matches(checkPass.toRegex())){
                 binding.txtOldPassword.visibility = View.GONE
-                binding.txtNewPassword.text = "Password must contain a special character"
+                binding.txtNewPassword.text = "*Password must contain a special character."
             }
             else if(confirmPass.isEmpty()){
                 binding.txtNewPassword.visibility = View.GONE
                 binding.txtConfirmNewPassword.visibility = View.VISIBLE
-                binding.txtConfirmNewPassword.text = "Required"
+                binding.txtConfirmNewPassword.text = "*Please enter confirm password"
             }
             else if (confirmPass != newPass){
                 binding.txtNewPassword.visibility = View.GONE
                 binding.txtConfirmNewPassword.visibility = View.VISIBLE
-                binding.txtConfirmNewPassword.text = "New password and confirm password must be same"
+                binding.txtConfirmNewPassword.text = "*new password and confirm password must be same*"
             }
             else{
                 // hide tv textViews

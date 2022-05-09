@@ -7,7 +7,7 @@
     tools:context=".fragment.UserFragment">
 
     <EditText
-        android:id="@+id/etPhone"
+        android:id="@+id/etCustomerCode"
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:maxLength="10"
@@ -17,7 +17,7 @@
         android:layout_marginTop="10dp"
         android:background="@drawable/rounded_edit_text"
         android:fontFamily="sans-serif"
-        android:hint="@string/phone_number"
+        android:hint="Customer Code"
         android:inputType="number"
         android:paddingHorizontal="5dp"
         android:paddingStart="7dp"
@@ -25,7 +25,7 @@
         android:textSize="15sp" />
 
     <TextView
-        android:id="@+id/txtPhone"
+        android:id="@+id/txtCustomerCode"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text=""

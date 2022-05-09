@@ -44,51 +44,51 @@ class UserFragment : Fragment() {
             // added clicks on continue
             binding.btnLogin.setOnClickListener {
 
-                val phoneNumber = binding.etPhone.text.toString().trim()
+                val customerCode = binding.etCustomerCode.text.toString().trim()
                 val email = binding.etEmail.text.toString().trim()
                 val pass = binding.etPass.text.toString().trim()
 
-                if(phoneNumber.isEmpty()){
-                    binding.txtPhone.text = "Please enter phone number"
+                if(customerCode.isEmpty()){
+                    binding.txtCustomerCode.text = "*Please enter customer code."
                     binding.txtEmail.text = ""
                     binding.txtPassword.text = ""
                 }
-                else if (phoneNumber.length != 10) {
-                    binding.txtPhone.text = "Phone number must contain 10 digits"
+                else if (customerCode.length != 10) {
+                    binding.txtCustomerCode.text = "*Customer Code must contain 10 digits."
                     binding.txtEmail.text = ""
                     binding.txtPassword.text = ""
                 }
                 else if (email.isEmpty()) {
-                    binding.txtPhone.text = ""
-                    binding.txtEmail.text = "Please enter email address"
+                    binding.txtCustomerCode.text = ""
+                    binding.txtEmail.text = "*Please enter email address."
                     binding.txtPassword.text = ""
                 }
                 else if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
-                    binding.txtPhone.text = ""
-                    binding.txtEmail.text = "Please enter valid email address"
+                    binding.txtCustomerCode.text = ""
+                    binding.txtEmail.text = "*Please enter valid email address."
                     binding.txtPassword.text = ""
                 }
                 else if (pass.isEmpty()) {
-                    binding.txtPhone.text = ""
+                    binding.txtCustomerCode.text = ""
                     binding.txtEmail.text = ""
-                    binding.txtPassword.text = "Please enter your password"
+                    binding.txtPassword.text = "*Please enter your password."
                 }
                 else if (pass.length < 8) {
-                    binding.txtPhone.text = ""
+                    binding.txtCustomerCode.text = ""
                     binding.txtEmail.text = ""
-                    binding.txtPassword.text = "Password must contains atleast 8 characters"
+                    binding.txtPassword.text = "*Password must contains atleast 8 characters."
                 }
                 else {
-                    binding.txtPhone.text = ""
+                    binding.txtCustomerCode.text = ""
                     binding.txtEmail.text = ""
                     binding.txtPassword.text = ""
 
-                    sharedPreferences.edit().putString("userPhone", binding.etPhone.text.toString()).apply()
+                    sharedPreferences.edit().putString("userPhone", binding.etCustomerCode.text.toString()).apply()
                     sharedPreferences.edit().putString("userEmail", binding.etEmail.text.toString()).apply()
                     sharedPreferences.edit().putString("userPass", binding.etPass.text.toString()).apply()
                     sharedPreferences.edit().putBoolean("isLoggedIn", true).apply()
 
-                    binding.etPhone.text.clear()
+                    binding.etCustomerCode.text.clear()
                     binding.etEmail.text.clear()
                     binding.etPass.text.clear()
 
