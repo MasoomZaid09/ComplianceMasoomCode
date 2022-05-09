@@ -9,6 +9,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.*
+import androidx.core.view.accessibility.AccessibilityViewCommand
 import com.example.complyanyproject.R
 import com.example.complyanyproject.activity.*
 import com.example.complyanyproject.fragment.UserFragment
@@ -196,63 +197,122 @@ class MenuFragment : Fragment() {
 //        backLawOrHead = view.findViewById(R.id.backLawOrHead)
 //        backSubLawOrSubHead = view.findViewById(R.id.backSubLawOrSubHead)
 
+        // added company management clicks
         companyManagement.setOnClickListener {
 
-            if (flag1 == true) {
+            if(flag1){
+
                 companyArrowDown.visibility = View.GONE
                 companyArrowRight.visibility = View.VISIBLE
                 companyManagementMenu.visibility = View.GONE
+
                 flag1 = false
-            } else {
+            }else{
+
                 companyArrowDown.visibility = View.VISIBLE
                 companyArrowRight.visibility = View.GONE
                 companyManagementMenu.visibility = View.VISIBLE
+
+                departmentArrowDown.visibility = View.GONE
+                departmentArrowRight.visibility = View.VISIBLE
+
+                lawOrheadArrowDown.visibility = View.GONE
+                lawOrheadArrowRight.visibility = View.VISIBLE
+
+                userManagementArrowDown.visibility = View.GONE
+                userManagementArrowRight.visibility = View.VISIBLE
+
+                clientGroupManagementArrowDown.visibility = View.GONE
+                clientGroupManagementArrowRight.visibility = View.VISIBLE
+
+                complianceManagementArrowDown.visibility = View.GONE
+                complianceManagementArrowRight.visibility = View.VISIBLE
+
+
                 departmentManagementMenu.visibility = View.GONE
                 lawOrHeadManagementMenu.visibility = View.GONE
                 userManagementMenu.visibility = View.GONE
                 clientGroupManagementMenu.visibility = View.GONE
                 complianceManagementMenu.visibility = View.GONE
+
                 flag1 = true
             }
 
         }
 
+        // added department management clicks
         departmentManagement.setOnClickListener {
+            if(flag2){
 
-            if (flag2 == true) {
                 departmentArrowDown.visibility = View.GONE
                 departmentArrowRight.visibility = View.VISIBLE
                 departmentManagementMenu.visibility = View.GONE
+
                 flag2 = false
-            }
-            else {
+            }else{
+
                 departmentArrowDown.visibility = View.VISIBLE
                 departmentArrowRight.visibility = View.GONE
                 departmentManagementMenu.visibility = View.VISIBLE
+
+                companyArrowDown.visibility = View.GONE
+                companyArrowRight.visibility = View.VISIBLE
+
+                lawOrheadArrowDown.visibility = View.GONE
+                lawOrheadArrowRight.visibility = View.VISIBLE
+
+                userManagementArrowDown.visibility = View.GONE
+                userManagementArrowRight.visibility = View.VISIBLE
+
+                clientGroupManagementArrowDown.visibility = View.GONE
+                clientGroupManagementArrowRight.visibility = View.VISIBLE
+
+                complianceManagementArrowDown.visibility = View.GONE
+                complianceManagementArrowRight.visibility = View.VISIBLE
+
                 companyManagementMenu.visibility = View.GONE
                 lawOrHeadManagementMenu.visibility = View.GONE
                 userManagementMenu.visibility = View.GONE
                 clientGroupManagementMenu.visibility = View.GONE
                 complianceManagementMenu.visibility = View.GONE
+
                 flag2 = true
             }
-
         }
 
+        // added law or head management clicks
         lawOrHeadManagement.setOnClickListener {
 
-            if (flag3 == true) {
+            if(flag3){
+
                 lawOrheadArrowDown.visibility = View.GONE
                 lawOrheadArrowRight.visibility = View.VISIBLE
                 lawOrHeadManagementMenu.visibility = View.GONE
+
                 flag3 = false
-            }
-            else {
+            }else{
+
                 lawOrheadArrowDown.visibility = View.VISIBLE
                 lawOrheadArrowRight.visibility = View.GONE
                 lawOrHeadManagementMenu.visibility = View.VISIBLE
-                departmentManagementMenu.visibility = View.GONE
+
+                companyArrowDown.visibility = View.GONE
+                companyArrowRight.visibility = View.VISIBLE
+
+                departmentArrowDown.visibility = View.GONE
+                departmentArrowRight.visibility = View.VISIBLE
+
+                userManagementArrowDown.visibility = View.GONE
+                userManagementArrowRight.visibility = View.VISIBLE
+
+                clientGroupManagementArrowDown.visibility = View.GONE
+                clientGroupManagementArrowRight.visibility = View.VISIBLE
+
+                complianceManagementArrowDown.visibility = View.GONE
+                complianceManagementArrowRight.visibility = View.VISIBLE
+
                 companyManagementMenu.visibility = View.GONE
+                departmentManagementMenu.visibility = View.GONE
                 userManagementMenu.visibility = View.GONE
                 clientGroupManagementMenu.visibility = View.GONE
                 complianceManagementMenu.visibility = View.GONE
@@ -262,67 +322,126 @@ class MenuFragment : Fragment() {
 
         }
 
+        // added user management clicks
         userManagement.setOnClickListener {
 
-            if (flag4 == true) {
+            if(flag4){
+
                 userManagementArrowDown.visibility = View.GONE
                 userManagementArrowRight.visibility = View.VISIBLE
                 userManagementMenu.visibility = View.GONE
+
                 flag4 = false
-            }
-            else {
+            }else{
+
                 userManagementArrowDown.visibility = View.VISIBLE
                 userManagementArrowRight.visibility = View.GONE
                 userManagementMenu.visibility = View.VISIBLE
-                departmentManagementMenu.visibility = View.GONE
+
+                companyArrowDown.visibility = View.GONE
+                companyArrowRight.visibility = View.VISIBLE
+
+                departmentArrowDown.visibility = View.GONE
+                departmentArrowRight.visibility = View.VISIBLE
+
+                lawOrheadArrowDown.visibility = View.GONE
+                lawOrheadArrowRight.visibility = View.VISIBLE
+
+                clientGroupManagementArrowDown.visibility = View.GONE
+                clientGroupManagementArrowRight.visibility = View.VISIBLE
+
+                complianceManagementArrowDown.visibility = View.GONE
+                complianceManagementArrowRight.visibility = View.VISIBLE
+
                 companyManagementMenu.visibility = View.GONE
+                departmentManagementMenu.visibility = View.GONE
                 lawOrHeadManagementMenu.visibility = View.GONE
                 clientGroupManagementMenu.visibility = View.GONE
                 complianceManagementMenu.visibility = View.GONE
+
                 flag4 = true
             }
-
         }
 
+        // added client group management clicks
         clientGroupManagement.setOnClickListener {
 
-            if (flag5 == true) {
+            if(flag5){
+
                 clientGroupManagementArrowDown.visibility = View.GONE
                 clientGroupManagementArrowRight.visibility = View.VISIBLE
                 clientGroupManagementMenu.visibility = View.GONE
+
                 flag5 = false
-            }
-            else {
+            }else{
+
                 clientGroupManagementArrowDown.visibility = View.VISIBLE
                 clientGroupManagementArrowRight.visibility = View.GONE
                 clientGroupManagementMenu.visibility = View.VISIBLE
-                departmentManagementMenu.visibility = View.GONE
+
+                companyArrowDown.visibility = View.GONE
+                companyArrowRight.visibility = View.VISIBLE
+
+                departmentArrowDown.visibility = View.GONE
+                departmentArrowRight.visibility = View.VISIBLE
+
+                lawOrheadArrowDown.visibility = View.GONE
+                lawOrheadArrowRight.visibility = View.VISIBLE
+
+                userManagementArrowDown.visibility = View.GONE
+                userManagementArrowRight.visibility = View.VISIBLE
+
+                complianceManagementArrowDown.visibility = View.GONE
+                complianceManagementArrowRight.visibility = View.VISIBLE
+
                 companyManagementMenu.visibility = View.GONE
+                departmentManagementMenu.visibility = View.GONE
                 lawOrHeadManagementMenu.visibility = View.GONE
                 userManagementMenu.visibility = View.GONE
                 complianceManagementMenu.visibility = View.GONE
+
                 flag5 = true
             }
 
         }
 
+        // added compliance management clicks
         complianceManagement.setOnClickListener {
 
-            if (flag6 == true) {
+            if(flag6){
+
                 complianceManagementArrowDown.visibility = View.GONE
                 complianceManagementArrowRight.visibility = View.VISIBLE
                 complianceManagementMenu.visibility = View.GONE
+
                 flag6 = false
-            }
-            else {
+            }else{
+
                 complianceManagementArrowDown.visibility = View.VISIBLE
                 complianceManagementArrowRight.visibility = View.GONE
                 complianceManagementMenu.visibility = View.VISIBLE
-                departmentManagementMenu.visibility = View.GONE
+
+                companyArrowDown.visibility = View.GONE
+                companyArrowRight.visibility = View.VISIBLE
+
+                departmentArrowDown.visibility = View.GONE
+                departmentArrowRight.visibility = View.VISIBLE
+
+                lawOrheadArrowDown.visibility = View.GONE
+                lawOrheadArrowRight.visibility = View.VISIBLE
+
+                userManagementArrowDown.visibility = View.GONE
+                userManagementArrowRight.visibility = View.VISIBLE
+
+                clientGroupManagementArrowDown.visibility = View.GONE
+                clientGroupManagementArrowRight.visibility = View.VISIBLE
+
                 companyManagementMenu.visibility = View.GONE
+                departmentManagementMenu.visibility = View.GONE
                 lawOrHeadManagementMenu.visibility = View.GONE
                 userManagementMenu.visibility = View.GONE
                 clientGroupManagementMenu.visibility = View.GONE
+
                 flag6 = true
             }
 
