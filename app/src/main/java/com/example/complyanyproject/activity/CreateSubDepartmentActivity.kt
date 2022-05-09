@@ -59,10 +59,7 @@ class CreateSubDepartmentActivity : AppCompatActivity() {
             Intent(this, ListSubDepartmentActivity::class.java).also {
                 startActivityForResult(it, 1)
             }
-
         }
-
-
     }
 
     override fun onBackPressed() {
